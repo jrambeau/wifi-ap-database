@@ -140,8 +140,8 @@ def main():
     parser = argparse.ArgumentParser(description='Convert Excel AP specifications to YAML for Jekyll')
     parser.add_argument('--excel', default='Axians_Lyon_Comparatif_AP_v1.0.xlsx', 
                         help='Excel file to convert (default: Axians_Lyon_Comparatif_AP_v1.0.xlsx)')
-    parser.add_argument('--output', default='ap_models.yaml', 
-                        help='Output YAML file (default: ap_models.yaml)')
+    parser.add_argument('--output', default='_data/ap_models.yaml', 
+                        help='Output YAML file (default: _data/ap_models.yaml)')
     parser.add_argument('--no-backup', action='store_true', 
                         help='Skip creating backup of existing YAML file')
     parser.add_argument('--validate', action='store_true', 
