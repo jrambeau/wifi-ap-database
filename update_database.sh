@@ -8,9 +8,9 @@ echo "🔄 WiFi AP Database Update"
 echo "=========================="
 
 # Check if English Excel file exists
-if [ ! -f "Axians_Lyon_Comparatif_AP_v1.0_English.xlsx" ]; then
+if [ ! -f "wifi-ap-database.xlsx" ]; then
     echo "❌ English Excel file not found!"
-    echo "💡 Please ensure 'Axians_Lyon_Comparatif_AP_v1.0_English.xlsx' exists"
+    echo "💡 Please ensure 'wifi-ap-database.xlsx' exists"
     echo "💡 Or run: python translate_excel_headers.py to create it"
     exit 1
 fi

@@ -185,8 +185,8 @@ function changeFontSize(delta) {
 
 ## 🔄 How to Update This Database
 
-1. **Edit Excel File**: Update `Axians_Lyon_Comparatif_AP_v1.0.xlsx` with new AP data
-2. **Run Update Script**: `./update_site.sh`
+1. **Edit Excel File**: Update `wifi-ap-database.xlsx` with new AP data
+2. **Run Update Script**: `./update_database.sh`
 3. **Commit Changes**: `git add . && git commit -m "Update AP database"`
 4. **Deploy**: `git push origin main`
 

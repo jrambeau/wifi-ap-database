@@ -138,8 +138,8 @@ def show_statistics(yaml_file):
 
 def main():
     parser = argparse.ArgumentParser(description='Convert Excel AP specifications to YAML for Jekyll')
-    parser.add_argument('--excel', default='Axians_Lyon_Comparatif_AP_v1.0_English.xlsx', 
-                        help='Excel file to convert (default: Axians_Lyon_Comparatif_AP_v1.0_English.xlsx)')
+    parser.add_argument('--excel', default='wifi-ap-database.xlsx', 
+                        help='Excel file to convert (default: wifi-ap-database.xlsx)')
     parser.add_argument('--output', default='_data/ap_models.yaml', 
                         help='Output YAML file (default: _data/ap_models.yaml)')
     parser.add_argument('--no-backup', action='store_true', 
