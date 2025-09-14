@@ -117,16 +117,16 @@ def show_statistics(yaml_file):
         indoor_outdoor = {}
         
         for ap in data:
-            # Manufacturers
-            manufacturer = ap.get('Constructeur', 'Unknown').strip()
+            # Manufacturers (support both English and French for backward compatibility)
+            manufacturer = ap.get('Manufacturer', ap.get('Constructeur', 'Unknown')).strip()
             manufacturers[manufacturer] = manufacturers.get(manufacturer, 0) + 1
             
             # Generations
-            generation = ap.get('Génération', 'Unknown')
+            generation = ap.get('Generation', ap.get('Génération', 'Unknown'))
             generations[generation] = generations.get(generation, 0) + 1
             
             # Indoor/Outdoor
-            location = ap.get('Indoor/Outdoor', 'Unknown')
+            location = ap.get('Indoor_Outdoor', ap.get('Indoor/Outdoor', 'Unknown'))
             indoor_outdoor[location] = indoor_outdoor.get(location, 0) + 1
         
         print(f"   Manufacturers: {', '.join([f'{k}({v})' for k,v in sorted(manufacturers.items(), key=lambda x: str(x[0]))])}")
@@ -138,8 +138,8 @@ def show_statistics(yaml_file):
 
 def main():
     parser = argparse.ArgumentParser(description='Convert Excel AP specifications to YAML for Jekyll')
-    parser.add_argument('--excel', default='Axians_Lyon_Comparatif_AP_v1.0.xlsx', 
-                        help='Excel file to convert (default: Axians_Lyon_Comparatif_AP_v1.0.xlsx)')
+    parser.add_argument('--excel', default='Axians_Lyon_Comparatif_AP_v1.0_English.xlsx', 
+                        help='Excel file to convert (default: Axians_Lyon_Comparatif_AP_v1.0_English.xlsx)')
     parser.add_argument('--output', default='_data/ap_models.yaml', 
                         help='Output YAML file (default: _data/ap_models.yaml)')
     parser.add_argument('--no-backup', action='store_true', 
