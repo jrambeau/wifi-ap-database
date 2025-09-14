@@ -82,10 +82,12 @@ p {
 <table id="ap-table" class="display" style="width:100%">
     <thead>
         <tr>
-            {% assign first = site.data.ap_models[0] %}
-            {% for col in first %}
-            <th>{{ col[0] }}</th>
-            {% endfor %}
+            {% if site.data.ap_models.size > 0 %}
+                {% assign first = site.data.ap_models[0] %}
+                {% for col in first %}
+                <th>{{ col[0] }}</th>
+                {% endfor %}
+            {% endif %}
         </tr>
     </thead>
     <tbody>
