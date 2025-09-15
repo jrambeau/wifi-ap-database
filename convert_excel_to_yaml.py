@@ -287,8 +287,8 @@ def main():
     if result and len(result) == 3:
         success, columns, changes = result
         
-        # Update template if requested
-        if args.update_template:
+        # Update template if requested and changes detected
+        if args.update_template and (changes['added'] or changes['removed'] or changes['renamed']):
             print(f"\n🔄 Updating Jekyll template...")
             update_jekyll_template(columns)
         
@@ -297,7 +297,7 @@ def main():
             show_statistics(args.output)
             print(f"\n🚀 Next steps:")
             print(f"   1. Review the generated {args.output}")
-            if args.update_template:
+            if args.update_template and (changes['added'] or changes['removed'] or changes['renamed']):
                 print(f"   2. Review the updated index.md template")
                 print(f"   3. Commit changes to your Jekyll repository")
                 print(f"   4. Deploy your updated site")
