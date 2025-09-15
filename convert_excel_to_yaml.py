@@ -33,7 +33,7 @@ def backup_existing_yaml(yaml_file):
 def clean_data(value):
     """Clean and normalize data values"""
     if pd.isna(value):
-        return ".nan"
+        return ""  # Return empty string instead of ".nan"
     if isinstance(value, str):
         return value.strip()
     return value
