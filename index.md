@@ -36,7 +36,8 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 #ap-table-container {
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto; /* allow vertical scroll only here */
+    overflow-x: hidden; /* prevent horizontal scroll at this level so sticky works */
     position: fixed;
     top: 0;
     left: 0;
@@ -49,7 +50,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 /* Ensure horizontal scroll works properly */
 .dataTables_wrapper {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; /* single horizontal scroll context */
     padding-bottom: 40px; /* ensure internal controls not cut off */
 }
 
