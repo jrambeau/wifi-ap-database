@@ -320,6 +320,19 @@ div.dataTables_scrollBody table {
     margin-top: 0 !important;
     border-top: none !important;
 }
+/* --- Sticky first two columns (Manufacturer, Model) --- */
+/* CSS variable updated dynamically to match actual first column width */
+:root { --sticky-col-1-width: 0px; }
+#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; background: inherit; }
+#ap-table thead .sticky-col { z-index: 8; }
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; }
+#ap-table .sticky-col-1 { box-shadow: 2px 0 3px -2px rgba(0,0,0,0.08); }
+#ap-table .sticky-col-2 { left: var(--sticky-col-1-width); box-shadow: 4px 0 5px -3px rgba(0,0,0,0.15); }
+/* Preserve row hover / striping appearance for sticky cells */
+#ap-table tbody tr:hover .sticky-col { background: inherit; }
+#ap-table tbody tr:nth-child(even) .sticky-col { background: inherit; }
+/* Ensure probe row sticky cells don't introduce spacing */
+#ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; }
 </style>
 
 ## 📱 WiFi Access Points Database
@@ -338,8 +351,8 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <th>Manufacturer</th>
-            <th>Model</th>
+            <th class="sticky-col sticky-col-1 noVis">Manufacturer</th>
+            <th class="sticky-col sticky-col-2 noVis">Model</th>
             <th>Manufacturer Reference</th>
             <th>Antenna Type</th>
             <th>Indoor Outdoor</th>
@@ -374,8 +387,8 @@ div.dataTables_scrollBody table {
 
         </tr>
         <tr class="filter-row">
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
+            <th class="sticky-col sticky-col-1"><input type="text" placeholder="Filter" /></th>
+            <th class="sticky-col sticky-col-2"><input type="text" placeholder="Filter" /></th>
             <th><input type="text" placeholder="Filter" /></th>
             <th><input type="text" placeholder="Filter" /></th>
             <th><input type="text" placeholder="Filter" /></th>
@@ -411,8 +424,8 @@ div.dataTables_scrollBody table {
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
-            <td>VeryLongManufacturerNameSample</td>
-            <td>Model-Extreme-9999X-Pro-Max</td>
+            <td class="sticky-col sticky-col-1">VeryLongManufacturerNameSample</td>
+            <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
             <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
             <td>External High-Gain Omni Directional Antenna Pack</td>
             <td>Indoor/Outdoor Industrial Hardened</td>
@@ -448,8 +461,8 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <td>{{ ap.Manufacturer | default: "" }}</td>
-            <td>{{ ap.Model | default: "" }}</td>
+            <td class="sticky-col sticky-col-1">{{ ap.Manufacturer | default: "" }}</td>
+            <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
             <td>{{ ap.Manufacturer_Reference | default: "" }}</td>
             <td>{{ ap.Antenna_Type | default: "" }}</td>
             <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
@@ -507,7 +520,11 @@ $(document).ready(function() {
         // Layout control - bring back buttons
         dom: 'Bfrtip',
         buttons: [
-            'colvis',
+            {
+                extend: 'colvis',
+                columns: ':not(.noVis)',
+                text: 'Column visibility'
+            },
             {
                 text: 'A-',
                 className: 'dt-font-btn dt-font-dec',
@@ -594,6 +611,30 @@ $(document).ready(function() {
         ]
     });
 
+    // Sticky columns offset calculation
+    function updateStickyOffsets(){
+        var firstDataCell = document.querySelector('#ap-table tbody tr:not(.width-probe) td.sticky-col-1');
+        var headerCell = document.querySelector('#ap-table thead tr:not(.filter-row) th.sticky-col-1');
+        var source = firstDataCell || headerCell;
+        if(source){
+            var w = source.getBoundingClientRect().width;
+            if(w && w > 0){
+                document.documentElement.style.setProperty('--sticky-col-1-width', w + 'px');
+            }
+        }
+    }
+    // Initial and event-based recalculations
+    updateStickyOffsets();
+    table.on('draw.dt column-visibility.dt', function(){
+        updateStickyOffsets();
+    });
+    $(window).on('resize', function(){
+        updateStickyOffsets();
+    });
+
+    // Expose for font resize function
+    window.updateStickyOffsets = updateStickyOffsets;
+
 });
 
 // Font size controls
@@ -617,7 +658,11 @@ function changeFontSize(delta) {
     controls.forEach(function(el) { el.style.fontSize = newSize + 'px'; });
     // Force DataTables to recalculate column widths
     if ($.fn.dataTable) {
-        $('#ap-table').DataTable().columns.adjust().draw(false);
+        var dt = $('#ap-table').DataTable();
+        dt.columns.adjust().draw(false);
+        if(typeof window.updateStickyOffsets === 'function') {
+            window.updateStickyOffsets();
+        }
     }
 }
 </script>
