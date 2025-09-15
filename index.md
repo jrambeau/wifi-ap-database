@@ -55,7 +55,7 @@ body {
 #ap-table {
     margin: 0 !important;
     width: 100% !important;
-    font-size: 13px;
+    font-size: 14px;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -80,14 +80,14 @@ body {
     padding: 16px 12px;
     text-align: left;
     border: none;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: auto !important;
-    min-width: 80px;
+    min-width: 100px;
 }
 
 #ap-table tbody td {
@@ -100,7 +100,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     width: auto !important;
-    min-width: 80px;
+    min-width: 100px;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -396,18 +396,24 @@ $(document).ready(function() {
         order: [[ 0, "asc" ]],
         autoWidth: false, // Critical for alignment
         columnDefs: [
-            { width: "150px", targets: [0] }, // Manufacturer - wider for long names
-            { width: "140px", targets: [1] }, // Model - wider for model numbers
-            { width: "120px", targets: [2, 3] }, // Manufacturer Reference, Antenna Type
-            { width: "110px", targets: [4, 5, 6, 7] }, // Indoor/Outdoor, Generation, Protocol, Product Positioning
-            { width: "100px", targets: [8, 9, 10, 11, 12] }, // Radio specs
-            { width: "90px", targets: [13, 14, 15, 16] }, // PoE specs
-            { width: "100px", targets: [17, 18, 19, 20] }, // Ethernet, Weight, Dimensions
-            { width: "120px", targets: [21] }, // Geolocation (long name)
-            { width: "80px", targets: [22, 23, 24, 25, 26] }, // USB, UWB, GNSS, Bluetooth, Zigbee
-            { width: "110px", targets: [27, 28] }, // Cloud Compatible, Minimum Version
-            { width: "100px", targets: [29, 30] }, // Prices
-            { width: "150px", targets: [31] } // Comments - wider for text
+            { width: "200px", targets: [0] }, // Manufacturer - wide for company names
+            { width: "180px", targets: [1] }, // Model - wide for model numbers
+            { width: "160px", targets: [2] }, // Manufacturer Reference
+            { width: "180px", targets: [3] }, // Antenna Type - descriptive text
+            { width: "140px", targets: [4, 5] }, // Indoor/Outdoor, Generation
+            { width: "160px", targets: [6, 7] }, // Protocol, Product Positioning
+            { width: "140px", targets: [8, 9, 10, 11] }, // Radio specs
+            { width: "160px", targets: [12] }, // Dedicated Scanning Radio
+            { width: "140px", targets: [13, 14] }, // PoE Class, Max PoE Consumption
+            { width: "200px", targets: [15, 16] }, // Limited Capabilities (long text)
+            { width: "120px", targets: [17, 18] }, // Ethernet ports
+            { width: "100px", targets: [19, 20] }, // Weight, Dimensions
+            { width: "220px", targets: [21] }, // Geolocation (very long technical name)
+            { width: "100px", targets: [22, 23, 24, 25, 26] }, // USB, UWB, GNSS, Bluetooth, Zigbee
+            { width: "160px", targets: [27] }, // Cloud Compatible
+            { width: "140px", targets: [28] }, // Minimum Version
+            { width: "120px", targets: [29, 30] }, // Prices
+            { width: "250px", targets: [31] } // Comments - very wide for descriptive text
         ],
         language: {
             search: "🔍 Search all columns:",
