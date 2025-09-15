@@ -42,6 +42,16 @@ body {
     padding: 16px;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
 }
+
+/* Ensure horizontal scroll works properly */
+.dataTables_wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.dataTables_scroll {
+    overflow-x: auto;
+}
 #ap-table {
     margin: 0 !important;
     width: 100% !important;
@@ -67,7 +77,7 @@ body {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
     font-weight: 600;
-    padding: 16px 8px;
+    padding: 16px 12px;
     text-align: left;
     border: none;
     font-size: 12px;
@@ -77,11 +87,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     width: auto !important;
-    min-width: 100px;
+    min-width: 80px;
 }
 
 #ap-table tbody td {
-    padding: 12px 8px;
+    padding: 12px;
     border-bottom: 1px solid #e2e8f0;
     font-weight: 400;
     color: #4a5568;
@@ -90,7 +100,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     width: auto !important;
-    min-width: 100px;
+    min-width: 80px;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -233,8 +243,8 @@ p {
 .dataTables_scrollHead table th,
 .dataTables_scrollBody table td {
     box-sizing: border-box !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 
 /* Remove any borders between header and body */
@@ -386,9 +396,18 @@ $(document).ready(function() {
         order: [[ 0, "asc" ]],
         autoWidth: false, // Critical for alignment
         columnDefs: [
-            { width: "120px", targets: [0, 1] }, // Manufacturer, Model - wider
-            { width: "100px", targets: [2, 3, 4, 5, 6, 7] }, // Key info columns
-            { width: "80px", targets: "_all" } // All other columns
+            { width: "150px", targets: [0] }, // Manufacturer - wider for long names
+            { width: "140px", targets: [1] }, // Model - wider for model numbers
+            { width: "120px", targets: [2, 3] }, // Manufacturer Reference, Antenna Type
+            { width: "110px", targets: [4, 5, 6, 7] }, // Indoor/Outdoor, Generation, Protocol, Product Positioning
+            { width: "100px", targets: [8, 9, 10, 11, 12] }, // Radio specs
+            { width: "90px", targets: [13, 14, 15, 16] }, // PoE specs
+            { width: "100px", targets: [17, 18, 19, 20] }, // Ethernet, Weight, Dimensions
+            { width: "120px", targets: [21] }, // Geolocation (long name)
+            { width: "80px", targets: [22, 23, 24, 25, 26] }, // USB, UWB, GNSS, Bluetooth, Zigbee
+            { width: "110px", targets: [27, 28] }, // Cloud Compatible, Minimum Version
+            { width: "100px", targets: [29, 30] }, // Prices
+            { width: "150px", targets: [31] } // Comments - wider for text
         ],
         language: {
             search: "🔍 Search all columns:",
