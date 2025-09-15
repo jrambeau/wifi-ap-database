@@ -332,14 +332,18 @@ div.dataTables_scrollBody table {
 :root { --sticky-col-1-width: 0px; }
 #ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
 #ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
-#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #eef2ff; }
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #eef2ff; box-shadow:none; }
 #ap-table tbody .sticky-col { background: #ffffff; }
 #ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
 #ap-table tbody tr:hover .sticky-col { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
 #ap-table .sticky-col-1 { box-shadow: 2px 0 3px -2px rgba(0,0,0,0.08); }
 #ap-table .sticky-col-2 { left: var(--sticky-col-1-width); box-shadow: 4px 0 5px -3px rgba(0,0,0,0.15); }
+/* Remove visual separator (shadow + fade) on filter row cells so they match others */
+#ap-table thead tr.filter-row .sticky-col-1, #ap-table thead tr.filter-row .sticky-col-2 { box-shadow:none; }
 /* Soft fade edge to emphasize separation */
 #ap-table .sticky-col-1::after, #ap-table .sticky-col-2::after { content: ""; position: absolute; top:0; right:-1px; width:10px; height:100%; pointer-events:none; background: linear-gradient(to right, rgba(0,0,0,0.08), rgba(0,0,0,0)); }
+/* No fade on filter row sticky cells */
+#ap-table thead tr.filter-row .sticky-col-1::after, #ap-table thead tr.filter-row .sticky-col-2::after { display:none; }
 /* Prevent probe row artifacts */
 #ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; background: transparent !important; }
 </style>
