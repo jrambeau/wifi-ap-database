@@ -80,7 +80,7 @@ def update_jekyll_template(columns, template_file="index.md"):
         headers = '\n'.join([f'            <th>{col.replace("_", " ")}</th>' for col in columns])
         
         # Generate new table data cells
-        cells = '\n'.join([f'            <td>{{{{ ap.{col} | default: "" }}</td>' for col in columns])
+        cells = '\n'.join([f'            <td>{{{{ ap.{col} | default: "" }}}}</td>' for col in columns])
         
         # Find and replace the table structure
         import re
