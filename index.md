@@ -18,7 +18,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 14px;
+    font-size: var(--table-font-size, 14px);
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #2d3748;
 }
@@ -69,7 +69,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 }
 #ap-table {
     margin: 0 !important;
-    font-size: 14px;
+    font-size: var(--table-font-size, 14px);
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -348,11 +348,11 @@ div.dataTables_scrollBody table {
 #ap-table .sticky-col-2 { left: var(--sticky-col-1-width); border-right: 1px solid #e2e8f0; }
 
 /* Compact mode adjustments */
-.compact-mode #ap-table thead th { padding: 8px 8px; font-size: 12px; }
+.compact-mode #ap-table thead th { padding: 8px 8px; }
 .compact-mode #ap-table thead tr.filter-row th { padding: 2px 4px; }
 .compact-mode #ap-table thead tr.filter-row th input { padding: 2px 4px; font-size: 10px; }
-.compact-mode #ap-table tbody td { padding: 4px 8px; font-size: 12px; }
-.compact-mode #ap-table { font-size: 12px; }
+.compact-mode #ap-table tbody td { padding: 4px 8px; }
+.compact-mode #ap-table { }
 .compact-mode .dataTables_wrapper .dataTables_filter input, 
 .compact-mode .dataTables_wrapper .dataTables_length select { padding:4px 8px; font-size:12px; }
 .compact-mode .dt-buttons .dt-button { padding:6px 10px !important; font-size:12px !important; }
@@ -720,20 +720,11 @@ $(document).ready(function() {
 // Font size controls
 var minFont = 9, maxFont = 20;
 function changeFontSize(delta) {
-    var table = document.getElementById('ap-table');
-    var style = window.getComputedStyle(table, null).getPropertyValue('font-size');
-    var current = parseFloat(style);
+    var root = document.documentElement;
+    var current = parseFloat(getComputedStyle(root).getPropertyValue('--table-font-size') || getComputedStyle(document.body).fontSize);
     var newSize = Math.max(minFont, Math.min(maxFont, current + delta));
-    // Set font size on the table and wrapper
-    table.style.fontSize = newSize + 'px';
-    var wrapper = document.getElementById('ap-table-container');
-    if (wrapper) wrapper.style.fontSize = newSize + 'px';
-    // Remove any explicit font-size on th/td to let inherit from table
-    var ths = table.querySelectorAll('th');
-    var tds = table.querySelectorAll('td');
-    ths.forEach(function(el) { el.style.fontSize = null; });
-    tds.forEach(function(el) { el.style.fontSize = null; });
-    // Also update filter and length controls
+    root.style.setProperty('--table-font-size', newSize + 'px');
+    // Inputs/selects inherit; adjust if necessary
     var controls = document.querySelectorAll('.dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select');
     controls.forEach(function(el) { el.style.fontSize = newSize + 'px'; });
     // Force DataTables to recalculate column widths
