@@ -82,20 +82,75 @@ p {
 <table id="ap-table" class="display" style="width:100%">
     <thead>
         <tr>
-            {% if site.data.ap_models.size > 0 %}
-                {% assign first = site.data.ap_models[0] %}
-                {% for col in first %}
-                <th>{{ col[0] }}</th>
-                {% endfor %}
-            {% endif %}
+            <th>Manufacturer</th>
+            <th>Model</th>
+            <th>Manufacturer Reference</th>
+            <th>Antenna Type</th>
+            <th>Indoor/Outdoor</th>
+            <th>Generation</th>
+            <th>Protocol</th>
+            <th>Product Positioning</th>
+            <th>Concurrent PHY Radios</th>
+            <th>Radio 2.4 GHz</th>
+            <th>Radio 5 GHz</th>
+            <th>Radio 6 GHz</th>
+            <th>Dedicated Scanning Radio</th>
+            <th>PoE Class</th>
+            <th>Max PoE Consumption (W)</th>
+            <th>Limited Capabilities PoE+ 30W</th>
+            <th>Limited Capabilities PoE 15W</th>
+            <th>Ethernet1</th>
+            <th>Ethernet2</th>
+            <th>Weight (kg)</th>
+            <th>Dimensions (cm)</th>
+            <th>Geolocation FTM</th>
+            <th>USB Ports</th>
+            <th>UWB</th>
+            <th>GPS</th>
+            <th>Bluetooth</th>
+            <th>Zigbee</th>
+            <th>Cloud Compatible</th>
+            <th>Minimum Version</th>
+            <th>Public Price (USD)</th>
+            <th>Public Price (EUR)</th>
+            <th>Comments</th>
         </tr>
     </thead>
     <tbody>
         {% for ap in site.data.ap_models %}
         <tr>
-            {% for col in ap %}
-            <td>{{ col[1] | default: "" }}</td>
-            {% endfor %}
+            <td>{{ ap.Manufacturer | default: "" }}</td>
+            <td>{{ ap.Model | default: "" }}</td>
+            <td>{{ ap.Manufacturer_Reference | default: "" }}</td>
+            <td>{{ ap.Antenna_Type | default: "" }}</td>
+            <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
+            <td>{{ ap.Generation | default: "" }}</td>
+            <td>{{ ap.Protocol | default: "" }}</td>
+            <td>{{ ap.Product_Positioning | default: "" }}</td>
+            <td>{{ ap.Concurrent_PHY_Radios | default: "" }}</td>
+            <td>{{ ap.Radio_2_4_GHz | default: "" }}</td>
+            <td>{{ ap.Radio_5_GHz | default: "" }}</td>
+            <td>{{ ap.Radio_6_GHz | default: "" }}</td>
+            <td>{{ ap.Dedicated_Scanning_Radio | default: "" }}</td>
+            <td>{{ ap.PoE_Class | default: "" }}</td>
+            <td>{{ ap.Max_PoE_Consumption_W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_Plus_30W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_15W | default: "" }}</td>
+            <td>{{ ap.Ethernet1 | default: "" }}</td>
+            <td>{{ ap.Ethernet2 | default: "" }}</td>
+            <td>{{ ap.Weight_kg | default: "" }}</td>
+            <td>{{ ap.Dimensions_cm | default: "" }}</td>
+            <td>{{ ap.Geolocation_FTM_80211mc_80211az | default: "" }}</td>
+            <td>{{ ap.USB_Ports | default: "" }}</td>
+            <td>{{ ap.UWB | default: "" }}</td>
+            <td>{{ ap.GPS | default: "" }}</td>
+            <td>{{ ap.Bluetooth | default: "" }}</td>
+            <td>{{ ap.Zigbee | default: "" }}</td>
+            <td>{{ ap.Cloud_Compatible | default: "" }}</td>
+            <td>{{ ap.Minimum_Version | default: "" }}</td>
+            <td>{{ ap.Public_Price_USD | default: "" }}</td>
+            <td>{{ ap.Public_Price_EUR | default: "" }}</td>
+            <td>{{ ap.Comments | default: "" }}</td>
         </tr>
         {% endfor %}
     </tbody>
