@@ -542,6 +542,8 @@ div.dataTables_scrollBody table {
 
 <script>
 $(document).ready(function() {
+    // Default to compact mode
+    document.body.classList.add('compact-mode');
     // Initialize DataTable with buttons but minimal other features
     var table = $('#ap-table').DataTable({
         // Core settings
