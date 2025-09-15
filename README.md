@@ -7,7 +7,6 @@ This repository contains a Jekyll-powered website for browsing and comparing Wi-
 - `wifi-ap-database.xlsx` - **Main data source** (edit this to add new APs)
 - `ap_models.yaml` - Generated YAML data file (used by Jekyll)
 - `index.md` - Jekyll page template for the AP table
-- `convert_excel_to_yaml.py` - Python conversion script
 - `update_database.sh` - **Easy update script** (recommended)
 
 ## 🚀 How to Add New Access Points (Easy Method)
