@@ -580,7 +580,7 @@ $(document).ready(function() {
                 }
             },
             {
-                text: 'Compact',
+                text: 'Compact/Roomy',
                 className: 'dt-compact-toggle',
                 action: function(e, dt, node, config){
                     document.body.classList.toggle('compact-mode');
