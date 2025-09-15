@@ -241,6 +241,27 @@ p {
     transform: translateY(-2px) !important;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
 }
+/* Column filter row */
+thead tr.filter-row th {
+    background: #eef2ff;
+    padding: 4px 6px;
+    border-bottom: 2px solid #cbd5e1;
+}
+thead tr.filter-row th input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+}
+thead tr.filter-row th input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.25);
+}
 .stats-box {
     background: rgba(255, 255, 255, 0.9);
     border: none;
@@ -352,6 +373,40 @@ div.dataTables_scrollBody table {
 
 
         </tr>
+        <tr class="filter-row">
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+            <th><input type="text" placeholder="Filter" /></th>
+        </tr>
     </thead>
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
@@ -456,18 +511,39 @@ $(document).ready(function() {
             {
                 text: 'A-',
                 className: 'dt-font-btn dt-font-dec',
-                action: function (e, dt, node, config) {
-                    changeFontSize(-1);
-                }
+                action: function (e, dt, node, config) { changeFontSize(-1); }
             },
             {
                 text: 'A+',
                 className: 'dt-font-btn dt-font-inc',
-                action: function (e, dt, node, config) {
-                    changeFontSize(1);
+                action: function (e, dt, node, config) { changeFontSize(1); }
+            },
+            {
+                text: 'Clear Filters',
+                className: 'dt-clear-filters',
+                action: function(e, dt, node, config){
+                    $('#ap-table thead tr.filter-row th input').val('');
+                    dt.columns().every(function(){ this.search(''); });
+                    dt.draw();
                 }
             }
         ],
+        orderCellsTop: true,
+        initComplete: function(){
+            var api = this.api();
+            // Attach events to each filter input
+            api.columns().every(function(colIdx){
+                var column = this;
+                var input = $(api.table().header()).find('tr.filter-row th').eq(colIdx).find('input');
+                if(!input.length) return;
+                input.on('keyup change clear', function(){
+                    var val = this.value;
+                    if(column.search() !== val){
+                        column.search(val, false, true).draw();
+                    }
+                });
+            });
+        },
         
         autoWidth: false,
         
