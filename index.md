@@ -337,7 +337,7 @@ div.dataTables_scrollBody table {
     margin-top: 0 !important;
     border-top: none !important;
 }
-/* --- Sticky first two columns (Manufacturer, Model) --- */
+/* --- Sticky first two columns (Vendor, Model) --- */
 /* CSS variable updated dynamically to match actual first column width */
 :root { 
     --sticky-col-1-width: 0px; 
@@ -401,9 +401,9 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <th class="sticky-col sticky-col-1 noVis">Manufacturer</th>
+            <th class="sticky-col sticky-col-1 noVis">Vendor</th>
             <th class="sticky-col sticky-col-2 noVis">Model</th>
-            <th>Manufacturer Reference</th>
+            <th>Reference</th>
             <th>Antenna Type</th>
             <th>Indoor Outdoor</th>
             <th>Generation</th>
@@ -474,7 +474,7 @@ div.dataTables_scrollBody table {
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
-            <td class="sticky-col sticky-col-1">VeryLongManufacturerNameSample</td>
+            <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
             <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
             <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
             <td>External High-Gain Omni Directional Antenna Pack</td>
@@ -511,9 +511,9 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <td class="sticky-col sticky-col-1">{{ ap.Manufacturer | default: "" }}</td>
+            <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: ap.Manufacturer | default: "" }}</td>
             <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
-            <td>{{ ap.Manufacturer_Reference | default: "" }}</td>
+            <td>{{ ap.Reference | default: ap.Manufacturer_Reference | default: "" }}</td>
             <td>{{ ap.Antenna_Type | default: "" }}</td>
             <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
             <td>{{ ap.Generation | default: "" }}</td>
