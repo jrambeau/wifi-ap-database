@@ -46,11 +46,13 @@ body {
     margin: 0;
     width: 100% !important;
     font-size: 13px;
-    table-layout: auto;
+    table-layout: fixed !important;
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-spacing: 0 !important;
+    border-collapse: separate !important;
 }
 #ap-table thead th {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
@@ -62,6 +64,9 @@ body {
     font-size: 13px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #ap-table tbody td {
     padding: 12px;
@@ -69,6 +74,9 @@ body {
     font-weight: 400;
     color: #4a5568;
     vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -183,6 +191,29 @@ p {
     border-radius: 6px;
     font-size: 13px;
 }
+
+/* DataTables column alignment fixes */
+.dataTables_wrapper {
+    width: 100%;
+}
+.dataTables_scrollHeadInner,
+.dataTables_scrollHeadInner table {
+    width: 100% !important;
+}
+.dataTables_scrollBody {
+    width: 100% !important;
+}
+.dataTables_scrollBody table {
+    width: 100% !important;
+}
+div.dataTables_scrollHead table.dataTable {
+    margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table {
+    border-top: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 </style>
 
 <div class="stats-box">
@@ -286,8 +317,7 @@ p {
 
 <script>
 $(document).ready(function() {
-    // Use DataTables with enhanced features
-    $('#ap-table').css('table-layout', 'fixed');
+    // Initialize DataTable with improved column alignment
     var table = $('#ap-table').DataTable({
         paging: true,
         searching: true,
@@ -304,12 +334,16 @@ $(document).ready(function() {
             }
         ],
         scrollX: true,
+        scrollCollapse: true,
         pageLength: 25,
         lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
         order: [[ 0, "asc" ]],
         columnDefs: [
             { responsivePriority: 1, targets: [0, 1] }, // Manufacturer, Model
             { responsivePriority: 2, targets: [4, 5] }, // Indoor/Outdoor, Generation
+            { width: "10%", targets: [0, 1] }, // Manufacturer, Model
+            { width: "8%", targets: [2, 3, 4, 5, 6, 7] }, // Other key columns
+            { width: "6%", targets: "_all" } // All other columns
         ],
         language: {
             search: "🔍 Search all columns:",
@@ -317,16 +351,26 @@ $(document).ready(function() {
             info: "Showing _START_ to _END_ of _TOTAL_ access points",
             infoEmpty: "No access points found",
             infoFiltered: "(filtered from _MAX_ total entries)"
+        },
+        initComplete: function() {
+            // Force column alignment after initialization
+            this.api().columns.adjust();
         }
     });
     
-    table.on('draw', function() {
+    // Enhanced column adjustment
+    table.on('draw.dt', function() {
         table.columns.adjust();
     });
+    
     $(window).on('resize', function() {
-        table.columns.adjust();
+        table.columns.adjust().draw();
     });
-    table.columns.adjust();
+    
+    // Initial column adjustment
+    setTimeout(function() {
+        table.columns.adjust().draw();
+    }, 100);
 });
 
 // Font size controls
