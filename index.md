@@ -3,9 +3,6 @@ layout: default
 title: Wi-Fi Access Points Database
 ---
 
-<h1>Wi-Fi Access Points Specifications</h1>
-<p>Filter, search, and explore AP models from multiple vendors. Database is updated regularly with new models.</p>
-
 <!-- DataTable CSS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
@@ -397,16 +394,6 @@ div.dataTables_scrollBody table {
 /* Prevent probe row artifacts */
 #ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; background: transparent !important; }
 </style>
-
-## 📱 WiFi Access Points Database
-
-<div class="stats-box">
-    <h3>📊 Database Statistics</h3>
-    {% assign total_aps = site.data.ap_models | size %}
-    
-    <div class="stat-item">🔢 Total APs: {{ total_aps }}</div>
-    <div class="stat-item">🕒 Last updated: {{ site.time | date: "%Y-%m-%d %H:%M" }}</div>
-</div>
 
 <div id="ap-table-container">
 <table id="ap-table" class="display" style="width:100%">
