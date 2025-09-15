@@ -248,6 +248,19 @@ p {
     transform: translateY(-2px) !important;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
 }
+/* Inline search placement inside buttons bar */
+.dt-buttons .dt-inline-search { display:inline-flex; align-items:center; margin-left:4px; }
+.dt-buttons .dt-inline-search input { 
+    font-family:'Inter',sans-serif; 
+    font-size:13px; 
+    padding:8px 12px; 
+    border:2px solid #e2e8f0; 
+    border-radius:6px; 
+    background:#fff; 
+    transition:border-color .2s ease; 
+}
+.dt-buttons .dt-inline-search input:focus { outline:none; border-color:#4f46e5; box-shadow:0 0 0 3px rgba(79,70,229,0.15); }
+.compact-mode .dt-buttons .dt-inline-search input { padding:4px 8px; font-size:12px; }
 /* Column filter row */
 thead tr.filter-row th {
     background: #eef2ff;
@@ -700,14 +713,20 @@ $(document).ready(function() {
     table.on('draw.dt', function(){ updateStickyHeaderHeight(); });
     window.updateStickyHeaderHeight = updateStickyHeaderHeight;
 
-    // Move the global search next to the Clear Filters button (after buttons are created)
-    var $wrapper = $('#ap-table').closest('.dataTables_wrapper');
-    var $buttons = $wrapper.find('.dt-buttons');
-    var $filter = $wrapper.find('div.dataTables_filter');
-    if($buttons.length && $filter.length){
-        // Insert filter after buttons container
-        $filter.insertAfter($buttons);
-    }
+        // Move the global search directly after the Compact/Roomy button
+        var $wrapper = $('#ap-table').closest('.dataTables_wrapper');
+        var $buttons = $wrapper.find('.dt-buttons');
+        var $filter = $wrapper.find('div.dataTables_filter');
+        var $compactBtn = $buttons.find('.dt-compact-toggle');
+        if($buttons.length && $filter.length && $compactBtn.length){
+            var $input = $filter.find('input');
+            // Preserve existing DataTables bindings; just relocate the input
+            $input.attr('placeholder','Search all...');
+            var $inline = $('<span class="dt-inline-search" />').append($input);
+            $inline.insertAfter($compactBtn);
+            // Remove original filter wrapper (label + container)
+            $filter.remove();
+        }
     // Sticky columns offset calculation
     function updateStickyOffsets(){
         var firstDataCell = document.querySelector('#ap-table tbody tr:not(.width-probe) td.sticky-col-1');
