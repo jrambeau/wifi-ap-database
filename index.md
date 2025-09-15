@@ -43,10 +43,9 @@ body {
     box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
 }
 #ap-table {
-    margin: 0;
+    margin: 0 !important;
     width: 100% !important;
     font-size: 13px;
-    table-layout: fixed !important;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -54,22 +53,35 @@ body {
     border-spacing: 0 !important;
     border-collapse: separate !important;
 }
+
+/* Force consistent table layout */
+#ap-table,
+#ap-table_wrapper table,
+.dataTables_scrollHead table,
+.dataTables_scrollBody table {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
 #ap-table thead th {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
     font-weight: 600;
-    padding: 16px 12px;
+    padding: 16px 8px;
     text-align: left;
     border: none;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: auto !important;
+    min-width: 100px;
 }
+
 #ap-table tbody td {
-    padding: 12px;
+    padding: 12px 8px;
     border-bottom: 1px solid #e2e8f0;
     font-weight: 400;
     color: #4a5568;
@@ -77,6 +89,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: auto !important;
+    min-width: 100px;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -196,23 +210,51 @@ p {
 .dataTables_wrapper {
     width: 100%;
 }
-.dataTables_scrollHeadInner,
-.dataTables_scrollHeadInner table {
-    width: 100% !important;
-}
+
+/* Force header and body to use same table structure */
+.dataTables_scrollHead,
 .dataTables_scrollBody {
     width: 100% !important;
 }
+
+.dataTables_scrollHeadInner,
+.dataTables_scrollHeadInner table {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
 .dataTables_scrollBody table {
     width: 100% !important;
+    margin: 0 !important;
+    border-top: none !important;
 }
+
+/* Ensure consistent column widths */
+.dataTables_scrollHead table th,
+.dataTables_scrollBody table td {
+    box-sizing: border-box !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* Remove any borders between header and body */
 div.dataTables_scrollHead table.dataTable {
     margin-bottom: 0 !important;
+    border-bottom: none !important;
 }
+
 div.dataTables_scrollBody table {
-    border-top: none !important;
     margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    border-top: none !important;
+}
+
+/* Force consistent table layout across all DataTables elements */
+.dataTables_scrollHead table,
+.dataTables_scrollBody table,
+.dataTables_scrollHeadInner table {
+    table-layout: fixed !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
 }
 </style>
 
@@ -321,13 +363,13 @@ div.dataTables_scrollBody table {
 
 <script>
 $(document).ready(function() {
-    // Initialize DataTable with improved column alignment
+    // Initialize DataTable with proper column alignment
     var table = $('#ap-table').DataTable({
         paging: true,
         searching: true,
         info: true,
         responsive: false,
-        colReorder: true,
+        colReorder: false, // Disable to prevent alignment issues
         dom: 'Bfrtip',
         buttons: [
             'colvis',
@@ -338,16 +380,15 @@ $(document).ready(function() {
             }
         ],
         scrollX: true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         pageLength: 25,
         lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
         order: [[ 0, "asc" ]],
+        autoWidth: false, // Critical for alignment
         columnDefs: [
-            { responsivePriority: 1, targets: [0, 1] }, // Manufacturer, Model
-            { responsivePriority: 2, targets: [4, 5] }, // Indoor/Outdoor, Generation
-            { width: "10%", targets: [0, 1] }, // Manufacturer, Model
-            { width: "8%", targets: [2, 3, 4, 5, 6, 7] }, // Other key columns
-            { width: "6%", targets: "_all" } // All other columns
+            { width: "120px", targets: [0, 1] }, // Manufacturer, Model - wider
+            { width: "100px", targets: [2, 3, 4, 5, 6, 7] }, // Key info columns
+            { width: "80px", targets: "_all" } // All other columns
         ],
         language: {
             search: "🔍 Search all columns:",
@@ -357,24 +398,49 @@ $(document).ready(function() {
             infoFiltered: "(filtered from _MAX_ total entries)"
         },
         initComplete: function() {
-            // Force column alignment after initialization
-            this.api().columns.adjust();
+            // Force proper alignment after initialization
+            this.api().columns.adjust().draw();
+            
+            // Set consistent widths for header and body
+            var $table = $('#ap-table');
+            var $headerCells = $table.find('thead th');
+            var $bodyCells = $table.find('tbody tr:first td');
+            
+            $headerCells.each(function(index) {
+                var width = $(this).outerWidth();
+                $bodyCells.eq(index).css('width', width + 'px');
+            });
         }
     });
     
-    // Enhanced column adjustment
+    // Enhanced column adjustment on every draw
     table.on('draw.dt', function() {
-        table.columns.adjust();
+        setTimeout(function() {
+            table.columns.adjust();
+            
+            // Force width synchronization
+            var $table = $('#ap-table');
+            var $headerCells = $table.find('thead th');
+            var $bodyCells = $table.find('tbody tr:first td');
+            
+            $headerCells.each(function(index) {
+                var width = $(this).outerWidth();
+                $bodyCells.eq(index).css('width', width + 'px');
+            });
+        }, 50);
     });
     
+    // Window resize handling
     $(window).on('resize', function() {
-        table.columns.adjust().draw();
+        setTimeout(function() {
+            table.columns.adjust().draw();
+        }, 100);
     });
     
-    // Initial column adjustment
+    // Initial alignment after everything loads
     setTimeout(function() {
         table.columns.adjust().draw();
-    }, 100);
+    }, 500);
 });
 
 // Font size controls
