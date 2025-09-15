@@ -329,16 +329,33 @@ div.dataTables_scrollBody table {
 }
 /* --- Sticky first two columns (Manufacturer, Model) --- */
 /* CSS variable updated dynamically to match actual first column width */
-:root { --sticky-col-1-width: 0px; }
+:root { 
+    --sticky-col-1-width: 0px; 
+    /* Refined aesthetic backgrounds for sticky columns */
+    --sticky-col-bg: linear-gradient(90deg, #ffffff 0%, #f5f7fa 100%);
+    --sticky-col-bg-alt: linear-gradient(90deg, #f9fafb 0%, #f1f5f9 100%);
+    --sticky-col-bg-hover: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 100%);
+}
 #ap-table thead { position: sticky; top: 0; z-index: 20; }
 #ap-table thead tr.filter-row { position: sticky; top: var(--sticky-header-height, 0px); z-index: 19; }
 #ap-table thead tr.filter-row th { position: sticky; top: var(--sticky-header-height, 0px); }
 #ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
 #ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
-#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #eef2ff; box-shadow:none; }
-#ap-table tbody .sticky-col.sticky-col-1, #ap-table tbody .sticky-col.sticky-col-2 { background: #eef4ff; }
-#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-1, #ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-2 { background: #e5edff; }
-#ap-table tbody tr:hover .sticky-col.sticky-col-1, #ap-table tbody tr:hover .sticky-col.sticky-col-2 { background: #dbe6ff; }
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #f1f5f9; box-shadow:none; }
+/* Neutral, subtle gradient backgrounds for sticky columns */
+#ap-table tbody .sticky-col.sticky-col-1, 
+#ap-table tbody .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg); 
+    transition: background 0.25s ease; 
+}
+#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-1, 
+#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg-alt); 
+}
+#ap-table tbody tr:hover .sticky-col.sticky-col-1, 
+#ap-table tbody tr:hover .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg-hover); 
+}
 #ap-table tbody .sticky-col { background: #ffffff; }
 #ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
 #ap-table tbody tr:hover .sticky-col { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
