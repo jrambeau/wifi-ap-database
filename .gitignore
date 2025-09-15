@@ -11,3 +11,4 @@ Gemfile.lock
 *_french.yaml
 *_simple.yaml
 *_full_backup.yaml
+backups/

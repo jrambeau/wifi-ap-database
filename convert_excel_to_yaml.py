@@ -24,7 +24,11 @@ def backup_existing_yaml(yaml_file):
     """Create a backup of the existing YAML file with timestamp"""
     if os.path.exists(yaml_file):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_file = f"{yaml_file}.backup_{timestamp}"
+        # Store backup in a separate directory to avoid cluttering _data
+        backup_dir = "backups"
+        os.makedirs(backup_dir, exist_ok=True)
+        yaml_filename = os.path.basename(yaml_file)
+        backup_file = os.path.join(backup_dir, f"{yaml_filename}.backup_{timestamp}")
         shutil.copy2(yaml_file, backup_file)
         print(f"📁 Backup created: {backup_file}")
         return backup_file
