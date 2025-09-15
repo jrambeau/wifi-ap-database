@@ -6,3 +6,8 @@ _site/
 Gemfile.lock
 .DS_Store
 *.xlsx.backup_*
+*.backup_*
+*_backup.yaml
+*_french.yaml
+*_simple.yaml
+*_full_backup.yaml
