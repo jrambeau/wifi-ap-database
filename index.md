@@ -8,9 +8,6 @@ title: Wi-Fi Access Points Database
 
 <!-- DataTable CSS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.min.css">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
@@ -61,18 +58,6 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-spacing: 0 !important;
     border-collapse: separate !important;
-    white-space: nowrap;
-    table-layout: fixed !important; /* Prevent layout shifts during sort */
-}
-
-/* Allow natural table width with scroll but prevent column reordering */
-#ap-table,
-#ap-table_wrapper table,
-.dataTables_scrollHead table,
-.dataTables_scrollBody table {
-    table-layout: fixed !important; /* Consistent layout */
-    width: auto !important;
-    min-width: 100% !important;
 }
 
 #ap-table thead th {
@@ -86,10 +71,6 @@ body {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: auto !important;
-    min-width: 100px;
 }
 
 #ap-table tbody td {
@@ -98,11 +79,7 @@ body {
     font-weight: 400;
     color: #4a5568;
     vertical-align: middle;
-}
-
-/* Ensure no text wrapping in cells */
-.dt-body-nowrap {
-    white-space: nowrap !important;
+    white-space: nowrap;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -349,95 +326,44 @@ div.dataTables_scrollBody table {
 <!-- jQuery and DataTables JS -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.colVis.min.js"></script>
-<script src="https://cdn.datatables.net/colreorder/1.7.0/js/dataTables.colReorder.min.js"></script>
 
 <script>
 $(document).ready(function() {
-    // Initialize DataTable with stable column behavior
+    // Ultra minimal DataTable configuration to prevent any column movement
     var table = $('#ap-table').DataTable({
+        // Core settings - absolutely minimal
         paging: true,
         searching: true,
-        info: true,
-        responsive: false,
-        colReorder: false, // Disable column reordering completely
-        dom: 'Bfrtip',
-        buttons: [
-            'colvis',
-            {
-                text: '<span id="font-size-controls"><button onclick="changeFontSize(-1)">A-</button> <button onclick="changeFontSize(1)">A+</button></span>',
-                className: 'font-size-btns',
-                action: function () {}
-            }
-        ],
-        scrollX: true,
-        scrollCollapse: false,
+        info: false,
+        ordering: true,
+        
+        // Layout control
+        dom: 'ft', // Only filter and table - no buttons, no info
+        scrollX: false, // Disable horizontal scrolling that might cause issues
+        autoWidth: false, // Don't auto-adjust widths
+        
+        // Pagination
         pageLength: 25,
-        lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+        
+        // Default sort
         order: [[ 0, "asc" ]],
-        autoWidth: false, // Use fixed width to prevent resize on sort
-        stateSave: false, // Disable state saving that might cause reordering
-        columnDefs: [
-            { 
-                targets: "_all", 
-                className: "dt-body-nowrap",
-                orderable: true, // Enable sorting but prevent column movement
-                width: "150px" // Set consistent width for all columns
-            }
-        ],
+        
+        // Language
         language: {
-            search: "🔍 Search all columns:",
-            lengthMenu: "Show _MENU_ entries per page",
-            info: "Showing _START_ to _END_ of _TOTAL_ access points",
-            infoEmpty: "No access points found",
-            infoFiltered: "(filtered from _MAX_ total entries)"
+            search: "🔍 Search:",
         },
-        initComplete: function() {
-            // Lock in column widths after initial render
-            var table = this.api();
-            table.columns().every(function() {
-                var column = this;
-                var header = $(column.header());
-                var width = header.outerWidth();
-                header.css('width', width + 'px');
-            });
-        },
-        drawCallback: function() {
-            // Prevent column width changes during sort/filter
-            // Do nothing - let existing widths persist
-        }
+        
+        // Column definitions - ensure no special behavior
+        columnDefs: [
+            {
+                targets: '_all',
+                orderable: true,
+                className: 'no-wrap'
+            }
+        ]
     });
-    
-    // Disable responsive behavior that might cause shifts
-    $(window).off('resize.DT');
 });
-
-// Font size controls
-var minFont = 9, maxFont = 20;
-function changeFontSize(delta) {
-    var table = document.getElementById('ap-table');
-    var style = window.getComputedStyle(table, null).getPropertyValue('font-size');
-    var current = parseFloat(style);
-    var newSize = Math.max(minFont, Math.min(maxFont, current + delta));
-    // Set font size on the table and wrapper
-    table.style.fontSize = newSize + 'px';
-    var wrapper = document.getElementById('ap-table-container');
-    if (wrapper) wrapper.style.fontSize = newSize + 'px';
-    // Remove any explicit font-size on th/td to let inherit from table
-    var ths = table.querySelectorAll('th');
-    var tds = table.querySelectorAll('td');
-    ths.forEach(function(el) { el.style.fontSize = null; });
-    tds.forEach(function(el) { el.style.fontSize = null; });
-    // Also update filter and length controls
-    var controls = document.querySelectorAll('.dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select');
-    controls.forEach(function(el) { el.style.fontSize = newSize + 'px'; });
-    // Force DataTables to recalculate column widths
-    if ($.fn.dataTable) {
-        $('#ap-table').DataTable().columns.adjust().draw(false);
-    }
-}
+</script>
 </script>
 
 ---
