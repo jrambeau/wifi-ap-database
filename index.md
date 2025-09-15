@@ -229,6 +229,7 @@ div.dataTables_scrollBody table {
     <thead>
         <tr>
             
+            
             <th>Manufacturer</th>
             <th>Model</th>
             <th>Manufacturer Reference</th>
@@ -262,44 +263,47 @@ div.dataTables_scrollBody table {
             <th>Public Price EUR</th>
             <th>Comments</th>
 
+
         </tr>
     </thead>
     <tbody>
         {% for ap in site.data.ap_models %}
         <tr>
             
-            <td>{{ ap.Manufacturer | default: "" }</td>
-            <td>{{ ap.Model | default: "" }</td>
-            <td>{{ ap.Manufacturer_Reference | default: "" }</td>
-            <td>{{ ap.Antenna_Type | default: "" }</td>
-            <td>{{ ap.Indoor_Outdoor | default: "" }</td>
-            <td>{{ ap.Generation | default: "" }</td>
-            <td>{{ ap.Protocol | default: "" }</td>
-            <td>{{ ap.Product_Positioning | default: "" }</td>
-            <td>{{ ap.Concurrent_PHY_Radios | default: "" }</td>
-            <td>{{ ap.Radio_2_4_GHz | default: "" }</td>
-            <td>{{ ap.Radio_5_GHz | default: "" }</td>
-            <td>{{ ap.Radio_6_GHz | default: "" }</td>
-            <td>{{ ap.Dedicated_Scanning_Radio | default: "" }</td>
-            <td>{{ ap.PoE_Class | default: "" }</td>
-            <td>{{ ap.Max_PoE_Consumption_W | default: "" }</td>
-            <td>{{ ap.Limited_Capabilities_PoE_Plus_30W | default: "" }</td>
-            <td>{{ ap.Limited_Capabilities_PoE_15W | default: "" }</td>
-            <td>{{ ap.Ethernet1 | default: "" }</td>
-            <td>{{ ap.Ethernet2 | default: "" }</td>
-            <td>{{ ap.Weight_kg | default: "" }</td>
-            <td>{{ ap.Dimensions_cm | default: "" }</td>
-            <td>{{ ap.Geolocation_FTM_80211mc_80211az | default: "" }</td>
-            <td>{{ ap.USB_Ports | default: "" }</td>
-            <td>{{ ap.UWB | default: "" }</td>
-            <td>{{ ap.GNSS | default: "" }</td>
-            <td>{{ ap.Bluetooth | default: "" }</td>
-            <td>{{ ap.Zigbee | default: "" }</td>
-            <td>{{ ap.Cloud_Compatible | default: "" }</td>
-            <td>{{ ap.Minimum_Version | default: "" }</td>
-            <td>{{ ap.Public_Price_USD | default: "" }</td>
-            <td>{{ ap.Public_Price_EUR | default: "" }</td>
-            <td>{{ ap.Comments | default: "" }</td>
+            
+            <td>{{ ap.Manufacturer | default: "" }}</td>
+            <td>{{ ap.Model | default: "" }}</td>
+            <td>{{ ap.Manufacturer_Reference | default: "" }}</td>
+            <td>{{ ap.Antenna_Type | default: "" }}</td>
+            <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
+            <td>{{ ap.Generation | default: "" }}</td>
+            <td>{{ ap.Protocol | default: "" }}</td>
+            <td>{{ ap.Product_Positioning | default: "" }}</td>
+            <td>{{ ap.Concurrent_PHY_Radios | default: "" }}</td>
+            <td>{{ ap.Radio_2_4_GHz | default: "" }}</td>
+            <td>{{ ap.Radio_5_GHz | default: "" }}</td>
+            <td>{{ ap.Radio_6_GHz | default: "" }}</td>
+            <td>{{ ap.Dedicated_Scanning_Radio | default: "" }}</td>
+            <td>{{ ap.PoE_Class | default: "" }}</td>
+            <td>{{ ap.Max_PoE_Consumption_W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_Plus_30W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_15W | default: "" }}</td>
+            <td>{{ ap.Ethernet1 | default: "" }}</td>
+            <td>{{ ap.Ethernet2 | default: "" }}</td>
+            <td>{{ ap.Weight_kg | default: "" }}</td>
+            <td>{{ ap.Dimensions_cm | default: "" }}</td>
+            <td>{{ ap.Geolocation_FTM_80211mc_80211az | default: "" }}</td>
+            <td>{{ ap.USB_Ports | default: "" }}</td>
+            <td>{{ ap.UWB | default: "" }}</td>
+            <td>{{ ap.GNSS | default: "" }}</td>
+            <td>{{ ap.Bluetooth | default: "" }}</td>
+            <td>{{ ap.Zigbee | default: "" }}</td>
+            <td>{{ ap.Cloud_Compatible | default: "" }}</td>
+            <td>{{ ap.Minimum_Version | default: "" }}</td>
+            <td>{{ ap.Public_Price_USD | default: "" }}</td>
+            <td>{{ ap.Public_Price_EUR | default: "" }}</td>
+            <td>{{ ap.Comments | default: "" }}</td>
+
 
         </tr>
         {% endfor %}
