@@ -85,7 +85,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
     padding: 16px 12px;
     text-align: left;
     border: none;
-    font-size: 13px;
+    font-size: calc(var(--table-font-size, 14px) * 0.93); /* scales with controls */
     letter-spacing: 0.025em;
     text-transform: uppercase;
     white-space: nowrap;
