@@ -59,6 +59,8 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-spacing: 0 !important;
     border-collapse: separate !important;
+    table-layout: fixed; /* Prevent recalculation of widths on sort */
+    width: 3000px; /* Large enough fixed width for all columns */
 }
 
 #ap-table thead th {
@@ -84,9 +86,17 @@ body {
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-    transform: translateY(-1px);
-    transition: all 0.2s ease;
 }
+
+/* Equal width distribution prevents shifting */
+#ap-table thead th, #ap-table tbody td {
+    width: 95px; /* uniform width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Allow scroll if viewport narrower */
+#ap-table-container { overflow-x: auto; }
 #ap-table tbody tr:nth-child(even) {
     background: #f8fafc;
 }
@@ -301,38 +311,38 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <th>Manufacturer</th>
-            <th>Model</th>
-            <th>Manufacturer Reference</th>
-            <th>Antenna Type</th>
-            <th>Indoor Outdoor</th>
-            <th>Generation</th>
-            <th>Protocol</th>
-            <th>Product Positioning</th>
-            <th>Concurrent PHY Radios</th>
-            <th>Radio 2 4 GHz</th>
-            <th>Radio 5 GHz</th>
-            <th>Radio 6 GHz</th>
-            <th>Dedicated Scanning Radio</th>
-            <th>PoE Class</th>
-            <th>Max PoE Consumption W</th>
-            <th>Limited Capabilities PoE Plus 30W</th>
-            <th>Limited Capabilities PoE 15W</th>
-            <th>Ethernet1</th>
-            <th>Ethernet2</th>
-            <th>Weight kg</th>
-            <th>Dimensions cm</th>
-            <th>Geolocation FTM 80211mc 80211az</th>
-            <th>USB Ports</th>
-            <th>UWB</th>
-            <th>GNSS</th>
-            <th>Bluetooth</th>
-            <th>Zigbee</th>
-            <th>Cloud Compatible</th>
-            <th>Minimum Version</th>
-            <th>Public Price USD</th>
-            <th>Public Price EUR</th>
-            <th>Comments</th>
+            <th title="Manufacturer">Manufacturer</th>
+            <th title="Model">Model</th>
+            <th title="Manufacturer Reference">Manufacturer Reference</th>
+            <th title="Antenna Type">Antenna Type</th>
+            <th title="Indoor or Outdoor category">Indoor Outdoor</th>
+            <th title="Generation">Generation</th>
+            <th title="Protocol / Wi-Fi standard">Protocol</th>
+            <th title="Product positioning / target market">Product Positioning</th>
+            <th title="Number of concurrent PHY radios">Concurrent PHY Radios</th>
+            <th title="2.4 GHz radio details">Radio 2 4 GHz</th>
+            <th title="5 GHz radio details">Radio 5 GHz</th>
+            <th title="6 GHz radio details">Radio 6 GHz</th>
+            <th title="Dedicated scanning / security radio">Dedicated Scanning Radio</th>
+            <th title="PoE Class">PoE Class</th>
+            <th title="Maximum PoE power consumption (Watts)">Max PoE Consumption W</th>
+            <th title="Capabilities when limited to 30W PoE+">Limited Capabilities PoE Plus 30W</th>
+            <th title="Capabilities when limited to 15W PoE">Limited Capabilities PoE 15W</th>
+            <th title="Ethernet Port 1 details">Ethernet1</th>
+            <th title="Ethernet Port 2 details">Ethernet2</th>
+            <th title="Weight (kg)">Weight kg</th>
+            <th title="Physical dimensions (cm)">Dimensions cm</th>
+            <th title="Geolocation FTM / 802.11mc / 802.11az support">Geolocation FTM 80211mc 80211az</th>
+            <th title="USB Ports availability">USB Ports</th>
+            <th title="Ultra WideBand support">UWB</th>
+            <th title="GNSS capability">GNSS</th>
+            <th title="Bluetooth support">Bluetooth</th>
+            <th title="Zigbee support">Zigbee</th>
+            <th title="Cloud management compatibility">Cloud Compatible</th>
+            <th title="Minimum firmware/software version">Minimum Version</th>
+            <th title="Public list price in USD">Public Price USD</th>
+            <th title="Public list price in EUR">Public Price EUR</th>
+            <th title="Additional comments">Comments</th>
 
 
         </tr>
@@ -451,6 +461,33 @@ $(document).ready(function() {
                 className: 'no-wrap'
             }
         ]
+    });
+
+    // Lock column widths after first draw
+    var locked = false;
+    function lockWidths() {
+        if (locked) return;
+        var headerCells = $('#ap-table thead th');
+        headerCells.each(function(index) {
+            var w = $(this).outerWidth();
+            // Apply width to header and all cells in column
+            $(this).css('width', w + 'px');
+            $('#ap-table tbody tr').each(function() {
+                var cell = $(this).find('td').eq(index);
+                cell.css('width', w + 'px');
+            });
+        });
+        locked = true;
+    }
+    table.on('draw', function(){ lockWidths(); });
+    lockWidths();
+
+    // Maintain widths on events that could trigger recalculation
+    table.on('order.dt search.dt page.dt', function(){
+        $('#ap-table thead th, #ap-table tbody td').each(function(){
+            var w = $(this).outerWidth();
+            $(this).css('width', w + 'px');
+        });
     });
 });
 
