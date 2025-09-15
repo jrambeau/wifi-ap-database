@@ -329,9 +329,9 @@ div.dataTables_scrollBody table {
 /* --- Sticky first two columns (Manufacturer, Model) --- */
 /* CSS variable updated dynamically to match actual first column width */
 :root { --sticky-col-1-width: 0px; }
-#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; background: transparent; }
-#ap-table thead .sticky-col { z-index: 8; }
-#ap-table thead tr.filter-row .sticky-col { z-index: 7; }
+#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
+#ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #eef2ff; }
 #ap-table tbody .sticky-col { background: #ffffff; }
 #ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
 #ap-table tbody tr:hover .sticky-col { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
