@@ -4,24 +4,24 @@ This repository contains a Jekyll-powered website for browsing and comparing Wi-
 
 ## 📁 Files Overview
 
-- `Axians_Lyon_Comparatif_AP_v1.0.xlsx` - **Main data source** (edit this to add new APs)
+- `wifi-ap-database.xlsx` - **Main data source** (edit this to add new APs)
 - `ap_models.yaml` - Generated YAML data file (used by Jekyll)
-- `ap_table.md` - Jekyll page template for the AP table
+- `index.md` - Jekyll page template for the AP table
 - `convert_excel_to_yaml.py` - Python conversion script
-- `update_site.sh` - **Easy update script** (recommended)
+- `update_database.sh` - **Easy update script** (recommended)
 
 ## 🚀 How to Add New Access Points (Easy Method)
 
 ### Option 1: Using the Update Script (Recommended)
 
 1. **Edit the Excel file**:
-   - Open `Axians_Lyon_Comparatif_AP_v1.0.xlsx`
+   - Open `wifi-ap-database.xlsx`
    - Add new rows with AP specifications
    - Save the file
 
 2. **Run the update script**:
    ```bash
-   ./update_site.sh
+   ./update_database.sh
    ```
 
 3. **Test locally** (if you have Jekyll installed):
@@ -81,16 +81,16 @@ python3 convert_excel_to_yaml.py --stats
 
 ```bash
 # Show current database stats
-./update_site.sh stats
+python3 convert_excel_to_yaml.py --stats
 
 # Validate current YAML
-./update_site.sh validate
+python3 convert_excel_to_yaml.py --validate
 
 # Full update with backup
-./update_site.sh backup
+./update_database.sh
 
 # Update without backup
-./update_site.sh no-backup
+python3 convert_excel_to_yaml.py --no-backup
 ```
 
 ## 📝 Excel File Format
@@ -99,12 +99,12 @@ The Excel file should contain these columns:
 
 | Column | Description | Example |
 |--------|-------------|---------|
-| Constructeur | Manufacturer | Cisco, Aruba, Mist |
-| Modèle | Model number | CW9178I, AP-505 |
-| Référence constructeur | Part number | C9120AXI-E |
-| Type Ant | Antenna type | Internal : omni downtilt |
-| Indoor/Outdoor | Usage type | Indoor, Outdoor |
-| Génération | Wi-Fi generation | Wi-Fi 6, Wi-Fi 6E, Wi-Fi 7 |
+| Manufacturer | Manufacturer | Cisco, Aruba, Mist |
+| Model | Model number | CW9178I, AP-505 |
+| Manufacturer_Reference | Part number | C9120AXI-E |
+| Antenna_Type | Antenna type | Internal : omni downtilt |
+| Indoor_Outdoor | Usage type | Indoor, Outdoor |
+| Generation | Wi-Fi generation | Wi-Fi 6, Wi-Fi 6E, Wi-Fi 7 |
 | ... | (32 columns total) | ... |
 
 ## 🔧 Troubleshooting
@@ -112,11 +112,11 @@ The Excel file should contain these columns:
 ### Common Issues:
 
 1. **"Excel file not found"**:
-   - Make sure `Axians_Lyon_Comparatif_AP_v1.0.xlsx` exists
+   - Make sure `wifi-ap-database.xlsx` exists
    - Check the filename matches exactly
 
 2. **"YAML syntax error"**:
-   - Run `./update_site.sh validate` to check current file
+   - Run `./update_database.sh validate` to check current file
    - Check for special characters in Excel data
 
 3. **"Python dependencies missing"**:
@@ -126,14 +126,14 @@ The Excel file should contain these columns:
 
 4. **"Permission denied"**:
    ```bash
-   chmod +x update_site.sh
+   chmod +x update_database.sh
    ```
 
 ### Getting Help:
 
 ```bash
 # Show script help
-./update_site.sh help
+./update_database.sh help
 
 # Show Python script help
 python3 convert_excel_to_yaml.py --help
@@ -169,8 +169,8 @@ git push -u origin main
 **Future updates:**
 ```bash
 # Edit Excel → Run update → Deploy
-./update_site.sh
-./deploy.sh  # One command to commit and push
+./update_database.sh
+git add . && git commit -m "Update AP database" && git push origin main
 ```
 
 **Result:** Your site will be live at `https://USERNAME.github.io/REPOSITORY`
@@ -235,7 +235,7 @@ bundle exec jekyll build --disable-disk-cache
 
 ## 📈 Current Database Stats
 
-Run `./update_site.sh stats` to see:
+Run `python3 convert_excel_to_yaml.py --stats` to see:
 - Total number of APs
 - Breakdown by manufacturer
 - Wi-Fi generation distribution
@@ -244,6 +244,6 @@ Run `./update_site.sh stats` to see:
 ## 🎯 Quick Workflow Summary
 
 **For adding new APs:**
-1. Edit Excel → 2. Run `./update_site.sh` → 3. Test → 4. Deploy
+1. Edit Excel → 2. Run `./update_database.sh` → 3. Test → 4. Deploy
 
 **That's it!** 🎉
