@@ -120,6 +120,32 @@ body {
     transform: translateY(0);
 }
 
+/* DataTables integrated buttons styling */
+.dt-buttons .dt-button {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 8px 14px !important;
+    margin: 0 6px 12px 0 !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transition: all 0.2s ease !important;
+}
+.dt-buttons .dt-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+.dt-buttons .dt-button:active {
+    transform: translateY(0) !important;
+}
+
+/* Specific font buttons (optional distinct style) */
+.dt-font-btn {
+    letter-spacing: 0.5px;
+}
+
 h1 {
     margin: 0 0 16px 0;
     font-size: 2rem;
@@ -261,11 +287,6 @@ div.dataTables_scrollBody table {
 
 ## 📱 WiFi Access Points Database
 
-<div class="control-buttons">
-    <button onclick="changeFontSize(-1)" class="font-btn">🔍 A-</button>
-    <button onclick="changeFontSize(1)" class="font-btn">🔍 A+</button>
-</div>
-
 <div class="stats-box">
     <h3>📊 Database Statistics</h3>
     {% assign total_aps = site.data.ap_models | size %}
@@ -380,7 +401,21 @@ $(document).ready(function() {
         // Layout control - bring back buttons
         dom: 'Bfrtip',
         buttons: [
-            'colvis'
+            'colvis',
+            {
+                text: 'A-',
+                className: 'dt-font-btn dt-font-dec',
+                action: function (e, dt, node, config) {
+                    changeFontSize(-1);
+                }
+            },
+            {
+                text: 'A+',
+                className: 'dt-font-btn dt-font-inc',
+                action: function (e, dt, node, config) {
+                    changeFontSize(1);
+                }
+            }
         ],
         
         autoWidth: false,
