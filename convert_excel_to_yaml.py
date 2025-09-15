@@ -19,6 +19,63 @@ import os
 from datetime import datetime
 import shutil
 import sys
+from typing import List, Tuple, Dict, Any
+
+# Normalization map for legacy -> new column names
+COLUMN_RENAMES = {
+    'Manufacturer': 'Vendor',
+    'Manufacturer_Reference': 'Reference',
+    'Constructeur': 'Vendor',            # legacy French
+    'Référence_Constructeur': 'Reference',
+}
+
+def normalize_column_names(columns: List[str]) -> List[str]:
+    """Return a list of columns with legacy names mapped to new schema.
+    Does not enforce uniqueness beyond first occurrence.
+    """
+    normalized = []
+    for col in columns:
+        normalized.append(COLUMN_RENAMES.get(col, col))
+    return normalized
+
+def migrate_yaml_keys(yaml_file: str, dry_run: bool = False) -> Tuple[bool, int]:
+    """Migrate existing YAML file keys to new schema.
+    Manufacturer -> Vendor, Manufacturer_Reference -> Reference.
+    Returns (success flag, number of records changed).
+    """
+    if not os.path.exists(yaml_file):
+        print(f"❌ YAML file not found for migration: {yaml_file}")
+        return False, 0
+    try:
+        with open(yaml_file, 'r', encoding='utf-8') as f:
+            data = yaml.safe_load(f) or []
+        if not isinstance(data, list):
+            print("⚠️  YAML root is not a list; aborting migration")
+            return False, 0
+        changed = 0
+        for rec in data:
+            if not isinstance(rec, dict):
+                continue
+            # Manufacturer -> Vendor
+            if 'Manufacturer' in rec and 'Vendor' not in rec:
+                rec['Vendor'] = rec.pop('Manufacturer')
+                changed += 1
+            # Manufacturer_Reference -> Reference
+            if 'Manufacturer_Reference' in rec and 'Reference' not in rec:
+                rec['Reference'] = rec.pop('Manufacturer_Reference')
+                changed += 1
+        if dry_run:
+            print(f"🔎 Dry run: would migrate {changed} key occurrences")
+            return True, changed
+        # Backup before write
+        backup_existing_yaml(yaml_file)
+        with open(yaml_file, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        print(f"✅ Migration complete. Updated {changed} key occurrences in {yaml_file}")
+        return True, changed
+    except Exception as e:
+        print(f"❌ Migration failed: {e}")
+        return False, 0
 
 def backup_existing_yaml(yaml_file):
     """Create a backup of the existing YAML file with timestamp"""
@@ -154,6 +211,14 @@ def convert_excel_to_yaml(excel_file, yaml_file, create_backup=True):
         
         # Read Excel file
         df = pd.read_excel(excel_file)
+        # Normalize column names to new schema where needed
+        original_columns = list(df.columns)
+        new_columns = normalize_column_names(original_columns)
+        if new_columns != original_columns:
+            rename_map = {orig: new for orig, new in zip(original_columns, new_columns) if orig != new}
+            if rename_map:
+                df.rename(columns=rename_map, inplace=True)
+                print(f"📝 Normalized columns: {', '.join([f'{k}->{v}' for k,v in rename_map.items()])}")
         print(f"📊 Found {len(df)} access point records")
         print(f"📋 Columns: {len(df.columns)} fields")
         
@@ -223,9 +288,11 @@ def show_statistics(yaml_file):
         indoor_outdoor = {}
         
         for ap in data:
-            # Manufacturers (support both English and French for backward compatibility)
-            manufacturer = ap.get('Manufacturer', ap.get('Constructeur', 'Unknown')).strip()
-            manufacturers[manufacturer] = manufacturers.get(manufacturer, 0) + 1
+            # Vendor backward compatibility (Manufacturer / Constructeur)
+            vendor = ap.get('Vendor', ap.get('Manufacturer', ap.get('Constructeur', 'Unknown')))
+            if isinstance(vendor, str):
+                vendor = vendor.strip()
+            manufacturers[vendor] = manufacturers.get(vendor, 0) + 1
             
             # Generations
             generation = ap.get('Generation', ap.get('Génération', 'Unknown'))
@@ -256,6 +323,10 @@ def main():
                         help='Only validate existing YAML file syntax')
     parser.add_argument('--stats', action='store_true', 
                         help='Show statistics about the AP database')
+    parser.add_argument('--migrate-yaml', action='store_true',
+                        help='Migrate existing YAML keys (Manufacturer->Vendor, Manufacturer_Reference->Reference)')
+    parser.add_argument('--migrate-dry-run', action='store_true',
+                        help='Show what would change in migration without writing')
     
     args = parser.parse_args()
     
@@ -275,6 +346,11 @@ def main():
     # Stats only mode
     if args.stats:
         show_statistics(args.output)
+        sys.exit(0)
+
+    # Migration only mode
+    if args.migrate_yaml:
+        migrate_yaml_keys(args.output, dry_run=args.migrate_dry_run)
         sys.exit(0)
     
     # Main conversion
