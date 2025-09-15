@@ -224,6 +224,12 @@ p {
 .dt-buttons {
     margin-bottom: 16px;
 }
+/* Layout container adjustments for buttons + global search */
+.dt-buttons, .dataTables_filter { display: inline-flex; align-items: center; gap: 8px; }
+.dt-buttons { flex-wrap: wrap; }
+.dataTables_filter { margin: 0 0 12px 8px; }
+.dataTables_filter label { display: flex; align-items: center; gap: 6px; font-weight:500; color:#4a5568; }
+.dataTables_filter input { margin-left: 0 !important; }
 .dt-button {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
     border: none !important;
@@ -575,7 +581,7 @@ $(document).ready(function() {
         
         // Language
         language: {
-            search: "🔍 Search:",
+            search: "Search all:",
             lengthMenu: "Show _MENU_ entries per page",
             info: "Showing _START_ to _END_ of _TOTAL_ access points",
             infoEmpty: "No access points found",
@@ -613,6 +619,14 @@ $(document).ready(function() {
         ]
     });
 
+    // Move the global search next to the Clear Filters button (after buttons are created)
+    var $wrapper = $('#ap-table').closest('.dataTables_wrapper');
+    var $buttons = $wrapper.find('.dt-buttons');
+    var $filter = $wrapper.find('div.dataTables_filter');
+    if($buttons.length && $filter.length){
+        // Insert filter after buttons container
+        $filter.insertAfter($buttons);
+    }
     // Sticky columns offset calculation
     function updateStickyOffsets(){
         var firstDataCell = document.querySelector('#ap-table tbody tr:not(.width-probe) td.sticky-col-1');
