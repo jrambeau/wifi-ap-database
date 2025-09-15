@@ -17,7 +17,7 @@ fi
 
 # Run the conversion
 echo "📊 Converting Excel to YAML..."
-python convert_excel_to_yaml.py
+python3 convert_excel_to_yaml.py
 
 if [ $? -eq 0 ]; then
     echo ""
