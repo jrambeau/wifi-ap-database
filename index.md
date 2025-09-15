@@ -22,6 +22,11 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #2d3748;
 }
+
+/* Hidden probe row participates in layout sizing */
+.width-probe { visibility: collapse; }
+/* For browsers not honoring collapse fully */
+tbody .width-probe td { padding:0 !important; border:none !important; font-size:0 !important; }
 .font-size-btns {
     background: none !important;
     border: none !important;
@@ -338,6 +343,41 @@ div.dataTables_scrollBody table {
         </tr>
     </thead>
     <tbody>
+        <!-- Width probe row: representative max-length samples to stabilize column widths -->
+        <tr class="width-probe">
+            <td>VeryLongManufacturerNameSample</td>
+            <td>Model-Extreme-9999X-Pro-Max</td>
+            <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
+            <td>External High-Gain Omni Directional Antenna Pack</td>
+            <td>Indoor/Outdoor Industrial Hardened</td>
+            <td>Wi-Fi 7 / 802.11be Gen</td>
+            <td>802.11a/b/g/n/ac/ax/be Tri-Band</td>
+            <td>High Density Enterprise Hospitality Stadium</td>
+            <td>4x Concurrent Multi-Radio Chains</td>
+            <td>4x4:4 2.4GHz MIMO</td>
+            <td>8x8:8 5GHz MU-MIMO</td>
+            <td>8x8:8 6GHz MU-MIMO</td>
+            <td>Dedicated Security / WIPS / Sensor Radio Included</td>
+            <td>PoE++ Class 8</td>
+            <td>45.5 W</td>
+            <td>Reduced Performance Mode @30W</td>
+            <td>Basic Operation Mode @15W</td>
+            <td>1 x 10G SFP+/RJ45 Combo</td>
+            <td>1 x 2.5G Ethernet Port</td>
+            <td>1.250 kg</td>
+            <td>28 x 28 x 6.5 cm</td>
+            <td>FTM + 802.11mc + 802.11az Enabled</td>
+            <td>USB-C + USB-A</td>
+            <td>Yes (UWB)</td>
+            <td>Multi-Constellation GNSS</td>
+            <td>BLE 5.4 Long Range</td>
+            <td>Zigbee 3.0 Thread</td>
+            <td>Cloud + On-Prem Controller Compatible</td>
+            <td>Minimum Release 23.9.5</td>
+            <td>9999 USD</td>
+            <td>8999 EUR</td>
+            <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
+        </tr>
         {% for ap in site.data.ap_models %}
         <tr>
             
@@ -441,6 +481,20 @@ $(document).ready(function() {
                 next: "Next ›",
                 previous: "‹ Previous"
             }
+        },
+        // Adjust displayed counts to exclude probe row
+        infoCallback: function(settings, start, end, max, total, pre) {
+            // Subtract the single probe row from counts if present
+            var adjustedTotal = total > 0 ? total - 1 : 0;
+            var adjustedMax = max > 0 ? max - 1 : 0;
+            // Adjust start/end if they include the probe row (which is always first)
+            var displayStart = start > 1 ? start - 1 : start;
+            var displayEnd = end - 1;
+            if (displayEnd < 0) displayEnd = 0;
+            if (displayStart === 1 && adjustedTotal === 0) {
+                return 'No access points found';
+            }
+            return 'Showing ' + displayStart + ' to ' + displayEnd + ' of ' + adjustedTotal + ' access points';
         },
         
         // Column definitions - ensure no special behavior
