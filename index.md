@@ -54,7 +54,6 @@ body {
 }
 #ap-table {
     margin: 0 !important;
-    width: 100% !important;
     font-size: 14px;
     background: white;
     border-radius: 12px;
@@ -62,15 +61,17 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-spacing: 0 !important;
     border-collapse: separate !important;
+    white-space: nowrap;
 }
 
-/* Force consistent table layout */
+/* Allow natural table width with scroll */
 #ap-table,
 #ap-table_wrapper table,
 .dataTables_scrollHead table,
 .dataTables_scrollBody table {
-    table-layout: fixed !important;
-    width: 100% !important;
+    table-layout: auto !important;
+    width: auto !important;
+    min-width: 100% !important;
 }
 
 #ap-table thead th {
@@ -96,11 +97,11 @@ body {
     font-weight: 400;
     color: #4a5568;
     vertical-align: middle;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: auto !important;
-    min-width: 100px;
+}
+
+/* Ensure no text wrapping in cells */
+.dt-body-nowrap {
+    white-space: nowrap !important;
 }
 #ap-table tbody tr:hover {
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
@@ -219,32 +220,22 @@ p {
 /* DataTables column alignment fixes */
 .dataTables_wrapper {
     width: 100%;
+    overflow-x: auto;
 }
 
 /* Force header and body to use same table structure */
 .dataTables_scrollHead,
 .dataTables_scrollBody {
-    width: 100% !important;
+    overflow-x: auto;
 }
 
-.dataTables_scrollHeadInner,
-.dataTables_scrollHeadInner table {
-    width: 100% !important;
-    margin: 0 !important;
+.dataTables_scrollHeadInner {
+    overflow-x: auto;
 }
 
 .dataTables_scrollBody table {
-    width: 100% !important;
-    margin: 0 !important;
     border-top: none !important;
-}
-
-/* Ensure consistent column widths */
-.dataTables_scrollHead table th,
-.dataTables_scrollBody table td {
-    box-sizing: border-box !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    margin: 0 !important;
 }
 
 /* Remove any borders between header and body */
@@ -256,15 +247,6 @@ div.dataTables_scrollHead table.dataTable {
 div.dataTables_scrollBody table {
     margin-top: 0 !important;
     border-top: none !important;
-}
-
-/* Force consistent table layout across all DataTables elements */
-.dataTables_scrollHead table,
-.dataTables_scrollBody table,
-.dataTables_scrollHeadInner table {
-    table-layout: fixed !important;
-    border-collapse: separate !important;
-    border-spacing: 0 !important;
 }
 </style>
 
@@ -373,7 +355,7 @@ div.dataTables_scrollBody table {
 
 <script>
 $(document).ready(function() {
-    // Initialize DataTable with proper column alignment
+    // Initialize DataTable with natural column widths
     var table = $('#ap-table').DataTable({
         paging: true,
         searching: true,
@@ -394,26 +376,9 @@ $(document).ready(function() {
         pageLength: 25,
         lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
         order: [[ 0, "asc" ]],
-        autoWidth: false, // Critical for alignment
+        autoWidth: true, // Let DataTables calculate natural widths
         columnDefs: [
-            { width: "200px", targets: [0] }, // Manufacturer - wide for company names
-            { width: "180px", targets: [1] }, // Model - wide for model numbers
-            { width: "160px", targets: [2] }, // Manufacturer Reference
-            { width: "180px", targets: [3] }, // Antenna Type - descriptive text
-            { width: "140px", targets: [4, 5] }, // Indoor/Outdoor, Generation
-            { width: "160px", targets: [6, 7] }, // Protocol, Product Positioning
-            { width: "140px", targets: [8, 9, 10, 11] }, // Radio specs
-            { width: "160px", targets: [12] }, // Dedicated Scanning Radio
-            { width: "140px", targets: [13, 14] }, // PoE Class, Max PoE Consumption
-            { width: "200px", targets: [15, 16] }, // Limited Capabilities (long text)
-            { width: "120px", targets: [17, 18] }, // Ethernet ports
-            { width: "100px", targets: [19, 20] }, // Weight, Dimensions
-            { width: "220px", targets: [21] }, // Geolocation (very long technical name)
-            { width: "100px", targets: [22, 23, 24, 25, 26] }, // USB, UWB, GNSS, Bluetooth, Zigbee
-            { width: "160px", targets: [27] }, // Cloud Compatible
-            { width: "140px", targets: [28] }, // Minimum Version
-            { width: "120px", targets: [29, 30] }, // Prices
-            { width: "250px", targets: [31] } // Comments - very wide for descriptive text
+            { targets: "_all", className: "dt-body-nowrap" } // Prevent text wrapping
         ],
         language: {
             search: "🔍 Search all columns:",
@@ -423,49 +388,15 @@ $(document).ready(function() {
             infoFiltered: "(filtered from _MAX_ total entries)"
         },
         initComplete: function() {
-            // Force proper alignment after initialization
-            this.api().columns.adjust().draw();
-            
-            // Set consistent widths for header and body
-            var $table = $('#ap-table');
-            var $headerCells = $table.find('thead th');
-            var $bodyCells = $table.find('tbody tr:first td');
-            
-            $headerCells.each(function(index) {
-                var width = $(this).outerWidth();
-                $bodyCells.eq(index).css('width', width + 'px');
-            });
+            // Simple column adjustment
+            this.api().columns.adjust();
         }
     });
     
-    // Enhanced column adjustment on every draw
-    table.on('draw.dt', function() {
-        setTimeout(function() {
-            table.columns.adjust();
-            
-            // Force width synchronization
-            var $table = $('#ap-table');
-            var $headerCells = $table.find('thead th');
-            var $bodyCells = $table.find('tbody tr:first td');
-            
-            $headerCells.each(function(index) {
-                var width = $(this).outerWidth();
-                $bodyCells.eq(index).css('width', width + 'px');
-            });
-        }, 50);
-    });
-    
-    // Window resize handling
+    // Basic responsive handling
     $(window).on('resize', function() {
-        setTimeout(function() {
-            table.columns.adjust().draw();
-        }, 100);
+        table.columns.adjust();
     });
-    
-    // Initial alignment after everything loads
-    setTimeout(function() {
-        table.columns.adjust().draw();
-    }, 500);
 });
 
 // Font size controls
