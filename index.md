@@ -13,11 +13,16 @@ title: Wi-Fi Access Points Database
 <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.min.css">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
 }
 .font-size-btns {
     background: none !important;
@@ -32,41 +37,151 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #f5f5f5;
+    background: #f8fafc;
     z-index: 1;
-    padding: 8px 4px 4px 4px;
+    padding: 16px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
 }
 #ap-table {
     margin: 0;
     width: 100% !important;
-    font-size: 12px;
-    table-layout: fixed;
+    font-size: 13px;
+    table-layout: auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+#ap-table thead th {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    font-weight: 600;
+    padding: 16px 12px;
+    text-align: left;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+#ap-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 400;
+    color: #4a5568;
+    vertical-align: middle;
+}
+#ap-table tbody tr:hover {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+#ap-table tbody tr:nth-child(even) {
+    background: #f8fafc;
 }
 h1 {
-    margin: 12px 0 8px 0;
-    font-size: 1.3em;
+    margin: 0 0 16px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
 }
 p {
-    margin: 4px 0 12px 0;
-    font-size: 1em;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #64748b;
+    font-weight: 400;
 }
 .dataTables_wrapper .dataTables_filter input,
 .dataTables_wrapper .dataTables_length select {
-    font-size: 12px;
-    padding: 2px 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    transition: border-color 0.2s ease;
+}
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_length select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #64748b;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    color: #4a5568 !important;
+    font-weight: 500;
+    margin: 0 2px;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+    color: white !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+    color: white !important;
+}
+.dt-buttons {
+    margin-bottom: 16px;
+}
+.dt-button {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 16px !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    margin: 0 8px 0 0 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+.dt-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
 }
 .stats-box {
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 8px 0;
-    font-size: 11px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 0 24px 0;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.stats-box h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
 }
 .stat-item {
     display: inline-block;
-    margin: 3px 10px 3px 0;
-    font-weight: bold;
+    margin: 6px 16px 6px 0;
+    font-weight: 500;
+    color: #4a5568;
+    background: #edf2f7;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
 }
 </style>
 
