@@ -42,7 +42,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
     left: 0;
     background: #f8fafc;
     z-index: 1;
-    padding: 16px;
+    padding: 16px 16px 120px 16px; /* extra bottom padding for pagination visibility */
     box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
 }
 
@@ -50,6 +50,17 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 .dataTables_wrapper {
     width: 100%;
     overflow-x: auto;
+    padding-bottom: 40px; /* ensure internal controls not cut off */
+}
+
+/* Additional safety space specifically for pagination bar */
+.dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 20px;
+}
+
+/* Handle mobile safe-area (iOS notch) */
+@supports (padding: max(0px)) {
+  #ap-table-container { padding-bottom: calc(120px + env(safe-area-inset-bottom)); }
 }
 
 .dataTables_scroll {
