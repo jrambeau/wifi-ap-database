@@ -62,14 +62,15 @@ body {
     border-spacing: 0 !important;
     border-collapse: separate !important;
     white-space: nowrap;
+    table-layout: fixed !important; /* Prevent layout shifts during sort */
 }
 
-/* Allow natural table width with scroll */
+/* Allow natural table width with scroll but prevent column reordering */
 #ap-table,
 #ap-table_wrapper table,
 .dataTables_scrollHead table,
 .dataTables_scrollBody table {
-    table-layout: auto !important;
+    table-layout: fixed !important; /* Consistent layout */
     width: auto !important;
     min-width: 100% !important;
 }
@@ -355,13 +356,13 @@ div.dataTables_scrollBody table {
 
 <script>
 $(document).ready(function() {
-    // Initialize DataTable with natural column widths
+    // Initialize DataTable with stable column behavior
     var table = $('#ap-table').DataTable({
         paging: true,
         searching: true,
         info: true,
         responsive: false,
-        colReorder: false, // Disable to prevent alignment issues
+        colReorder: false, // Disable column reordering completely
         dom: 'Bfrtip',
         buttons: [
             'colvis',
@@ -376,9 +377,15 @@ $(document).ready(function() {
         pageLength: 25,
         lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
         order: [[ 0, "asc" ]],
-        autoWidth: true, // Let DataTables calculate natural widths
+        autoWidth: false, // Use fixed width to prevent resize on sort
+        stateSave: false, // Disable state saving that might cause reordering
         columnDefs: [
-            { targets: "_all", className: "dt-body-nowrap" } // Prevent text wrapping
+            { 
+                targets: "_all", 
+                className: "dt-body-nowrap",
+                orderable: true, // Enable sorting but prevent column movement
+                width: "150px" // Set consistent width for all columns
+            }
         ],
         language: {
             search: "🔍 Search all columns:",
@@ -388,15 +395,23 @@ $(document).ready(function() {
             infoFiltered: "(filtered from _MAX_ total entries)"
         },
         initComplete: function() {
-            // Simple column adjustment
-            this.api().columns.adjust();
+            // Lock in column widths after initial render
+            var table = this.api();
+            table.columns().every(function() {
+                var column = this;
+                var header = $(column.header());
+                var width = header.outerWidth();
+                header.css('width', width + 'px');
+            });
+        },
+        drawCallback: function() {
+            // Prevent column width changes during sort/filter
+            // Do nothing - let existing widths persist
         }
     });
     
-    // Basic responsive handling
-    $(window).on('resize', function() {
-        table.columns.adjust();
-    });
+    // Disable responsive behavior that might cause shifts
+    $(window).off('resize.DT');
 });
 
 // Font size controls
