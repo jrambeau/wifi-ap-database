@@ -336,6 +336,9 @@ div.dataTables_scrollBody table {
 #ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
 #ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
 #ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #eef2ff; box-shadow:none; }
+#ap-table tbody .sticky-col.sticky-col-1, #ap-table tbody .sticky-col.sticky-col-2 { background: #eef4ff; }
+#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-1, #ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-2 { background: #e5edff; }
+#ap-table tbody tr:hover .sticky-col.sticky-col-1, #ap-table tbody tr:hover .sticky-col.sticky-col-2 { background: #dbe6ff; }
 #ap-table tbody .sticky-col { background: #ffffff; }
 #ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
 #ap-table tbody tr:hover .sticky-col { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
@@ -343,6 +346,22 @@ div.dataTables_scrollBody table {
 /* No fade on filter row sticky cells */
 #ap-table .sticky-col-1 { border-right: 1px solid #e2e8f0; }
 #ap-table .sticky-col-2 { left: var(--sticky-col-1-width); border-right: 1px solid #e2e8f0; }
+
+/* Compact mode adjustments */
+.compact-mode #ap-table thead th { padding: 8px 8px; font-size: 12px; }
+.compact-mode #ap-table thead tr.filter-row th { padding: 2px 4px; }
+.compact-mode #ap-table thead tr.filter-row th input { padding: 2px 4px; font-size: 10px; }
+.compact-mode #ap-table tbody td { padding: 4px 8px; font-size: 12px; }
+.compact-mode #ap-table { font-size: 12px; }
+.compact-mode .dataTables_wrapper .dataTables_filter input, 
+.compact-mode .dataTables_wrapper .dataTables_length select { padding:4px 8px; font-size:12px; }
+.compact-mode .dt-buttons .dt-button { padding:6px 10px !important; font-size:12px !important; }
+
+/* Sticky header blur effect */
+#ap-table thead { background: rgba(79,70,229,0.92); backdrop-filter: saturate(140%) blur(6px); -webkit-backdrop-filter:saturate(140%) blur(6px); }
+#ap-table thead.scrolled { background: rgba(79,70,229,0.80); }
+#ap-table thead th { transition: background 0.25s ease; }
+#ap-table thead.scrolled th { background: linear-gradient(135deg, rgba(79,70,229,0.95) 0%, rgba(124,58,237,0.95) 100%); }
 /* Remove all separator effects (shadows & fades) for a flat appearance */
 #ap-table .sticky-col-1::after, #ap-table .sticky-col-2::after { display:none; }
 /* Prevent probe row artifacts */
@@ -557,6 +576,15 @@ $(document).ready(function() {
                     dt.columns().every(function(){ this.search(''); });
                     dt.draw();
                 }
+            },
+            {
+                text: 'Compact',
+                className: 'dt-compact-toggle',
+                action: function(e, dt, node, config){
+                    document.body.classList.toggle('compact-mode');
+                    if(typeof window.updateStickyOffsets === 'function') window.updateStickyOffsets();
+                    if(typeof window.updateStickyHeaderHeight === 'function') window.updateStickyHeaderHeight();
+                }
             }
         ],
         orderCellsTop: true,
@@ -636,6 +664,19 @@ $(document).ready(function() {
         }
     }
     updateStickyHeaderHeight();
+    // Scroll listener to adjust header appearance
+    var container = document.getElementById('ap-table-container');
+    function handleScroll(){
+        var thead = document.querySelector('#ap-table thead');
+        if(!thead) return;
+        if(container.scrollTop > 10){
+            thead.classList.add('scrolled');
+        } else {
+            thead.classList.remove('scrolled');
+        }
+    }
+    container.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     $(window).on('resize', updateStickyHeaderHeight);
     table.on('draw.dt', function(){ updateStickyHeaderHeight(); });
     window.updateStickyHeaderHeight = updateStickyHeaderHeight;
