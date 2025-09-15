@@ -1,4 +1,6 @@
-- Model: AP1521
+- Vendor: Alcatel
+  Model: AP1521
+  Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -28,9 +30,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1511
   Reference: ''
-- Model: AP1511
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -60,9 +62,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1351
   Reference: ''
-- Model: AP1351
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -92,9 +94,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1331
   Reference: ''
-- Model: AP1331
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -124,9 +126,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1322
   Reference: ''
-- Model: AP1322
   Antenna_Type: 'External : 4x RP-SMA'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -156,9 +158,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1321
   Reference: ''
-- Model: AP1321
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -188,9 +190,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1311
   Reference: ''
-- Model: AP1311
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -220,9 +222,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1301
   Reference: ''
-- Model: AP1301
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -252,9 +254,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1451
   Reference: ''
-- Model: AP1451
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -284,9 +286,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1431
   Reference: ''
-- Model: AP1431
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -316,9 +318,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Alcatel
+- Vendor: Alcatel
+  Model: AP1411
   Reference: ''
-- Model: AP1411
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -349,9 +351,9 @@
   Public_Price_EUR: ''
   Comments: 'Dual radio mode :  2.4GHz 2x2:2+5GHz 2x2:2 or 2.4GHz 2x2:2+6GHz 2x2:2
     or 5GHz 2x2:2+6GHz 2x2:2'
-  Vendor: Alcatel
-  Reference: ''
-- Model: AP-725
+- Vendor: Aruba
+  Model: AP-725
+  Reference: S4A22A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -381,9 +383,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Aruba
-  Reference: S4A22A
-- Model: AP-755
+- Vendor: Aruba
+  Model: AP-755
+  Reference: S1G84A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -414,9 +416,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2806.0
   Comments: ''
-  Vendor: Aruba
-  Reference: S1G84A
-- Model: AP-735
+- Vendor: Aruba
+  Model: AP-735
+  Reference: S1G42A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -446,9 +448,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1869.0
   Comments: ''
-  Vendor: Aruba
-  Reference: S1G42A
-- Model: AP-655
+- Vendor: Aruba
+  Model: AP-655
+  Reference: R7J38A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -478,9 +480,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2056.0
   Comments: ''
-  Vendor: Aruba
-  Reference: R7J38A
-- Model: AP-635
+- Vendor: Aruba
+  Model: AP-635
+  Reference: R7J27A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -510,9 +512,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1582.0
   Comments: ''
-  Vendor: Aruba
-  Reference: R7J27A
-- Model: AP-615
+- Vendor: Aruba
+  Model: AP-615
+  Reference: R7J49A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -542,9 +544,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1129.0
   Comments: Only 2 concurrent radios
-  Vendor: Aruba
-  Reference: R7J49A
-- Model: AP-555
+- Vendor: Aruba
+  Model: AP-555
+  Reference: JZ356A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -574,9 +576,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2262.0
   Comments: ''
-  Vendor: Aruba
-  Reference: JZ356A
-- Model: AP-535
+- Vendor: Aruba
+  Model: AP-535
+  Reference: JZ336A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -606,9 +608,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1900.0
   Comments: ''
-  Vendor: Aruba
-  Reference: JZ336A
-- Model: AP-515
+- Vendor: Aruba
+  Model: AP-515
+  Reference: Q9H62A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -638,9 +640,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1392.0
   Comments: ''
-  Vendor: Aruba
-  Reference: Q9H62A
-- Model: AP-505
+- Vendor: Aruba
+  Model: AP-505
+  Reference: R2H28A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -670,9 +672,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 884.0
   Comments: ''
-  Vendor: Aruba
-  Reference: R2H28A
-- Model: CW9178I
+- Vendor: Cisco
+  Model: CW9178I
+  Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -702,9 +704,9 @@
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9176D1
   Reference: ''
-- Model: CW9176D1
   Antenna_Type: 'Internal : directionnal 8dBi 70°H/V'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -734,9 +736,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9176I
   Reference: ''
-- Model: CW9176I
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -766,9 +768,9 @@
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9166D1
   Reference: ''
-- Model: CW9166D1
   Antenna_Type: 'Internal : directionnal 8dBi 60°H/V'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -798,9 +800,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9166I
   Reference: ''
-- Model: CW9166I
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -830,9 +832,9 @@
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9164I
   Reference: ''
-- Model: CW9164I
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -862,9 +864,9 @@
   Public_Price_USD: 2200.0
   Public_Price_EUR: 2134.0
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9163E
   Reference: ''
-- Model: CW9163E
   Antenna_Type: 'External : 4x RP-TNC'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -894,9 +896,9 @@
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: CW9162I
   Reference: ''
-- Model: CW9162I
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -926,9 +928,9 @@
   Public_Price_USD: 1248.0
   Public_Price_EUR: 1210.56
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9136I
   Reference: ''
-- Model: C9136I
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -958,9 +960,9 @@
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9130AXI
   Reference: ''
-- Model: C9130AXI
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -990,10 +992,10 @@
   Public_Price_USD: 2666.0
   Public_Price_EUR: 2586.02
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9124AXI/AXD
   Reference: ''
-- Model: C9124AXI/AXD
-  Antenna_Type: 'Internal : AXI omni (AXI), AXD directionnal 9dBi 60°H/V'
+  Antenna_Type: 'Internal : AXI omni, AXD directionnal 9dBi 60°H/V'
   Indoor_Outdoor: Outdoor
   Generation: Wi-Fi 6
   Protocol: 802.11ac,ax
@@ -1022,9 +1024,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9120AXI
   Reference: ''
-- Model: C9120AXI
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1054,9 +1056,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9115AXI
   Reference: ''
-- Model: C9115AXI
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1086,9 +1088,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
+- Vendor: Cisco
+  Model: C9105AXI
   Reference: ''
-- Model: C9105AXI
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1118,9 +1120,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Cisco
-  Reference: ''
-- Model: FAP-441K
+- Vendor: Fortinet
+  Model: FAP-441K
+  Reference: FAP-441K-N
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 6E
@@ -1150,9 +1152,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
-  Reference: FAP-441K-N
-- Model: FAP-241K
+- Vendor: Fortinet
+  Model: FAP-241K
+  Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1182,9 +1184,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-431G
   Reference: ''
-- Model: FAP-431G
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1214,9 +1216,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-231G
   Reference: ''
-- Model: FAP-231G
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1246,9 +1248,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-234G
   Reference: ''
-- Model: FAP-234G
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1278,9 +1280,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-831F
   Reference: ''
-- Model: FAP-831F
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1310,9 +1312,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-431F
   Reference: ''
-- Model: FAP-431F
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1342,9 +1344,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-234F
   Reference: ''
-- Model: FAP-234F
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1374,9 +1376,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
+- Vendor: Fortinet
+  Model: FAP-23JF
   Reference: ''
-- Model: FAP-23JF
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
@@ -1406,9 +1408,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Fortinet
-  Reference: ''
-- Model: 8771-X1T
+- Vendor: Huawei
+  Model: 8771-X1T
+  Reference: 02355CXW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1438,9 +1440,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 3039.0
   Comments: ''
-  Vendor: Huawei
-  Reference: 02355CXW
-- Model: 6776-58TI
+- Vendor: Huawei
+  Model: 6776-58TI
+  Reference: '50087136'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1470,9 +1472,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1790.0
   Comments: ''
-  Vendor: Huawei
-  Reference: '50087136'
-- Model: 6776-57T
+- Vendor: Huawei
+  Model: 6776-57T
+  Reference: '50086828'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1502,9 +1504,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
   Comments: ''
-  Vendor: Huawei
-  Reference: '50086828'
-- Model: 6776-56TP
+- Vendor: Huawei
+  Model: 6776-56TP
+  Reference: 50086827-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1534,9 +1536,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
   Comments: ''
-  Vendor: Huawei
-  Reference: 50086827-001
-- Model: 5776-26
+- Vendor: Huawei
+  Model: 5776-26
+  Reference: 50086829-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1566,9 +1568,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1277.0
   Comments: ''
-  Vendor: Huawei
-  Reference: 50086829-001
-- Model: 5773-23h
+- Vendor: Huawei
+  Model: 5773-23h
+  Reference: '50086834'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1598,9 +1600,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
   Comments: Supporte Câble Hybride Huawei par rapport à la 22 et 21
-  Vendor: Huawei
-  Reference: '50086834'
-- Model: 5773-22p
+- Vendor: Huawei
+  Model: 5773-22p
+  Reference: 50086833-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1630,9 +1632,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
   Comments: ''
-  Vendor: Huawei
-  Reference: 50086833-001
-- Model: 5773-21
+- Vendor: Huawei
+  Model: 5773-21
+  Reference: 50086767-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7
@@ -1662,9 +1664,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 840.0
   Comments: ''
-  Vendor: Huawei
-  Reference: 50086767-001
-- Model: 6761-22T
+- Vendor: Huawei
+  Model: 6761-22T
+  Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 6E
@@ -1694,9 +1696,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: Not in price list anymore
-  Vendor: Huawei
-  Reference: ''
-- Model: AP47
+- Vendor: Juniper Mist
+  Model: AP47
+  Reference: AP47-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 7
@@ -1726,9 +1728,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP47-WW
-- Model: AP64
+- Vendor: Juniper Mist
+  Model: AP64
+  Reference: AP64-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor/Outdoor
   Generation: Wi-Fi 6E
@@ -1758,9 +1760,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2102.0
   Comments: Only 2 concurrent radios
-  Vendor: Juniper Mist
-  Reference: AP64-WW
-- Model: AP45
+- Vendor: Juniper Mist
+  Model: AP45
+  Reference: AP45-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -1790,9 +1792,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2006.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP45-WW
-- Model: AP43
+- Vendor: Juniper Mist
+  Model: AP43
+  Reference: AP43-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1822,9 +1824,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1700.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP43-WW
-- Model: AP34
+- Vendor: Juniper Mist
+  Model: AP34
+  Reference: AP34-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -1854,9 +1856,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1485.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP34-WW
-- Model: AP33
+- Vendor: Juniper Mist
+  Model: AP33
+  Reference: AP33-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1886,9 +1888,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1383.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP33-WW
-- Model: AP32
+- Vendor: Juniper Mist
+  Model: AP32
+  Reference: AP32-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1918,9 +1920,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1169.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP32-WW
-- Model: AP24
+- Vendor: Juniper Mist
+  Model: AP24
+  Reference: AP24-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6E
@@ -1950,9 +1952,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1107.0
   Comments: Only 2 concurrent radios
-  Vendor: Juniper Mist
-  Reference: AP24-WW
-- Model: AP12
+- Vendor: Juniper Mist
+  Model: AP12
+  Reference: AP12-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
   Generation: Wi-Fi 6
@@ -1982,9 +1984,9 @@
   Public_Price_USD: ''
   Public_Price_EUR: 842.0
   Comments: ''
-  Vendor: Juniper Mist
-  Reference: AP12-WW
-- Model: AP305C
+- Vendor: Extreme
+  Model: AP305C
+  Reference: ''
   Antenna_Type: ''
   Indoor_Outdoor: ''
   Generation: ''
@@ -2014,5 +2016,35 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-  Vendor: Extreme
+- Vendor: Juniper Mist
+  Model: AP37
   Reference: ''
+  Antenna_Type: ''
+  Indoor_Outdoor: ''
+  Generation: Wi-Fi 7
+  Protocol: ''
+  Product_Positioning: ''
+  Concurrent_PHY_Radios: ''
+  Radio_2_4_GHz: ''
+  Radio_5_GHz: ''
+  Radio_6_GHz: ''
+  Dedicated_Scanning_Radio: ''
+  PoE_Class: ''
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_Plus_30W: ''
+  Limited_Capabilities_PoE_15W: ''
+  Ethernet1: ''
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: ''
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: ''
+  GNSS: ''
+  Bluetooth: ''
+  Zigbee: ''
+  Cloud_Compatible: ''
+  Minimum_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
