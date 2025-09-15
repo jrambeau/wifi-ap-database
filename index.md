@@ -323,16 +323,18 @@ div.dataTables_scrollBody table {
 /* --- Sticky first two columns (Manufacturer, Model) --- */
 /* CSS variable updated dynamically to match actual first column width */
 :root { --sticky-col-1-width: 0px; }
-#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; background: inherit; }
+#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; background: transparent; }
 #ap-table thead .sticky-col { z-index: 8; }
 #ap-table thead tr.filter-row .sticky-col { z-index: 7; }
+#ap-table tbody .sticky-col { background: #ffffff; }
+#ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
+#ap-table tbody tr:hover .sticky-col { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
 #ap-table .sticky-col-1 { box-shadow: 2px 0 3px -2px rgba(0,0,0,0.08); }
 #ap-table .sticky-col-2 { left: var(--sticky-col-1-width); box-shadow: 4px 0 5px -3px rgba(0,0,0,0.15); }
-/* Preserve row hover / striping appearance for sticky cells */
-#ap-table tbody tr:hover .sticky-col { background: inherit; }
-#ap-table tbody tr:nth-child(even) .sticky-col { background: inherit; }
-/* Ensure probe row sticky cells don't introduce spacing */
-#ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; }
+/* Soft fade edge to emphasize separation */
+#ap-table .sticky-col-1::after, #ap-table .sticky-col-2::after { content: ""; position: absolute; top:0; right:-1px; width:10px; height:100%; pointer-events:none; background: linear-gradient(to right, rgba(0,0,0,0.08), rgba(0,0,0,0)); }
+/* Prevent probe row artifacts */
+#ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; background: transparent !important; }
 </style>
 
 ## 📱 WiFi Access Points Database
