@@ -8,6 +8,7 @@ title: Wi-Fi Access Points Database
 
 <!-- DataTable CSS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
@@ -89,6 +90,36 @@ body {
 #ap-table tbody tr:nth-child(even) {
     background: #f8fafc;
 }
+
+/* Control buttons styling */
+.control-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.font-btn {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.font-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.font-btn:active {
+    transform: translateY(0);
+}
+
 h1 {
     margin: 0 0 16px 0;
     font-size: 2rem;
@@ -228,6 +259,13 @@ div.dataTables_scrollBody table {
 }
 </style>
 
+## 📱 WiFi Access Points Database
+
+<div class="control-buttons">
+    <button onclick="changeFontSize(-1)" class="font-btn">🔍 A-</button>
+    <button onclick="changeFontSize(1)" class="font-btn">🔍 A+</button>
+</div>
+
 <div class="stats-box">
     <h3>📊 Database Statistics</h3>
     {% assign total_aps = site.data.ap_models | size %}
@@ -326,24 +364,30 @@ div.dataTables_scrollBody table {
 <!-- jQuery and DataTables JS -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.colVis.min.js"></script>
 
 <script>
 $(document).ready(function() {
-    // Ultra minimal DataTable configuration to prevent any column movement
+    // Initialize DataTable with buttons but minimal other features
     var table = $('#ap-table').DataTable({
-        // Core settings - absolutely minimal
+        // Core settings
         paging: true,
         searching: true,
-        info: false,
+        info: true,
         ordering: true,
         
-        // Layout control
-        dom: 'ft', // Only filter and table - no buttons, no info
-        scrollX: false, // Disable horizontal scrolling that might cause issues
-        autoWidth: false, // Don't auto-adjust widths
+        // Layout control - bring back buttons
+        dom: 'Bfrtip',
+        buttons: [
+            'colvis'
+        ],
+        
+        autoWidth: false,
         
         // Pagination
         pageLength: 25,
+        lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
         
         // Default sort
         order: [[ 0, "asc" ]],
@@ -351,6 +395,17 @@ $(document).ready(function() {
         // Language
         language: {
             search: "🔍 Search:",
+            lengthMenu: "Show _MENU_ entries per page",
+            info: "Showing _START_ to _END_ of _TOTAL_ access points",
+            infoEmpty: "No access points found",
+            infoFiltered: "(filtered from _MAX_ total access points)",
+            zeroRecords: "No matching access points found",
+            paginate: {
+                first: "« First",
+                last: "Last »",
+                next: "Next ›",
+                previous: "‹ Previous"
+            }
         },
         
         // Column definitions - ensure no special behavior
@@ -363,6 +418,31 @@ $(document).ready(function() {
         ]
     });
 });
+
+// Font size controls
+var minFont = 9, maxFont = 20;
+function changeFontSize(delta) {
+    var table = document.getElementById('ap-table');
+    var style = window.getComputedStyle(table, null).getPropertyValue('font-size');
+    var current = parseFloat(style);
+    var newSize = Math.max(minFont, Math.min(maxFont, current + delta));
+    // Set font size on the table and wrapper
+    table.style.fontSize = newSize + 'px';
+    var wrapper = document.getElementById('ap-table-container');
+    if (wrapper) wrapper.style.fontSize = newSize + 'px';
+    // Remove any explicit font-size on th/td to let inherit from table
+    var ths = table.querySelectorAll('th');
+    var tds = table.querySelectorAll('td');
+    ths.forEach(function(el) { el.style.fontSize = null; });
+    tds.forEach(function(el) { el.style.fontSize = null; });
+    // Also update filter and length controls
+    var controls = document.querySelectorAll('.dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select');
+    controls.forEach(function(el) { el.style.fontSize = newSize + 'px'; });
+    // Force DataTables to recalculate column widths
+    if ($.fn.dataTable) {
+        $('#ap-table').DataTable().columns.adjust().draw(false);
+    }
+}
 </script>
 </script>
 
