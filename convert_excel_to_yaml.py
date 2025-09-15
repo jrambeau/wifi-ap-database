@@ -30,6 +30,104 @@ def backup_existing_yaml(yaml_file):
         return backup_file
     return None
 
+def analyze_column_changes(new_columns, yaml_file):
+    """Analyze changes in column structure compared to existing YAML"""
+    changes = {
+        'added': [],
+        'removed': [],
+        'renamed': [],
+        'unchanged': []
+    }
+    
+    # Get existing columns from YAML if it exists
+    existing_columns = set()
+    if os.path.exists(yaml_file):
+        try:
+            with open(yaml_file, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f)
+            if data and len(data) > 0:
+                existing_columns = set(data[0].keys())
+        except Exception as e:
+            print(f"⚠️  Could not read existing YAML: {e}")
+    
+    new_columns_set = set(new_columns)
+    
+    # Detect changes
+    changes['added'] = list(new_columns_set - existing_columns)
+    changes['removed'] = list(existing_columns - new_columns_set)
+    changes['unchanged'] = list(new_columns_set & existing_columns)
+    
+    # Simple rename detection (if one removed and one added, might be rename)
+    if len(changes['removed']) == 1 and len(changes['added']) == 1:
+        changes['renamed'] = [(changes['removed'][0], changes['added'][0])]
+        changes['removed'] = []
+        changes['added'] = []
+    
+    return changes
+
+def update_jekyll_template(columns, template_file="index.md"):
+    """Update Jekyll template with new column structure"""
+    try:
+        # Read current template
+        with open(template_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Generate new table headers
+        headers = '\n'.join([f'            <th>{col.replace("_", " ")}</th>' for col in columns])
+        
+        # Generate new table data cells
+        cells = '\n'.join([f'            <td>{{{{ ap.{col} | default: "" }}</td>' for col in columns])
+        
+        # Find and replace the table structure
+        import re
+        
+        # Replace headers
+        header_pattern = r'(<thead>\s*<tr>\s*)(.*?)(\s*</tr>\s*</thead>)'
+        new_headers = f'\\1\n{headers}\n\\3'
+        content = re.sub(header_pattern, new_headers, content, flags=re.DOTALL)
+        
+        # Replace data cells
+        cell_pattern = r'({% for ap in site\.data\.ap_models %}\s*<tr>\s*)(.*?)(\s*</tr>\s*{% endfor %})'
+        new_cells = f'\\1\n{cells}\n\\3'
+        content = re.sub(cell_pattern, new_cells, content, flags=re.DOTALL)
+        
+        # Write updated template
+        with open(template_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        print(f"✅ Updated Jekyll template: {template_file}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Failed to update template: {e}")
+        return False
+
+def print_column_changes(changes):
+    """Print a summary of column changes"""
+    if any(changes[key] for key in ['added', 'removed', 'renamed']):
+        print(f"\n🔄 Column Structure Changes Detected:")
+        
+        if changes['renamed']:
+            for old, new in changes['renamed']:
+                print(f"   📝 Renamed: '{old}' → '{new}'")
+        
+        if changes['added']:
+            for col in changes['added']:
+                print(f"   ➕ Added: '{col}'")
+        
+        if changes['removed']:
+            for col in changes['removed']:
+                print(f"   ➖ Removed: '{col}'")
+        
+        print(f"   ✅ Unchanged: {len(changes['unchanged'])} columns")
+        
+        if changes['added'] or changes['removed'] or changes['renamed']:
+            print(f"\n⚠️  Template Update Required:")
+            print(f"     The Jekyll template (index.md) may need updates")
+            print(f"     to reflect these column changes.")
+    else:
+        print(f"✅ No column structure changes detected")
+
 def clean_data(value):
     """Clean and normalize data values"""
     if pd.isna(value):
@@ -55,6 +153,10 @@ def convert_excel_to_yaml(excel_file, yaml_file, create_backup=True):
         print(f"📊 Found {len(df)} access point records")
         print(f"📋 Columns: {len(df.columns)} fields")
         
+        # Analyze column changes
+        changes = analyze_column_changes(list(df.columns), yaml_file)
+        print_column_changes(changes)
+        
         # Create backup if requested
         if create_backup:
             backup_existing_yaml(yaml_file)
@@ -75,14 +177,14 @@ def convert_excel_to_yaml(excel_file, yaml_file, create_backup=True):
         print(f"✅ Successfully converted {len(data)} records to {yaml_file}")
         print(f"🌐 Jekyll site can now be updated with new AP data")
         
-        return True
+        return True, list(df.columns), changes
         
     except FileNotFoundError:
         print(f"❌ Error: Excel file '{excel_file}' not found")
-        return False
+        return False, [], {}
     except Exception as e:
         print(f"❌ Error during conversion: {str(e)}")
-        return False
+        return False, [], {}
 
 def validate_yaml_syntax(yaml_file):
     """Validate YAML syntax"""
@@ -144,6 +246,8 @@ def main():
                         help='Output YAML file (default: _data/ap_models.yaml)')
     parser.add_argument('--no-backup', action='store_true', 
                         help='Skip creating backup of existing YAML file')
+    parser.add_argument('--update-template', action='store_true', 
+                        help='Automatically update Jekyll template when columns change')
     parser.add_argument('--validate', action='store_true', 
                         help='Only validate existing YAML file syntax')
     parser.add_argument('--stats', action='store_true', 
@@ -170,20 +274,32 @@ def main():
         sys.exit(0)
     
     # Main conversion
-    success = convert_excel_to_yaml(
+    result = convert_excel_to_yaml(
         excel_file=args.excel,
         yaml_file=args.output,
         create_backup=not args.no_backup
     )
     
-    if success:
+    if result and len(result) == 3:
+        success, columns, changes = result
+        
+        # Update template if requested and changes detected
+        if args.update_template and (changes['added'] or changes['removed'] or changes['renamed']):
+            print(f"\n🔄 Updating Jekyll template...")
+            update_jekyll_template(columns)
+        
         # Validate the generated YAML
         if validate_yaml_syntax(args.output):
             show_statistics(args.output)
             print(f"\n🚀 Next steps:")
             print(f"   1. Review the generated {args.output}")
-            print(f"   2. Commit changes to your Jekyll repository")
-            print(f"   3. Deploy your updated site")
+            if args.update_template and (changes['added'] or changes['removed'] or changes['renamed']):
+                print(f"   2. Review the updated index.md template")
+                print(f"   3. Commit changes to your Jekyll repository")
+                print(f"   4. Deploy your updated site")
+            else:
+                print(f"   2. Commit changes to your Jekyll repository")
+                print(f"   3. Deploy your updated site")
         else:
             print(f"⚠️  YAML file generated but contains syntax errors")
             sys.exit(1)

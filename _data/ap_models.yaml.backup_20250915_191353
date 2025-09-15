@@ -1696,7 +1696,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: Not in price list anymore
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP47
   Manufacturer_Reference: AP47-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1728,7 +1728,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP64
   Manufacturer_Reference: AP64-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1760,7 +1760,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2102.0
   Comments: Only 2 concurrent radios
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP45
   Manufacturer_Reference: AP45-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1792,7 +1792,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 2006.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP43
   Manufacturer_Reference: AP43-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1824,7 +1824,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1700.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP34
   Manufacturer_Reference: AP34-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1856,7 +1856,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1485.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP33
   Manufacturer_Reference: AP33-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1888,7 +1888,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1383.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP32
   Manufacturer_Reference: AP32-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1920,7 +1920,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1169.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP24
   Manufacturer_Reference: AP24-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1952,7 +1952,7 @@
   Public_Price_USD: ''
   Public_Price_EUR: 1107.0
   Comments: Only 2 concurrent radios
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP12
   Manufacturer_Reference: AP12-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1983,36 +1983,4 @@
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 842.0
-  Comments: ''
-- Manufacturer: Extreme
-  Model: AP305C
-  Manufacturer_Reference: ''
-  Antenna_Type: ''
-  Indoor_Outdoor: ''
-  Generation: ''
-  Protocol: ''
-  Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
-  Limited_Capabilities_PoE_Plus_30W: ''
-  Limited_Capabilities_PoE_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Cloud_Compatible: ''
-  Minimum_Version: ''
-  Public_Price_USD: ''
-  Public_Price_EUR: ''
   Comments: ''

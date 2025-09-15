@@ -19,12 +19,12 @@
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 1.02
   Dimensions_cm: 21 x 21 x 4,3
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -51,12 +51,12 @@
   Ethernet2: ''
   Weight_kg: 0.764
   Dimensions_cm: 19 x 19 x 3,8
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -83,12 +83,12 @@
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 1.2
   Dimensions_cm: 26 x 26 x 6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -115,12 +115,12 @@
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 0.98
   Dimensions_cm: 21 x 21 x 40
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -147,12 +147,12 @@
   Ethernet2: ''
   Weight_kg: 0.75
   Dimensions_cm: 18 x 18 x 3,6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -179,12 +179,12 @@
   Ethernet2: ''
   Weight_kg: 0.75
   Dimensions_cm: 18 x 18 x 3,6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -211,12 +211,12 @@
   Ethernet2: 1 Gbits, PoE
   Weight_kg: 0.58
   Dimensions_cm: 18 x 18 x 3,6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -243,12 +243,12 @@
   Ethernet2: ''
   Weight_kg: 0.57
   Dimensions_cm: 18 x 18 x 3,6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'No'
-  Zigbee: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Non
+  Zigbee: Non
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -275,12 +275,12 @@
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 2.37
   Dimensions_cm: 26 x 26 x 6
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -307,12 +307,12 @@
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 1.01
   Dimensions_cm: 21 x 21 x 4,0
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -339,50 +339,18 @@
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 1.01
   Dimensions_cm: 21 x 21 x 4,0
-  Geolocation_FTM_80211mc_80211az: 'No'
+  Geolocation_FTM_80211mc_80211az: Non
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: 'Dual radio mode :  2.4GHz 2x2:2+5GHz 2x2:2 or 2.4GHz 2x2:2+6GHz 2x2:2
     or 5GHz 2x2:2+6GHz 2x2:2'
-- Manufacturer: Aruba
-  Model: AP-725
-  Manufacturer_Reference: S4A22A
-  Antenna_Type: 'Internal : omni downtilt'
-  Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
-  Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: 'No'
-  PoE_Class: 802.3at Class 4 (30W)
-  Max_PoE_Consumption_W: 22.8
-  Limited_Capabilities_PoE_Plus_30W: ''
-  Limited_Capabilities_PoE_15W: USB disabled, Tx -3dB
-  Ethernet1: 2,5 Gbits
-  Ethernet2: ''
-  Weight_kg: 0.91
-  Dimensions_cm: 20 x 20 x 4,6
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
-  USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: ''
-  Minimum_Version: 10
-  Public_Price_USD: ''
-  Public_Price_EUR: ''
-  Comments: ''
 - Manufacturer: Aruba
   Model: AP-755
   Manufacturer_Reference: S1G84A
@@ -405,13 +373,13 @@
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 2.13
   Dimensions_cm: 35 x 32 x 8.3
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: 2.0
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: 10
   Public_Price_USD: ''
   Public_Price_EUR: 2806.0
@@ -437,13 +405,13 @@
   Ethernet2: 5 Gbits, PoE
   Weight_kg: 1.44
   Dimensions_cm: 24 x 24 x 5.6
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: 2.0
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: 10
   Public_Price_USD: ''
   Public_Price_EUR: 1869.0
@@ -461,7 +429,7 @@
   Radio_5_GHz: 4x4:4
   Radio_6_GHz: 4x4:4
   Dedicated_Scanning_Radio: 'No'
-  PoE_Class: 802.3bt Class 6 (60W) or 2x 802.3at Class 4 (30W)
+  PoE_Class: 802.3bt Class 6 (60W) ou 2x 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 51.0
   Limited_Capabilities_PoE_Plus_30W: Radios 2x2:2, USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_15W: Not supported (AP staging only)
@@ -469,13 +437,13 @@
   Ethernet2: 5 Gbits, PoE
   Weight_kg: 1.8
   Dimensions_cm: 26 x 26 x 6
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: '8.10'
   Public_Price_USD: ''
   Public_Price_EUR: 2056.0
@@ -501,13 +469,13 @@
   Ethernet2: 2,5 Gbits, PoE
   Weight_kg: 1.3
   Dimensions_cm: 22 x22 5.1
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: '8.9'
   Public_Price_USD: ''
   Public_Price_EUR: 1582.0
@@ -533,17 +501,17 @@
   Ethernet2: ''
   Weight_kg: 0.72
   Dimensions_cm: 20.1 x 18.3 x 5.1
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: '8.11'
   Public_Price_USD: ''
   Public_Price_EUR: 1129.0
-  Comments: Only 2 concurrent radios
+  Comments: Seulement 2 radios simutannées
 - Manufacturer: Aruba
   Model: AP-555
   Manufacturer_Reference: JZ356A
@@ -557,7 +525,7 @@
   Radio_5_GHz: 4x4:4 + 4x4:4 | 8x8
   Radio_6_GHz: ''
   Dedicated_Scanning_Radio: 'No'
-  PoE_Class: 802.3bt Class 5 (45W) or 2x 802.3at Class 4 (30W)
+  PoE_Class: 802.3bt Class 5 (45W) ou 2x 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 38.2
   Limited_Capabilities_PoE_Plus_30W: 3rd radio disabled, USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_15W: Not supported
@@ -565,13 +533,13 @@
   Ethernet2: 5 Gbits, PoE
   Weight_kg: 1.57
   Dimensions_cm: 26 x 26 x 5,8
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: Oui
   Minimum_Version: '8.5'
   Public_Price_USD: ''
   Public_Price_EUR: 2262.0
@@ -589,7 +557,7 @@
   Radio_5_GHz: 4x4:4
   Radio_6_GHz: ''
   Dedicated_Scanning_Radio: 'No'
-  PoE_Class: 802.3bt Class 5 (45W) or 2x 802.3at Class 4 (30W)
+  PoE_Class: 802.3bt Class 5 (45W) ou 2x 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 26.4
   Limited_Capabilities_PoE_Plus_30W: USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_15W: Not supported
@@ -597,12 +565,12 @@
   Ethernet2: 5 Gbits, PoE
   Weight_kg: 1.27
   Dimensions_cm: 24 x 24 x 5,7
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: '8.5'
   Public_Price_USD: ''
@@ -629,12 +597,12 @@
   Ethernet2: 2,5 Gbits, no PoE
   Weight_kg: 8.1
   Dimensions_cm: 20 x 20 x 4,6
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: '8.4'
   Public_Price_USD: ''
@@ -661,12 +629,12 @@
   Ethernet2: ''
   Weight_kg: 0.5
   Dimensions_cm: 16 x 16,1 x 3,7
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  Geolocation_FTM_80211mc_80211az: Oui (.11mc)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Oui
   Cloud_Compatible: ''
   Minimum_Version: '8.6'
   Public_Price_USD: ''
@@ -695,11 +663,11 @@
   Dimensions_cm: 25.1 x 25.1 x 5.1
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'Yes'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Oui
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.15.3
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -727,10 +695,10 @@
   Dimensions_cm: 24 x 25 x 5.1
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'Yes'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
+  UWB: Oui
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Non
   Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
@@ -759,11 +727,11 @@
   Dimensions_cm: 24 x 24 x 5.1
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'Yes'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Oui
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.15.3
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
@@ -789,13 +757,13 @@
   Ethernet2: ''
   Weight_kg: 1.59
   Dimensions_cm: 24.1 x 24.1 x 5.8
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -821,13 +789,13 @@
   Ethernet2: ''
   Weight_kg: 1.6
   Dimensions_cm: 24.1 x 24.1 x 5.7
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: 1.0
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.9.1
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
@@ -853,13 +821,13 @@
   Ethernet2: ''
   Weight_kg: 1.6
   Dimensions_cm: 24.1 x 24.1 x 5.7
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.9.1
   Public_Price_USD: 2200.0
   Public_Price_EUR: 2134.0
@@ -887,11 +855,11 @@
   Dimensions_cm: 24.5 x 24.5 x 6.3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.12.3
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -917,13 +885,13 @@
   Ethernet2: ''
   Weight_kg: 0.93
   Dimensions_cm: 20 x 20 x 4.5
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Oui (.11az)
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: 17.9.1
   Public_Price_USD: 1248.0
   Public_Price_EUR: 1210.56
@@ -951,11 +919,11 @@
   Dimensions_cm: 25.1 x 25.1 x 5.6
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: non
   Minimum_Version: 17.7.1
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -983,11 +951,11 @@
   Dimensions_cm: 22.6 x 22.6 x 4.8
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: non
   Minimum_Version: 16.12.1
   Public_Price_USD: 2666.0
   Public_Price_EUR: 2586.02
@@ -1016,7 +984,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1047,11 +1015,11 @@
   Dimensions_cm: 21.6 x 21.6 x 4.3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: non
   Minimum_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1079,11 +1047,11 @@
   Dimensions_cm: 20.3 x 20.3 x 3.8
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: non
   Minimum_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1111,11 +1079,11 @@
   Dimensions_cm: 15 x 15 x 3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'No'
+  UWB: Non
+  GPS: Non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: non
   Minimum_Version: 17.3.1
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1143,11 +1111,11 @@
   Dimensions_cm: 25 x 25 x 5,7
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'Yes'
-  Cloud_Compatible: 'No'
+  UWB: non
+  GPS: Oui
+  Bluetooth: Oui
+  Zigbee: Oui
+  Cloud_Compatible: non
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1176,7 +1144,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1208,7 +1176,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1240,7 +1208,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1272,7 +1240,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1304,7 +1272,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1336,7 +1304,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1368,7 +1336,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1400,7 +1368,7 @@
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: ''
-  GNSS: ''
+  GPS: ''
   Bluetooth: ''
   Zigbee: ''
   Cloud_Compatible: ''
@@ -1431,11 +1399,11 @@
   Dimensions_cm: 22 x 22 x 5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 3039.0
@@ -1463,11 +1431,11 @@
   Dimensions_cm: 22 x 22 x 6.1
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1790.0
@@ -1495,11 +1463,11 @@
   Dimensions_cm: 22 x 22 x 4.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
@@ -1527,11 +1495,11 @@
   Dimensions_cm: 22 x 22 x 4.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
@@ -1559,11 +1527,11 @@
   Dimensions_cm: 22 x 22 x 4.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1277.0
@@ -1591,11 +1559,11 @@
   Dimensions_cm: 18 x 18 x 3.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
@@ -1623,11 +1591,11 @@
   Dimensions_cm: 18 x 18 x 3.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
@@ -1655,11 +1623,11 @@
   Dimensions_cm: 18 x 18 x 3.5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 840.0
@@ -1687,16 +1655,16 @@
   Dimensions_cm: 22 x 22 x 5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
-  Comments: Not in price list anymore
-- Manufacturer: Juniper Mist
+  Comments: Plus dans la price list Huawei
+- Manufacturer: Mist
   Model: AP47
   Manufacturer_Reference: AP47-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1719,16 +1687,16 @@
   Dimensions_cm: 25.4 x 25.4 x 6
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'Yes'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: oui
+  GPS: oui
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP64
   Manufacturer_Reference: AP64-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1751,16 +1719,16 @@
   Dimensions_cm: 21.5 x 21.5 x 6.4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'Yes'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: oui
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2102.0
-  Comments: Only 2 concurrent radios
-- Manufacturer: Juniper Mist
+  Comments: Seulement 2 radios simutannées
+- Manufacturer: Mist
   Model: AP45
   Manufacturer_Reference: AP45-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1783,16 +1751,16 @@
   Dimensions_cm: 23 x 23 x 5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2006.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP43
   Manufacturer_Reference: AP43-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1815,16 +1783,16 @@
   Dimensions_cm: 22.2 x 22.2 x5.3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1700.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP34
   Manufacturer_Reference: AP34-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1847,16 +1815,16 @@
   Dimensions_cm: 23 x 23 x 5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1485.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP33
   Manufacturer_Reference: AP33-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1879,16 +1847,16 @@
   Dimensions_cm: 20.2 x 20.2 x 4.4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1383.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP32
   Manufacturer_Reference: AP32-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1911,16 +1879,16 @@
   Dimensions_cm: 20.2 x 20.2 x 4.4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1169.0
   Comments: ''
-- Manufacturer: Juniper Mist
+- Manufacturer: Mist
   Model: AP24
   Manufacturer_Reference: AP24-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1943,16 +1911,16 @@
   Dimensions_cm: 18.5 x 18.5 x 3.9
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1107.0
-  Comments: Only 2 concurrent radios
-- Manufacturer: Juniper Mist
+  Comments: Seulement 2 radios simutannées
+- Manufacturer: Mist
   Model: AP12
   Manufacturer_Reference: AP12-WW
   Antenna_Type: 'Internal : omni downtilt'
@@ -1975,44 +1943,12 @@
   Dimensions_cm: 15 x 10 x 4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
-  UWB: 'No'
-  GNSS: 'No'
-  Bluetooth: 'Yes'
-  Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
+  UWB: non
+  GPS: non
+  Bluetooth: Oui
+  Zigbee: Non
+  Cloud_Compatible: Oui
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 842.0
-  Comments: ''
-- Manufacturer: Extreme
-  Model: AP305C
-  Manufacturer_Reference: ''
-  Antenna_Type: ''
-  Indoor_Outdoor: ''
-  Generation: ''
-  Protocol: ''
-  Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
-  Limited_Capabilities_PoE_Plus_30W: ''
-  Limited_Capabilities_PoE_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Cloud_Compatible: ''
-  Minimum_Version: ''
-  Public_Price_USD: ''
-  Public_Price_EUR: ''
   Comments: ''

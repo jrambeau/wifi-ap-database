@@ -15,9 +15,9 @@ if [ ! -f "wifi-ap-database.xlsx" ]; then
     exit 1
 fi
 
-# Run the conversion
-echo "📊 Converting Excel to YAML..."
-python3 convert_excel_to_yaml.py
+# Run the conversion with auto-template update
+echo "📊 Converting Excel to YAML with column change detection..."
+python3 convert_excel_to_yaml.py --update-template
 
 if [ $? -eq 0 ]; then
     echo ""
