@@ -26,7 +26,6 @@
   GNSS: 'No'
   Bluetooth: 'No'
   Zigbee: 'No'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -59,7 +58,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -92,7 +90,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -125,7 +122,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -158,7 +154,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -191,7 +186,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -224,7 +218,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -257,7 +250,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -290,7 +282,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -324,7 +315,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -357,7 +347,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -390,7 +379,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: '8.6'
   Public_Price_USD: ''
   Public_Price_EUR: 884.0
@@ -423,7 +411,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: '8.4'
   Public_Price_USD: ''
   Public_Price_EUR: 1392.0
@@ -456,7 +443,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: '8.5'
   Public_Price_USD: ''
   Public_Price_EUR: 1900.0
@@ -489,7 +475,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.5'
   Public_Price_USD: ''
   Public_Price_EUR: 2262.0
@@ -522,7 +507,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.11'
   Public_Price_USD: ''
   Public_Price_EUR: 1129.0
@@ -555,7 +539,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.9'
   Public_Price_USD: ''
   Public_Price_EUR: 1582.0
@@ -588,7 +571,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.10'
   Public_Price_USD: ''
   Public_Price_EUR: 2056.0
@@ -621,7 +603,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.12'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -654,7 +635,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: '8.12'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -687,7 +667,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: ''
   Minimum_Version: 10
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -720,7 +699,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 10
   Public_Price_USD: ''
   Public_Price_EUR: 1869.0
@@ -753,7 +731,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 10
   Public_Price_USD: ''
   Public_Price_EUR: 2806.0
@@ -786,7 +763,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'No'
   Minimum_Version: 17.3.1
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -819,7 +795,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'No'
   Minimum_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -852,7 +827,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'No'
   Minimum_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -885,7 +859,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -918,7 +891,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'No'
   Minimum_Version: 16.12.1
   Public_Price_USD: 2666.0
   Public_Price_EUR: 2586.02
@@ -951,7 +923,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'No'
   Minimum_Version: 17.7.1
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -984,7 +955,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.9.1
   Public_Price_USD: 1248.0
   Public_Price_EUR: 1210.56
@@ -1017,7 +987,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.12.3
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -1050,7 +1019,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.9.1
   Public_Price_USD: 2200.0
   Public_Price_EUR: 2134.0
@@ -1083,7 +1051,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1116,7 +1083,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.9.1
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
@@ -1149,7 +1115,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1182,7 +1147,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.15.3
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
@@ -1215,7 +1179,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: 17.15.3
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
@@ -1248,7 +1211,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1281,7 +1243,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1314,7 +1275,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1347,7 +1307,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1380,7 +1339,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1413,7 +1371,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1446,7 +1403,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1479,7 +1435,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1512,7 +1467,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Cloud_Compatible: 'No'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1545,7 +1499,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1578,7 +1531,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 840.0
@@ -1611,7 +1563,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
@@ -1644,7 +1595,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
@@ -1677,7 +1627,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1277.0
@@ -1710,7 +1659,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -1743,7 +1691,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
@@ -1776,7 +1723,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
@@ -1809,7 +1755,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1790.0
@@ -1842,7 +1787,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 3039.0
@@ -1875,7 +1819,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 842.0
@@ -1908,7 +1851,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1107.0
@@ -1941,7 +1883,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1169.0
@@ -1974,7 +1915,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1383.0
@@ -2007,7 +1947,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1485.0
@@ -2040,7 +1979,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -2073,7 +2011,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -2106,7 +2043,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1700.0
@@ -2139,7 +2075,6 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2006.0
@@ -2172,7 +2107,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
@@ -2205,7 +2139,6 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Cloud_Compatible: 'Yes'
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2102.0
@@ -2238,7 +2171,6 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Cloud_Compatible: ''
   Minimum_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
