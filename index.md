@@ -402,6 +402,7 @@ div.dataTables_scrollBody table {
             
             
             
+            
             <th>Vendor</th>
             <th>Model</th>
             <th>Reference</th>
@@ -436,11 +437,13 @@ div.dataTables_scrollBody table {
             <th>Public Price EUR</th>
             <th>Comments</th>
 
+
         </tr>
     </thead>
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
+            
             
             <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
             <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
@@ -476,9 +479,11 @@ div.dataTables_scrollBody table {
             <td>8999 EUR</td>
             <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
 
+
         </tr>
         {% for ap in site.data.ap_models %}
         <tr>
+            
             
             
             
@@ -515,6 +520,7 @@ div.dataTables_scrollBody table {
             <td>{{ ap.Public_Price_USD | default: "" }}</td>
             <td>{{ ap.Public_Price_EUR | default: "" }}</td>
             <td>{{ ap.Comments | default: "" }}</td>
+
 
 
 

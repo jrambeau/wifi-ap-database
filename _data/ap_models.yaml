@@ -1223,7 +1223,7 @@
 - Vendor: Extreme
   Model: AP305C
   Reference: ''
-  Antenna_Type: ''
+  Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
   Protocol: ''
