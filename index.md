@@ -12,15 +12,7 @@ title: Wi-Fi Access Points Database
 
 body {
     margin: 0;
-    pa            <th>USB_Ports</th>
-            <th>UWB</th>
-            <th>GNSS</th>
-            <th>Bluetooth</th>
-            <th>Zigbee</th>
-            <th>Minimum_Version</th>
-            <th>Public_Price_USD</th>
-            <th>Public_Price_EUR</th>
-            <th>Comments</th>
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: var(--table-font-size, 14px);
@@ -490,6 +482,7 @@ div.dataTables_scrollBody table {
             <td>Multi-Constellation GNSS</td>
             <td>BLE 5.4 Long Range</td>
             <td>Zigbee 3.0 Thread</td>
+            <td>Cloud + On-Prem Controller Compatible</td>
             <td>Minimum Release 23.9.5</td>
             <td>9999 USD</td>
             <td>8999 EUR</td>
@@ -537,6 +530,7 @@ div.dataTables_scrollBody table {
             <td>{{ ap.GNSS | default: "" }}</td>
             <td>{{ ap.Bluetooth | default: "" }}</td>
             <td>{{ ap.Zigbee | default: "" }}</td>
+            <td>{{ ap.Cloud_Compatible | default: "" }}</td>
             <td>{{ ap.Minimum_Version | default: "" }}</td>
             <td>{{ ap.Public_Price_USD | default: "" }}</td>
             <td>{{ ap.Public_Price_EUR | default: "" }}</td>
