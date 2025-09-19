@@ -401,8 +401,9 @@ div.dataTables_scrollBody table {
         <tr>
             
             
-            <th class="sticky-col sticky-col-1 noVis">Vendor</th>
-            <th class="sticky-col sticky-col-2 noVis">Model</th>
+            
+            <th>Vendor</th>
+            <th>Model</th>
             <th>Reference</th>
             <th>Antenna Type</th>
             <th>Indoor Outdoor</th>
@@ -416,8 +417,9 @@ div.dataTables_scrollBody table {
             <th>Dedicated Scanning Radio</th>
             <th>PoE Class</th>
             <th>Max PoE Consumption W</th>
-            <th>Limited Capabilities PoE Plus 30W</th>
-            <th>Limited Capabilities PoE 15W</th>
+            <th>Limited Capabilities PoE bt Class5 45W</th>
+            <th>Limited Capabilities PoE at 30W</th>
+            <th>Limited Capabilities PoE af 15W</th>
             <th>Ethernet1</th>
             <th>Ethernet2</th>
             <th>Weight kg</th>
@@ -434,46 +436,12 @@ div.dataTables_scrollBody table {
             <th>Public Price EUR</th>
             <th>Comments</th>
 
-
-        </tr>
-        <tr class="filter-row">
-            <th class="sticky-col sticky-col-1"><input type="text" placeholder="Filter" /></th>
-            <th class="sticky-col sticky-col-2"><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
-            <th><input type="text" placeholder="Filter" /></th>
         </tr>
     </thead>
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
+            
             <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
             <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
             <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
@@ -489,8 +457,9 @@ div.dataTables_scrollBody table {
             <td>Dedicated Security / WIPS / Sensor Radio Included</td>
             <td>PoE++ Class 8</td>
             <td>45.5 W</td>
-            <td>Reduced Performance Mode @30W</td>
-            <td>Basic Operation Mode @15W</td>
+            <td>Reduced Performance Mode @45W</td>
+            <td>Basic Operation Mode @30W</td>
+            <td>Limited Features @15W</td>
             <td>1 x 10G SFP+/RJ45 Combo</td>
             <td>1 x 2.5G Ethernet Port</td>
             <td>1.250 kg</td>
@@ -506,14 +475,16 @@ div.dataTables_scrollBody table {
             <td>9999 USD</td>
             <td>8999 EUR</td>
             <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
+
         </tr>
         {% for ap in site.data.ap_models %}
         <tr>
             
             
-            <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: ap.Manufacturer | default: "" }}</td>
-            <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
-            <td>{{ ap.Reference | default: ap.Manufacturer_Reference | default: "" }}</td>
+            
+            <td>{{ ap.Vendor | default: "" }}</td>
+            <td>{{ ap.Model | default: "" }}</td>
+            <td>{{ ap.Reference | default: "" }}</td>
             <td>{{ ap.Antenna_Type | default: "" }}</td>
             <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
             <td>{{ ap.Generation | default: "" }}</td>
@@ -526,8 +497,9 @@ div.dataTables_scrollBody table {
             <td>{{ ap.Dedicated_Scanning_Radio | default: "" }}</td>
             <td>{{ ap.PoE_Class | default: "" }}</td>
             <td>{{ ap.Max_PoE_Consumption_W | default: "" }}</td>
-            <td>{{ ap.Limited_Capabilities_PoE_Plus_30W | default: "" }}</td>
-            <td>{{ ap.Limited_Capabilities_PoE_15W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_bt_Class5_45W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_at_30W | default: "" }}</td>
+            <td>{{ ap.Limited_Capabilities_PoE_af_15W | default: "" }}</td>
             <td>{{ ap.Ethernet1 | default: "" }}</td>
             <td>{{ ap.Ethernet2 | default: "" }}</td>
             <td>{{ ap.Weight_kg | default: "" }}</td>
@@ -543,6 +515,7 @@ div.dataTables_scrollBody table {
             <td>{{ ap.Public_Price_USD | default: "" }}</td>
             <td>{{ ap.Public_Price_EUR | default: "" }}</td>
             <td>{{ ap.Comments | default: "" }}</td>
+
 
 
         </tr>
