@@ -351,22 +351,7 @@ div.dataTables_scrollBody table {
 #ap-table thead tr.filter-row th { position: sticky; top: var(--sticky-header-height, 0px); }
 #ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
 #ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
-#ap-table thead tr.filter-row .sticky-col {
-    z-index: 7;
-    /* Use same purple gradient as primary header row */
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-    box-shadow:none;
-}
-/* Improve input contrast on gradient cells */
-#ap-table thead tr.filter-row .sticky-col input {
-    background: rgba(255,255,255,0.95);
-    border: 1px solid rgba(255,255,255,0.6);
-    color: #1e293b;
-}
-#ap-table thead tr.filter-row .sticky-col input:focus {
-    border-color:#ffffff;
-    box-shadow:0 0 0 2px rgba(255,255,255,0.4);
-}
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #f1f5f9; box-shadow:none; }
 /* Neutral, subtle gradient backgrounds for sticky columns */
 #ap-table tbody .sticky-col.sticky-col-1, 
 #ap-table tbody .sticky-col.sticky-col-2 { 
