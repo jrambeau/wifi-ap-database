@@ -406,6 +406,7 @@ div.dataTables_scrollBody table {
             
             
             
+            
             <th>Vendor</th>
             <th>Model</th>
             <th>Reference</th>
@@ -444,11 +445,13 @@ div.dataTables_scrollBody table {
 
 
 
+
         </tr>
     </thead>
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
+            
             
             
             
@@ -492,9 +495,11 @@ div.dataTables_scrollBody table {
 
 
 
+
         </tr>
         {% for ap in site.data.ap_models %}
         <tr>
+            
             
             
             
@@ -535,6 +540,7 @@ div.dataTables_scrollBody table {
             <td>{{ ap.Public_Price_USD | default: "" }}</td>
             <td>{{ ap.Public_Price_EUR | default: "" }}</td>
             <td>{{ ap.Comments | default: "" }}</td>
+
 
 
 

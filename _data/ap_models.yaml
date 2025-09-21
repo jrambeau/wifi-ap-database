@@ -3,13 +3,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3af Class 3 (15W)
   Max_PoE_Consumption_W: 13.1
@@ -26,7 +27,7 @@
   GNSS: 'No'
   Bluetooth: 'No'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -35,13 +36,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 19.1
@@ -58,7 +60,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -67,13 +69,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 24.8
@@ -90,7 +93,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -99,13 +102,14 @@
   Reference: ''
   Antenna_Type: 'External : 4x RP-SMA'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 24.8
@@ -122,7 +126,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -131,16 +135,17 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: 28.0
+  Max_PoE_Consumption_W: 28
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: USB disabled, Eth2 disabled
@@ -154,7 +159,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -163,16 +168,17 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 8x8 + 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[5GHz] 8x8:8'
+  Serving_Radio_4: '-'
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 45.0
+  Max_PoE_Consumption_W: 45
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: Radios 2x2:2, USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_af_15W: Not supported
@@ -186,7 +192,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -195,13 +201,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 23.4
@@ -218,7 +225,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -227,13 +234,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 6 (60W)
   Max_PoE_Consumption_W: 40.2
@@ -250,7 +258,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -259,16 +267,17 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3at Class 4 (30W)
-  Max_PoE_Consumption_W: 25.0
+  Max_PoE_Consumption_W: 25
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
   Limited_Capabilities_PoE_af_15W: Not supported
@@ -282,7 +291,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: 'Dual radio mode :  2.4GHz 2x2:2+5GHz 2x2:2 or 2.4GHz 2x2:2+6GHz 2x2:2
@@ -292,16 +301,17 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: 34.0
+  Max_PoE_Consumption_W: 34
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: Not supported
@@ -315,7 +325,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -324,16 +334,17 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 8x8:8
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 8x8:8'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 49.0
+  Max_PoE_Consumption_W: 49
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: Radios 2x2:2, USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_af_15W: Not supported
@@ -347,7 +358,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -356,13 +367,14 @@
   Reference: R2H28A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 16.5
@@ -379,7 +391,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.6'
+  Minimum_Software_Version: '8.6'
   Public_Price_USD: ''
   Public_Price_EUR: 884.0
   Comments: ''
@@ -388,19 +400,20 @@
   Reference: Q9H62A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 20.8
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: Radio 2x2:2, USB disabled, Eth2 disabled
+  Limited_Capabilities_PoE_af_15W: Radios 2x2:2, USB disabled, Eth2 disabled
   Ethernet1: 2,5 Gbits
   Ethernet2: 2,5 Gbits, no PoE
   Weight_kg: 8.1
@@ -411,7 +424,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.4'
+  Minimum_Software_Version: '8.4'
   Public_Price_USD: ''
   Public_Price_EUR: 1392.0
   Comments: ''
@@ -420,13 +433,14 @@
   Reference: JZ336A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 5 (45W) or 2x 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 26.4
@@ -443,7 +457,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.5'
+  Minimum_Software_Version: '8.5'
   Public_Price_USD: ''
   Public_Price_EUR: 1900.0
   Comments: ''
@@ -452,13 +466,14 @@
   Reference: JZ356A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4 + 4x4:4 | 8x8
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: '-'
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 5 (45W) or 2x 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 38.2
@@ -475,7 +490,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.5'
+  Minimum_Software_Version: '8.5'
   Public_Price_USD: ''
   Public_Price_EUR: 2262.0
   Comments: ''
@@ -484,13 +499,14 @@
   Reference: R7J49A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 20.9
@@ -507,7 +523,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.11'
+  Minimum_Software_Version: '8.11'
   Public_Price_USD: ''
   Public_Price_EUR: 1129.0
   Comments: Only 2 concurrent radios
@@ -516,16 +532,17 @@
   Reference: R7J27A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: 40.0
+  Max_PoE_Consumption_W: 40
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
@@ -539,7 +556,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.9'
+  Minimum_Software_Version: '8.9'
   Public_Price_USD: ''
   Public_Price_EUR: 1582.0
   Comments: ''
@@ -548,16 +565,17 @@
   Reference: R7J38A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 6 (60W) or 2x 802.3at Class 4 (30W)
-  Max_PoE_Consumption_W: 51.0
+  Max_PoE_Consumption_W: 51
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: Radios 2x2:2, USB disabled, Eth2 disabled
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
@@ -571,7 +589,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.10'
+  Minimum_Software_Version: '8.10'
   Public_Price_USD: ''
   Public_Price_EUR: 2056.0
   Comments: ''
@@ -580,13 +598,14 @@
   Reference: S0P51A
   Antenna_Type: 'Internal : omni horizontal'
   Indoor_Outdoor: Outdoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 6 (60W)
   Max_PoE_Consumption_W: 45.5
@@ -603,7 +622,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.12'
+  Minimum_Software_Version: '8.12'
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -612,13 +631,14 @@
   Reference: S0P56A
   Antenna_Type: 'Internal : directionnal 7dBi 90°H/V'
   Indoor_Outdoor: Outdoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 6 (60W)
   Max_PoE_Consumption_W: 45.5
@@ -635,7 +655,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: '8.12'
+  Minimum_Software_Version: '8.12'
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -644,13 +664,14 @@
   Reference: S4A22A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 22.8
@@ -667,7 +688,40 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: 10
+  Minimum_Software_Version: 10.7.2
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-734
+  Reference: S1G32A
+  Antenna_Type: 'External : 4x RP-SMA'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 40
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: USB disabled
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 5 Gbits
+  Ethernet2: 5 Gbits, PoE
+  Weight_kg: 1.83
+  Dimensions_cm: 27 x 25,8 x 8,9
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 2.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: '10.7'
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -676,16 +730,17 @@
   Reference: S1G42A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: Mid-range
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: 40.0
+  Max_PoE_Consumption_W: 40
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
@@ -699,25 +754,92 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: 10
+  Minimum_Software_Version: '10.7'
   Public_Price_USD: ''
   Public_Price_EUR: 1869.0
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-745
+  Reference: S5Q98A
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 5 Gbits
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: 24 x 24 x 5.6
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: '10.8'
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-754
+  Reference: S1G74A
+  Antenna_Type: 'External : 8x RP-SMA'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: 51
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 2x2:2, USB disabled, Eth2 disabled, Tx -3dB
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 10 Gbits
+  Ethernet2: 10 Gbits, PoE
+  Weight_kg: 1.53
+  Dimensions_cm: 26 x 26 x 5,7
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 2.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: '10.7'
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Aruba
   Model: AP-755
   Reference: S1G84A
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 51.0
+  Max_PoE_Consumption_W: 51
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: Radios 2x2:2, USB disabled, Eth2 disabled, Tx -3dB
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
@@ -731,39 +853,106 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: 10
+  Minimum_Software_Version: '10.7'
   Public_Price_USD: ''
   Public_Price_EUR: 2806.0
+  Comments: ''
+- Vendor: Cisco
+  Model: C9105AXW
+  Reference: ''
+  Antenna_Type: 'Internal : omni horizontal (wall plate)'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (Spectrum Intelligence)
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: USB disabled, No PoE out on Eth1
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 3x 10/100/1000 ports, PoE out on Eth1
+  Weight_kg: 0.37
+  Dimensions_cm: 9 x 16 x 3,2
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Cisco
   Model: C9105AXI
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (Spectrum Intelligence)
-  PoE_Class: ''
+  PoE_Class: 802.3af Class 3 (15W)
   Max_PoE_Consumption_W: 12.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
   Limited_Capabilities_PoE_af_15W: ''
   Ethernet1: 1 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 0.33
   Dimensions_cm: 15 x 15 x 3
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 0.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.3.1
+  Minimum_Software_Version: 17.3.1
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Cisco
+  Model: C9115AXE
+  Reference: ''
+  Antenna_Type: 'External : 4x RP-TNC'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (Spectrum Intelligence)
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 21.4
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 2x2:2, Eth1 1Gbits, USB disabled
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 1.1
+  Dimensions_cm: 20.3 x 20.3 x 4,3
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -772,30 +961,97 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (Spectrum Intelligence)
-  PoE_Class: ''
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 21.4
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 2x2:2, Eth1 1Gbits, USB disabled
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 0.9
   Dimensions_cm: 20.3 x 20.3 x 3.8
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: '16.11'
+  Minimum_Software_Version: '16.11'
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Cisco
+  Model: C9120AXP
+  Reference: ''
+  Antenna_Type: 'External : 4x RP-TNC + DART interface'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 25.5
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 1x1 or 1 radio off, Eth1 1Gbits, USB disabled
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 1.3
+  Dimensions_cm: 21,6 x 21,6 x 5,1
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: '16.11'
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: Similar to C9120AXE but for higher gain antennas (>6dBi)
+- Vendor: Cisco
+  Model: C9120AXE
+  Reference: ''
+  Antenna_Type: 'External : 4x RP-TNC + DART interface'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 25.5
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 1x1 or 1 radio off, Eth1 1Gbits, USB disabled
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 1.3
+  Dimensions_cm: 21,6 x 21,6 x 5,1
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: '16.11'
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -804,30 +1060,65 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 1x1 or 1 radio off, Eth1 1Gbits, USB disabled
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.3
-  Dimensions_cm: 21.6 x 21.6 x 4.3
+  Dimensions_cm: 21,6 x 21,6 x 4,3
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: '16.11'
+  Minimum_Software_Version: '16.11'
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Cisco
+  Model: C9124AXE
+  Reference: ''
+  Antenna_Type: 'External : 6x N-type'
+  Indoor_Outdoor: Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[5GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: '?'
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 2x2:2, Eth1 1Gbits, SFP disabled, No PoE
+    out on Eth2
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits PoE out + SFP Port
+  Weight_kg: 3.1
+  Dimensions_cm: 25,9 x 23,3 x 8,1
+  Geolocation_FTM_80211mc_80211az: '?'
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.6.2
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -836,62 +1127,131 @@
   Reference: ''
   Antenna_Type: 'Internal : AXI omni, AXD directionnal 9dBi 60°H/V'
   Indoor_Outdoor: Outdoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir)
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
+  PoE_Class: 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: '?'
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 2x2:2, Eth1 1Gbits, SFP disabled, No PoE
+    out on Eth2
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 2,5 Gbits
-  Ethernet2: 1 Gbits, downlink PoE only
-  Weight_kg: ''
-  Dimensions_cm: ''
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Minimum_Version: ''
+  Ethernet2: 1 Gbits PoE out + SFP Port
+  Weight_kg: 2.9
+  Dimensions_cm: 25,9 x 23,3 x 8,1
+  Geolocation_FTM_80211mc_80211az: '?'
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.6.2
   Public_Price_USD: ''
   Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Cisco
+  Model: C9130AXE-STA
+  Reference: ''
+  Antenna_Type: 'External : factory-assembled with antenna C-ANT9104'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 30.5
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: 5GHz 4x4:4 or USB disabled
+  Limited_Capabilities_PoE_af_15W: Radios 1x1:1, Eth1 1Gbits, USB disabled
+  Ethernet1: 5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 7.03
+  Dimensions_cm: 59,7 x 46,2 x 14,8
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.6.1
+  Public_Price_USD: 2666.0
+  Public_Price_EUR: 2586.02
+  Comments: ''
+- Vendor: Cisco
+  Model: C9130AXE
+  Reference: ''
+  Antenna_Type: 'External : 4x RP-TNC + DART interface'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 30.5
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: 5GHz 4x4:4 or USB disabled
+  Limited_Capabilities_PoE_af_15W: Radios 1x1:1, Eth1 1Gbits, USB disabled
+  Ethernet1: 5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 1.71
+  Dimensions_cm: 22,6 x 22,6 x 4,8
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.1.1, AireOS8.10MR1
+  Public_Price_USD: 2666.0
+  Public_Price_EUR: 2586.02
   Comments: ''
 - Vendor: Cisco
   Model: C9130AXI
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 8x8
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3bt Class 5 (45W)
   Max_PoE_Consumption_W: 30.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: 5GHz 4x4:4 or USB disabled
+  Limited_Capabilities_PoE_af_15W: Radios 1x1:1, Eth1 1Gbits, USB disabled
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.45
-  Dimensions_cm: 22.6 x 22.6 x 4.8
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  Dimensions_cm: 23,3 x 23,3 x 4,0
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 16.12.1
+  Minimum_Software_Version: 16.12.1, AireOS8.10
   Public_Price_USD: 2666.0
   Public_Price_EUR: 2586.02
   Comments: ''
@@ -900,30 +1260,32 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 8x8
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 4.0
+  Concurrent_Serving_Radios: 3 or 4
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 8x8:8 if tri-radio mode or 4x4:4 if quad-radio mode'
+  Serving_Radio_3: '[5GHz] off if tri-radio mode or 4x4:4 if quad-radio mode'
+  Serving_Radio_4: '[6GHz] 4x4:4'
+  Dedicated_Scanning_Radio: Yes (CleanAir)
+  PoE_Class: 802.3bt Class 6 (60W)
   Max_PoE_Consumption_W: 47.3
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: 2.4GHz 2x2:2, 5GHz 4x4:4, 6GHz 2x2:2, Eth1 2,5Gbits,
+    USB disabled
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 5 Gbits
   Weight_kg: 1.65
-  Dimensions_cm: 25.1 x 25.1 x 5.6
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  Dimensions_cm: 25,1 x 25,1 x 5,6
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.7.1
+  Minimum_Software_Version: 17.7.1
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
   Comments: ''
@@ -932,62 +1294,65 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: 2,4GHz off, 5GHz and 6GHz 1x1:1, Eth1 1Gbits, USB
+    disabled
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 0.93
   Dimensions_cm: 20 x 20 x 4.5
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
-  USB_Ports: ''
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.9.1
+  Minimum_Software_Version: 17.9.2/17.10.1
   Public_Price_USD: 1248.0
   Public_Price_EUR: 1210.56
   Comments: ''
 - Vendor: Cisco
   Model: CW9163E
   Reference: ''
-  Antenna_Type: 'External : 4x RP-TNC'
+  Antenna_Type: 'External : 4x N-Type + 1x RP-SMA active GNSS'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Radios 1x1:1, Eth1 1Gbits
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.5
   Dimensions_cm: 24.5 x 24.5 x 6.3
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  Geolocation_FTM_80211mc_80211az: No ?
+  USB_Ports: 0.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.12.3
+  Minimum_Software_Version: 17.12.3
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
   Comments: ''
@@ -996,30 +1361,31 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 30.0
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 30
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: USB disabled
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.6
   Dimensions_cm: 24.1 x 24.1 x 5.7
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
-  USB_Ports: ''
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.9.1
+  Minimum_Software_Version: 17.9.1
   Public_Price_USD: 2200.0
   Public_Price_EUR: 2134.0
   Comments: ''
@@ -1028,30 +1394,31 @@
   Reference: ''
   Antenna_Type: 'Internal : directionnal 8dBi 60°H/V'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 5 (45W)
   Max_PoE_Consumption_W: 30.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.59
   Dimensions_cm: 24.1 x 24.1 x 5.8
-  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: 17.12.1
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1060,62 +1427,130 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 5 (45W)
   Max_PoE_Consumption_W: 30.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: USB disabled
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.6
   Dimensions_cm: 24.1 x 24.1 x 5.7
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc)
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.9.1
+  Public_Price_USD: 2500.0
+  Public_Price_EUR: 2425.0
+  Comments: ''
+- Vendor: Cisco
+  Model: CW9172H
+  Reference: ''
+  Antenna_Type: 'Internal : omni horizontal (wall plate)'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2 if tri-radio mode or 4x4:4 if dual-radio mode'
+  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 41
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: USB disabled
+  Limited_Capabilities_PoE_af_15W: 2.4GHz only remaining radio at 1x1:1, Eth1 1Gbits
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 3x 100/1000 ports, PoE out on one port
+  Weight_kg: 0.572
+  Dimensions_cm: 13 x 18 x 2.6
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: 17.17.1
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Cisco
+  Model: CW9172I
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2 if tri-radio mode or 4x4:4 if dual-radio mode'
+  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 32
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: PoE out disabled
+  Limited_Capabilities_PoE_af_15W: 2.4GHz only remaining radio at 1x1:1, Eth1 1Gbits
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 0.874
+  Dimensions_cm: 20 x 20 x 5.3
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.9.1
-  Public_Price_USD: 2500.0
-  Public_Price_EUR: 2425.0
+  Minimum_Software_Version: 17.15.2b
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Cisco
   Model: CW9176D1
   Reference: ''
   Antenna_Type: 'Internal : directionnal 8dBi 70°H/V'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4 + 4x4:4 XOR 2,4 GHz
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir Pro)
   PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 39.0
+  Max_PoE_Consumption_W: 39
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: 2.4GHz 2x2:2, USB disabled, Eth1 2.5 Gbits
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 10 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.56
   Dimensions_cm: 24 x 25 x 5.1
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 1.0
   UWB: 'Yes'
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: 17.15.3
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1124,30 +1559,31 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4 + 4x4:4 XOR 2,4 GHz
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir Pro)
   PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 39.0
+  Max_PoE_Consumption_W: 39
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: 2.4GHz 2x2:2, USB disabled, Eth1 2.5 Gbits
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 10 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.56
   Dimensions_cm: 24 x 24 x 5.1
-  Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
+  USB_Ports: 1.0
   UWB: 'Yes'
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.15.3
+  Minimum_Software_Version: 17.15.2
   Public_Price_USD: 2500.0
   Public_Price_EUR: 2425.0
   Comments: ''
@@ -1156,77 +1592,576 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 4.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 2 radios 4x4:4
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 47.0
+  Total_PHY_Serving_Radios: 4.0
+  Concurrent_Serving_Radios: 3 or 4
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[5GHz] off if tri-radio mode or 4x4:4 if quad-radio mode'
+  Serving_Radio_4: '[6GHz] 4x4:4'
+  Dedicated_Scanning_Radio: Yes (CleanAir Pro)
+  PoE_Class: 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: 47
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Depends on tri-radio or quad-radio operating mode,
+    check official specifications
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 10 Gbits
-  Ethernet2: ''
+  Ethernet2: 10 Gbits, PoE
   Weight_kg: 1.87
   Dimensions_cm: 25.1 x 25.1 x 5.1
-  Geolocation_FTM_80211mc_80211az: ''
+  Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: ''
   UWB: 'Yes'
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: 17.15.3
+  Minimum_Software_Version: 17.15.2
   Public_Price_USD: 3002.0
   Public_Price_EUR: 2911.94
+  Comments: ''
+- Vendor: Extreme
+  Model: AP5050D
+  Reference: ''
+  Antenna_Type: 'Internal : directionnal 7dBi 90°H/V'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: '?'
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 5 Gbits
+  Ethernet2: 2,5 Gbits, PoE out
+  Weight_kg: ''
+  Dimensions_cm: 28,8 x 47,8 x 7,5
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Extreme
+  Model: AP5050U
+  Reference: ''
+  Antenna_Type: 'Internal : directionnal software selectable 30x30 or 70x70 °H/V'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: '?'
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 5 Gbits
+  Ethernet2: 2,5 Gbits, PoE out
+  Weight_kg: ''
+  Dimensions_cm: 28,8 x 47,8 x 7,5
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Extreme
+  Model: AP5020
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 39.6
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 10 Gbits
+  Ethernet2: 5 Gbits, PoE in, PoE out
+  Weight_kg: 1.62
+  Dimensions_cm: 25,8 x 25,8 x 4,1
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Extreme
+  Model: AP5010
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 5 Gbits
+  Ethernet2: 2,5 Gbits, PoE out
+  Weight_kg: 1.3
+  Dimensions_cm: 24,3 x 24,3 x 3,8
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Extreme
+  Model: AP4000
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 16.6
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 0.85
+  Dimensions_cm: 20,5 x 20,5 x 3,7
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Extreme
+  Model: AP510CX
+  Reference: ''
+  Antenna_Type: 'External : 8x RP-SMA'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 19.92
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, PoE in
+  Weight_kg: 1.27
+  Dimensions_cm: 22,5 x 22,5 x 3,75
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: Yes (on some models)
+  Zigbee: Yes (on some models)
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: Cloud only
+- Vendor: Extreme
+  Model: AP510C
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 19.92
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, PoE in
+  Weight_kg: 1.27
+  Dimensions_cm: 22,5 x 22,5 x 3,75
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: Yes (on some models)
+  Zigbee: Yes (on some models)
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: Cloud only
+- Vendor: Extreme
+  Model: AP460S12C
+  Reference: ''
+  Antenna_Type: 'Internal : 120° Sector'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 25.3
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 1.8
+  Dimensions_cm: 23,7 x 23,7 x 9
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
+- Vendor: Extreme
+  Model: AP460S6C
+  Reference: ''
+  Antenna_Type: 'Internal : 60° Sector'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 25.3
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 1.8
+  Dimensions_cm: 23,7 x 23,7 x 9
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
+- Vendor: Extreme
+  Model: AP460C
+  Reference: ''
+  Antenna_Type: 'Internal : omni'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 25.3
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 1.8
+  Dimensions_cm: 23,7 x 23,7 x 7,25
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
+- Vendor: Extreme
+  Model: AP410C
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Mid-range
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 23.7
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 0.9
+  Dimensions_cm: 20,5 x 20,5 x 3,7
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: Yes (on some models)
+  Zigbee: Yes (on some models)
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
+- Vendor: Extreme
+  Model: AP3000X
+  Reference: ''
+  Antenna_Type: 'External : 4x fixed dipole antennas'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 17
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 0.85
+  Dimensions_cm: 17,3 x 17,3 x 3,7
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Only 2 concurrent radios: 2,4 GHz + 5 GHz or 5 GHz + 6 GHz'
+- Vendor: Extreme
+  Model: AP3000
+  Reference: ''
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6E (802.11ax)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 17
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE
+  Weight_kg: 0.52
+  Dimensions_cm: 16,2 x 16,2 x 3,6
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Only 2 concurrent radios: 2,4 GHz + 5 GHz or 5 GHz + 6 GHz'
+- Vendor: Extreme
+  Model: AP302W
+  Reference: ''
+  Antenna_Type: 'Internal : omni horizontal (wall plate)'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 24.9
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: No PoE out on Eth1
+  Ethernet1: 1 Gbits
+  Ethernet2: 3x 1 Gbits, PoE out
+  Weight_kg: 0.43
+  Dimensions_cm: 17,5 x 10,5 x 2,92
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Extreme
   Model: AP305C
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
-  Indoor_Outdoor: ''
-  Generation: ''
-  Protocol: ''
-  Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 16.3
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
+  Limited_Capabilities_PoE_af_15W: Reduced USB output to 500mA
+  Ethernet1: 1 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 0.4
+  Dimensions_cm: 13,3 x 13,3 x 3,5
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Minimum_Version: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
-  Comments: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
+- Vendor: Extreme
+  Model: AP305CX
+  Reference: ''
+  Antenna_Type: 'External : 4x RP-SMA'
+  Indoor_Outdoor: Indoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: Entry-level
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 16.3
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Reduced USB output to 500mA
+  Ethernet1: 1 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 0.4
+  Dimensions_cm: 14,7 x 14,7 x 39
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: 'Unified Hardware: Cloud / On premise'
 - Vendor: Fortinet
   Model: FAP-231G
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1243,7 +2178,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1253,12 +2188,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1275,7 +2211,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1285,12 +2221,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1307,7 +2244,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1317,12 +2254,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1339,7 +2277,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1349,12 +2287,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax,be
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1371,7 +2310,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1381,12 +2320,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1403,7 +2343,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1413,12 +2353,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1435,7 +2376,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1444,13 +2385,14 @@
   Reference: FAP-441K-N
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 41.7
@@ -1467,7 +2409,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1477,12 +2419,13 @@
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: ''
-  Protocol: 802.11ac,ax
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: ''
@@ -1499,7 +2442,7 @@
   GNSS: ''
   Bluetooth: ''
   Zigbee: ''
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -1508,13 +2451,14 @@
   Reference: 50086767-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 13.6
@@ -1531,7 +2475,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 840.0
   Comments: ''
@@ -1540,13 +2484,14 @@
   Reference: 50086833-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 14.04
@@ -1563,7 +2508,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
   Comments: ''
@@ -1572,13 +2517,14 @@
   Reference: '50086834'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 14.04
@@ -1595,7 +2541,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 935.0
   Comments: Supporte Câble Hybride Huawei par rapport à la 22 et 21
@@ -1604,13 +2550,14 @@
   Reference: 50086829-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 14.8
@@ -1627,7 +2574,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1277.0
   Comments: ''
@@ -1636,13 +2583,14 @@
   Reference: ''
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 24.2
@@ -1659,7 +2607,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: Not in price list anymore
@@ -1668,13 +2616,14 @@
   Reference: 50086827-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2 + 4x4:4
-  Radio_6_GHz: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: 2x2:2 + 4x4:4
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 22.3
@@ -1691,7 +2640,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
   Comments: ''
@@ -1700,13 +2649,14 @@
   Reference: '50086828'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 21.1
@@ -1723,7 +2673,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1600.0
   Comments: ''
@@ -1732,13 +2682,14 @@
   Reference: '50087136'
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 2x2:2
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 23.9
@@ -1755,7 +2706,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1790.0
   Comments: ''
@@ -1764,13 +2715,14 @@
   Reference: 02355CXW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
   Max_PoE_Consumption_W: 44.4
@@ -1787,30 +2739,31 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 3039.0
   Comments: ''
 - Vendor: Juniper Mist
   Model: AP12
   Reference: AP12-WW
-  Antenna_Type: 'Internal : omni downtilt'
+  Antenna_Type: 'Internal : omni horizontal (wall plate)'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 12.9
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: No PoE out on Eth1
   Ethernet1: 1 Gbits
-  Ethernet2: ''
+  Ethernet2: 3x 10/100/1000 Ethernet ports
   Weight_kg: 0.6
   Dimensions_cm: 15 x 10 x 4
   Geolocation_FTM_80211mc_80211az: ''
@@ -1819,7 +2772,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 842.0
   Comments: ''
@@ -1828,62 +2781,64 @@
   Reference: AP24-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: Entry-level
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 13.0
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3af Class 3 (15W)
+  Max_PoE_Consumption_W: 13
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
   Limited_Capabilities_PoE_af_15W: ''
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 0.75
   Dimensions_cm: 18.5 x 18.5 x 3.9
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1107.0
-  Comments: Only 2 concurrent radios
+  Comments: 'Only 2 concurrent radios: 5 GHz + 2.4 GHz or 5 GHz + 6 GHz'
 - Vendor: Juniper Mist
   Model: AP32
   Reference: AP32-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 19.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: 5GHz 2x2:2, Eth0 1Gbits, Eth1 disabled
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 1Gbits, no PoE in
   Weight_kg: 0.83
   Dimensions_cm: 20.2 x 20.2 x 4.4
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1169.0
   Comments: ''
@@ -1892,158 +2847,163 @@
   Reference: AP33-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 19.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: 5GHz 2x2:2, Eth0 1Gbits, Eth1 disabled
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 1Gbits, no PoE in
   Weight_kg: 0.98
   Dimensions_cm: 20.2 x 20.2 x 4.4
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
-  Bluetooth: 'Yes'
+  Bluetooth: Yes (vBLE)
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1383.0
-  Comments: ''
+  Comments: Similar to AP32 with added vBLE
 - Vendor: Juniper Mist
   Model: AP34
   Reference: AP34-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
   Max_PoE_Consumption_W: 20.9
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.89
   Dimensions_cm: 23 x 23 x 5
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1485.0
   Comments: ''
 - Vendor: Juniper Mist
   Model: AP36
   Reference: ''
-  Antenna_Type: ''
+  Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: '?'
+  Max_PoE_Consumption_W: '?'
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 10 Gbits
+  Ethernet2: 1 Gbits, no PoE in
+  Weight_kg: 1.5
+  Dimensions_cm: 23 x 23 x 4,5
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Minimum_Version: ''
+  USB_Ports: 2.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
 - Vendor: Juniper Mist
   Model: AP37
   Reference: ''
-  Antenna_Type: ''
+  Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: '?'
+  Max_PoE_Consumption_W: '?'
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 10 Gbits
+  Ethernet2: 1 Gbits, no PoE in
+  Weight_kg: 1.55
+  Dimensions_cm: 23 x 23 x 4,5
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Minimum_Version: ''
+  USB_Ports: 1.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: Yes (vBLE)
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
-  Comments: ''
+  Comments: Similar to AP36 with added vBLE
 - Vendor: Juniper Mist
   Model: AP43
   Reference: AP43-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6 (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
   Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
   Limited_Capabilities_PoE_af_15W: ''
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 1 Gbits, no PoE in, PoE out (requires 802.3bt on Eth0)
   Weight_kg: 1.39
   Dimensions_cm: 22.2 x 22.2 x5.3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
   GNSS: 'No'
-  Bluetooth: 'Yes'
+  Bluetooth: Yes (vBLE)
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 1700.0
   Comments: ''
@@ -2052,30 +3012,31 @@
   Reference: AP45-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
   Max_PoE_Consumption_W: 29.3
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 2×2 on 2.4 GHz and 6 GHz if tri-radio mode
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 2.01
   Dimensions_cm: 23 x 23 x 5
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'No'
   GNSS: 'No'
-  Bluetooth: 'Yes'
+  Bluetooth: Yes (vBLE)
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2006.0
   Comments: ''
@@ -2084,30 +3045,31 @@
   Reference: AP47-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: High-end
-  Concurrent_PHY_Radios: 3.0
-  Radio_2_4_GHz: 4x4:4
-  Radio_5_GHz: 4x4:4
-  Radio_6_GHz: 4x4:4
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[FRA 2.4GHz or 5GHz or 6GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: '[6GHz] 4x4:4'
+  Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
-  PoE_Class: 802.3bt Class 6 (60W)
-  Max_PoE_Consumption_W: 29.0
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 29
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: Radios 2x2 for 2.4GHz & 6GHz
+  Limited_Capabilities_PoE_at_30W: ''
   Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
   Ethernet1: 10 Gbits
-  Ethernet2: 10 Gbits with PoE
+  Ethernet2: 10 Gbits with PoE in
   Weight_kg: 2.0
   Dimensions_cm: 25.4 x 25.4 x 6
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 1.0
   UWB: 'Yes'
   GNSS: 'Yes'
-  Bluetooth: 'Yes'
+  Bluetooth: Yes (vBLE)
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -2116,62 +3078,164 @@
   Reference: AP64-WW
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: Indoor/Outdoor
-  Generation: Wi-Fi 6E
-  Protocol: 802.11ac,ax
+  Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: 2.0
-  Radio_2_4_GHz: 2x2:2
-  Radio_5_GHz: 2x2:2
-  Radio_6_GHz: 2x2:2
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 13.0
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3af Class 3 (15W)
+  Max_PoE_Consumption_W: 13
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
   Limited_Capabilities_PoE_af_15W: ''
   Ethernet1: 2,5 Gbits
-  Ethernet2: ''
+  Ethernet2: 'No'
   Weight_kg: 1.5
   Dimensions_cm: 21.5 x 21.5 x 6.4
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
+  USB_Ports: 0.0
   UWB: 'No'
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Version: ''
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: 2102.0
-  Comments: Only 2 concurrent radios
+  Comments: 'Only 2 concurrent radios: 5 GHz + 2.4 GHz or 5 GHz + 6 GHz'
+- Vendor: Juniper Mist
+  Model: AP63E
+  Reference: AP63E-WW
+  Antenna_Type: 'External : 6x N-type'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 25.2
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE in, PoE out (requires 802.3bt on Eth0)
+  Weight_kg: 3.9
+  Dimensions_cm: 28,5 x 28,5 x 8,6
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: Yes (vBLE)
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Juniper Mist
+  Model: AP63
+  Reference: AP63-WW
+  Antenna_Type: 'Internal : omni downtilt'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 2.0
+  Concurrent_Serving_Radios: 2
+  Serving_Radio_1: '[2.4GHz] 4x4:4'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3bt Class 5 (45W)
+  Max_PoE_Consumption_W: 25.2
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, no PoE in, PoE out (requires 802.3bt on Eth0)
+  Weight_kg: 3.4
+  Dimensions_cm: 28,5 x 28,5 x 8,6
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: Yes (vBLE)
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Juniper Mist
+  Model: AP66D
+  Reference: AP66D-WW
+  Antenna_Type: 'Internal : directionnal software selectable 90x90, 90x30 or 30x30
+    °H/V'
+  Indoor_Outdoor: Indoor/Outdoor
+  Generation: Wi-Fi 7 (802.11be)
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: '?'
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 10 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 2.1
+  Dimensions_cm: 23,2 x 23,2 x 8,8
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
 - Vendor: Juniper Mist
   Model: AP66
   Reference: AP66-WW
-  Antenna_Type: ''
+  Antenna_Type: 'Internal : omni'
   Indoor_Outdoor: Indoor/Outdoor
-  Generation: Wi-Fi 7
-  Protocol: 802.11ac,ax,be
+  Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Concurrent_PHY_Radios: ''
-  Radio_2_4_GHz: ''
-  Radio_5_GHz: ''
-  Radio_6_GHz: ''
-  Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: ''
+  Total_PHY_Serving_Radios: 3.0
+  Concurrent_Serving_Radios: 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[6GHz] 2x2:2'
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'Yes'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: '?'
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
-  Ethernet1: ''
-  Ethernet2: ''
-  Weight_kg: ''
-  Dimensions_cm: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 10 Gbits
+  Ethernet2: 'No'
+  Weight_kg: 2.0
+  Dimensions_cm: 23,2 x 23,2 x 7,1
   Geolocation_FTM_80211mc_80211az: ''
-  USB_Ports: ''
-  UWB: ''
-  GNSS: ''
-  Bluetooth: ''
-  Zigbee: ''
-  Minimum_Version: ''
+  USB_Ports: 0.0
+  UWB: 'No'
+  GNSS: 'Yes'
+  Bluetooth: 'Yes'
+  Zigbee: 'No'
+  Minimum_Software_Version: ''
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
