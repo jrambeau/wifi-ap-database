@@ -397,167 +397,117 @@ div.dataTables_scrollBody table {
 
 <div id="ap-table-container">
 <table id="ap-table" class="display" style="width:100%">
-    <thead>
-        <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <th>Vendor</th>
-            <th>Model</th>
-            <th>Reference</th>
-            <th>Antenna Type</th>
-            <th>Indoor Outdoor</th>
-            <th>Generation</th>
-            <th>Protocol</th>
-            <th>Product Positioning</th>
-            <th>Concurrent PHY Radios</th>
-            <th>Radio 2 4 GHz</th>
-            <th>Radio 5 GHz</th>
-            <th>Radio 6 GHz</th>
-            <th>Dedicated Scanning Radio</th>
-            <th>PoE Class</th>
-            <th>Max PoE Consumption W</th>
-            <th>Limited Capabilities PoE bt Class5 45W</th>
-            <th>Limited Capabilities PoE at 30W</th>
-            <th>Limited Capabilities PoE af 15W</th>
-            <th>Ethernet1</th>
-            <th>Ethernet2</th>
-            <th>Weight kg</th>
-            <th>Dimensions cm</th>
-            <th>Geolocation FTM 80211mc 80211az</th>
-            <th>USB Ports</th>
-            <th>UWB</th>
-            <th>GNSS</th>
-            <th>Bluetooth</th>
-            <th>Zigbee</th>
-            <th>Cloud Compatible</th>
-            <th>Minimum Version</th>
-            <th>Public Price USD</th>
-            <th>Public Price EUR</th>
-            <th>Comments</th>
-
-
-
-
-
-
-
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Width probe row: representative max-length samples to stabilize column widths -->
-        <tr class="width-probe">
-            
-            
-            
-            
-            
-            
-            
-            <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
-            <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
-            <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
-            <td>External High-Gain Omni Directional Antenna Pack</td>
-            <td>Indoor/Outdoor Industrial Hardened</td>
-            <td>Wi-Fi 7 / 802.11be Gen</td>
-            <td>802.11a/b/g/n/ac/ax/be Tri-Band</td>
-            <td>High Density Enterprise Hospitality Stadium</td>
-            <td>4x Concurrent Multi-Radio Chains</td>
-            <td>4x4:4 2.4GHz MIMO</td>
-            <td>8x8:8 5GHz MU-MIMO</td>
-            <td>8x8:8 6GHz MU-MIMO</td>
-            <td>Dedicated Security / WIPS / Sensor Radio Included</td>
-            <td>PoE++ Class 8</td>
-            <td>45.5 W</td>
-            <td>Reduced Performance Mode @45W</td>
-            <td>Basic Operation Mode @30W</td>
-            <td>Limited Features @15W</td>
-            <td>1 x 10G SFP+/RJ45 Combo</td>
-            <td>1 x 2.5G Ethernet Port</td>
-            <td>1.250 kg</td>
-            <td>28 x 28 x 6.5 cm</td>
-            <td>FTM + 802.11mc + 802.11az Enabled</td>
-            <td>USB-C + USB-A</td>
-            <td>Yes (UWB)</td>
-            <td>Multi-Constellation GNSS</td>
-            <td>BLE 5.4 Long Range</td>
-            <td>Zigbee 3.0 Thread</td>
-            <td>Cloud + On-Prem Controller Compatible</td>
-            <td>Minimum Release 23.9.5</td>
-            <td>9999 USD</td>
-            <td>8999 EUR</td>
-            <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
-
-
-
-
-
-
-
-        </tr>
-        {% for ap in site.data.ap_models %}
-        <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <td>{{ ap.Vendor | default: "" }}</td>
-            <td>{{ ap.Model | default: "" }}</td>
-            <td>{{ ap.Reference | default: "" }}</td>
-            <td>{{ ap.Antenna_Type | default: "" }}</td>
-            <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
-            <td>{{ ap.Generation | default: "" }}</td>
-            <td>{{ ap.Protocol | default: "" }}</td>
-            <td>{{ ap.Product_Positioning | default: "" }}</td>
-            <td>{{ ap.Concurrent_PHY_Radios | default: "" }}</td>
-            <td>{{ ap.Radio_2_4_GHz | default: "" }}</td>
-            <td>{{ ap.Radio_5_GHz | default: "" }}</td>
-            <td>{{ ap.Radio_6_GHz | default: "" }}</td>
-            <td>{{ ap.Dedicated_Scanning_Radio | default: "" }}</td>
-            <td>{{ ap.PoE_Class | default: "" }}</td>
-            <td>{{ ap.Max_PoE_Consumption_W | default: "" }}</td>
-            <td>{{ ap.Limited_Capabilities_PoE_bt_Class5_45W | default: "" }}</td>
-            <td>{{ ap.Limited_Capabilities_PoE_at_30W | default: "" }}</td>
-            <td>{{ ap.Limited_Capabilities_PoE_af_15W | default: "" }}</td>
-            <td>{{ ap.Ethernet1 | default: "" }}</td>
-            <td>{{ ap.Ethernet2 | default: "" }}</td>
-            <td>{{ ap.Weight_kg | default: "" }}</td>
-            <td>{{ ap.Dimensions_cm | default: "" }}</td>
-            <td>{{ ap.Geolocation_FTM_80211mc_80211az | default: "" }}</td>
-            <td>{{ ap.USB_Ports | default: "" }}</td>
-            <td>{{ ap.UWB | default: "" }}</td>
-            <td>{{ ap.GNSS | default: "" }}</td>
-            <td>{{ ap.Bluetooth | default: "" }}</td>
-            <td>{{ ap.Zigbee | default: "" }}</td>
-            <td>{{ ap.Cloud_Compatible | default: "" }}</td>
-            <td>{{ ap.Minimum_Version | default: "" }}</td>
-            <td>{{ ap.Public_Price_USD | default: "" }}</td>
-            <td>{{ ap.Public_Price_EUR | default: "" }}</td>
-            <td>{{ ap.Comments | default: "" }}</td>
-
-
-
-
-
-
-
-
-
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        <thead>
+            <tr>
+                <th class="sticky-col sticky-col-1">Vendor</th>
+                <th class="sticky-col sticky-col-2">Model</th>
+                <th>Reference</th>
+                <th>Antenna Type</th>
+                <th>Indoor Outdoor</th>
+                <th>Generation</th>
+                <th>Product Positioning</th>
+                <th>Total PHY Serving Radios</th>
+                <th>Concurrent Serving Radios</th>
+                <th>Serving Radio 1</th>
+                <th>Serving Radio 2</th>
+                <th>Serving Radio 3</th>
+                <th>Serving Radio 4</th>
+                <th>Dedicated Scanning Radio</th>
+                <th>PoE Class</th>
+                <th>Max PoE Consumption W</th>
+                <th>Limited Capabilities PoE bt Class5 45W</th>
+                <th>Limited Capabilities PoE at 30W</th>
+                <th>Limited Capabilities PoE af 15W</th>
+                <th>Ethernet1</th>
+                <th>Ethernet2</th>
+                <th>Weight kg</th>
+                <th>Dimensions cm</th>
+                <th>Geolocation FTM 80211mc 80211az</th>
+                <th>USB Ports</th>
+                <th>UWB</th>
+                <th>GNSS</th>
+                <th>Bluetooth</th>
+                <th>Zigbee</th>
+                <th>Minimum Software Version</th>
+                <th>Public Price USD</th>
+                <th>Public Price EUR</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Width probe row: representative max-length samples to stabilize column widths -->
+            <tr class="width-probe">
+                <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
+                <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
+                <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
+                <td>External High-Gain Omni Directional Antenna Pack</td>
+                <td>Indoor/Outdoor Industrial Hardened</td>
+                <td>Wi-Fi 7 / 802.11be Gen</td>
+                <td>High Density Enterprise Hospitality Stadium</td>
+                <td>4x Concurrent Multi-Radio Chains</td>
+                <td>4x4:4 2.4GHz MIMO</td>
+                <td>8x8:8 5GHz MU-MIMO</td>
+                <td>8x8:8 6GHz MU-MIMO</td>
+                <td>Dedicated Security / WIPS / Sensor Radio Included</td>
+                <td>PoE++ Class 8</td>
+                <td>45.5 W</td>
+                <td>Reduced Performance Mode @45W</td>
+                <td>Basic Operation Mode @30W</td>
+                <td>Limited Features @15W</td>
+                <td>1 x 10G SFP+/RJ45 Combo</td>
+                <td>1 x 2.5G Ethernet Port</td>
+                <td>1.250 kg</td>
+                <td>28 x 28 x 6.5 cm</td>
+                <td>FTM + 802.11mc + 802.11az Enabled</td>
+                <td>USB-C + USB-A</td>
+                <td>Yes (UWB)</td>
+                <td>Multi-Constellation GNSS</td>
+                <td>BLE 5.4 Long Range</td>
+                <td>Zigbee 3.0 Thread</td>
+                <td>Minimum Release 23.9.5</td>
+                <td>9999 USD</td>
+                <td>8999 EUR</td>
+                <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
+            </tr>
+            {% for ap in site.data.ap_models %}
+            <tr>
+                <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: "" }}</td>
+                <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
+                <td>{{ ap.Reference | default: "" }}</td>
+                <td>{{ ap.Antenna_Type | default: "" }}</td>
+                <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
+                <td>{{ ap.Generation | default: "" }}</td>
+                <td>{{ ap.Product_Positioning | default: "" }}</td>
+                <td>{{ ap.Total_PHY_Serving_Radios | default: "" }}</td>
+                <td>{{ ap.Concurrent_Serving_Radios | default: "" }}</td>
+                <td>{{ ap.Serving_Radio_1 | default: "" }}</td>
+                <td>{{ ap.Serving_Radio_2 | default: "" }}</td>
+                <td>{{ ap.Serving_Radio_3 | default: "" }}</td>
+                <td>{{ ap.Serving_Radio_4 | default: "" }}</td>
+                <td>{{ ap.Dedicated_Scanning_Radio | default: "" }}</td>
+                <td>{{ ap.PoE_Class | default: "" }}</td>
+                <td>{{ ap.Max_PoE_Consumption_W | default: "" }}</td>
+                <td>{{ ap.Limited_Capabilities_PoE_bt_Class5_45W | default: "" }}</td>
+                <td>{{ ap.Limited_Capabilities_PoE_at_30W | default: "" }}</td>
+                <td>{{ ap.Limited_Capabilities_PoE_af_15W | default: "" }}</td>
+                <td>{{ ap.Ethernet1 | default: "" }}</td>
+                <td>{{ ap.Ethernet2 | default: "" }}</td>
+                <td>{{ ap.Weight_kg | default: "" }}</td>
+                <td>{{ ap.Dimensions_cm | default: "" }}</td>
+                <td>{{ ap.Geolocation_FTM_80211mc_80211az | default: "" }}</td>
+                <td>{{ ap.USB_Ports | default: "" }}</td>
+                <td>{{ ap.UWB | default: "" }}</td>
+                <td>{{ ap.GNSS | default: "" }}</td>
+                <td>{{ ap.Bluetooth | default: "" }}</td>
+                <td>{{ ap.Zigbee | default: "" }}</td>
+                <td>{{ ap.Minimum_Software_Version | default: "" }}</td>
+                <td>{{ ap.Public_Price_USD | default: "" }}</td>
+                <td>{{ ap.Public_Price_EUR | default: "" }}</td>
+                <td>{{ ap.Comments | default: "" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 <!-- jQuery and DataTables JS -->
