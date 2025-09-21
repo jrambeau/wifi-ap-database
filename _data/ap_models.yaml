@@ -516,7 +516,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.72
-  Dimensions_cm: 20.1 x 18.3 x 5.1
+  Dimensions_cm: 20,1 x 18,3 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -549,7 +549,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 2,5 Gbits, PoE
   Weight_kg: 1.3
-  Dimensions_cm: 22 x22 5.1
+  Dimensions_cm: 22 x 22 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -747,7 +747,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: 5 Gbits, PoE
   Weight_kg: 1.44
-  Dimensions_cm: 24 x 24 x 5.6
+  Dimensions_cm: 24 x 24 x 5,6
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 2.0
   UWB: 'No'
@@ -780,7 +780,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: ''
-  Dimensions_cm: 24 x 24 x 5.6
+  Dimensions_cm: 24 x 24 x 5,6
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 1.0
   UWB: 'No'
@@ -846,7 +846,7 @@
   Ethernet1: 10 Gbits
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 2.13
-  Dimensions_cm: 35 x 32 x 8.3
+  Dimensions_cm: 35 x 32 x 8,3
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 2.0
   UWB: 'No'
@@ -945,7 +945,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.1
-  Dimensions_cm: 20.3 x 20.3 x 4,3
+  Dimensions_cm: 20,3 x 20,3 x 4,3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'No'
@@ -978,7 +978,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 0.9
-  Dimensions_cm: 20.3 x 20.3 x 3.8
+  Dimensions_cm: 20,3 x 20,3 x 3,8
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'No'
@@ -1312,7 +1312,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 0.93
-  Dimensions_cm: 20 x 20 x 4.5
+  Dimensions_cm: 20 x 20 x 4,5
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -1345,7 +1345,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.5
-  Dimensions_cm: 24.5 x 24.5 x 6.3
+  Dimensions_cm: 24,5 x 24,5 x 6,3
   Geolocation_FTM_80211mc_80211az: No ?
   USB_Ports: 0.0
   UWB: 'No'
@@ -1378,7 +1378,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.6
-  Dimensions_cm: 24.1 x 24.1 x 5.7
+  Dimensions_cm: 24,1 x 24,1 x 5,7
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -1411,7 +1411,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.59
-  Dimensions_cm: 24.1 x 24.1 x 5.8
+  Dimensions_cm: 24,1 x 24,1 x 5,8
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -1444,7 +1444,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.6
-  Dimensions_cm: 24.1 x 24.1 x 5.7
+  Dimensions_cm: 24,1 x 24,1 x 5,7
   Geolocation_FTM_80211mc_80211az: Yes (.11mc)
   USB_Ports: 1.0
   UWB: 'No'
@@ -1477,7 +1477,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 3x 100/1000 ports, PoE out on one port
   Weight_kg: 0.572
-  Dimensions_cm: 13 x 18 x 2.6
+  Dimensions_cm: 13 x 18 x 2,6
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 0.0
   UWB: 'No'
@@ -1510,7 +1510,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 0.874
-  Dimensions_cm: 20 x 20 x 5.3
+  Dimensions_cm: 20 x 20 x 5,3
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 1.0
   UWB: 'No'
@@ -1543,7 +1543,7 @@
   Ethernet1: 10 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.56
-  Dimensions_cm: 24 x 25 x 5.1
+  Dimensions_cm: 24 x 25 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 1.0
   UWB: 'Yes'
@@ -1576,7 +1576,7 @@
   Ethernet1: 10 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.56
-  Dimensions_cm: 24 x 24 x 5.1
+  Dimensions_cm: 24 x 24 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: 1.0
   UWB: 'Yes'
@@ -1610,7 +1610,7 @@
   Ethernet1: 10 Gbits
   Ethernet2: 10 Gbits, PoE
   Weight_kg: 1.87
-  Dimensions_cm: 25.1 x 25.1 x 5.1
+  Dimensions_cm: 25,1 x 25,1 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
   USB_Ports: ''
   UWB: 'Yes'
@@ -2468,7 +2468,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.47
-  Dimensions_cm: 18 x 18 x 3.5
+  Dimensions_cm: 18 x 18 x 3,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2501,7 +2501,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.51
-  Dimensions_cm: 18 x 18 x 3.5
+  Dimensions_cm: 18 x 18 x 3,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2534,7 +2534,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.52
-  Dimensions_cm: 18 x 18 x 3.5
+  Dimensions_cm: 18 x 18 x 3,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2567,7 +2567,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.73
-  Dimensions_cm: 22 x 22 x 4.5
+  Dimensions_cm: 22 x 22 x 4,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2633,7 +2633,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 0.74
-  Dimensions_cm: 22 x 22 x 4.5
+  Dimensions_cm: 22 x 22 x 4,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2666,7 +2666,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 0.75
-  Dimensions_cm: 22 x 22 x 4.5
+  Dimensions_cm: 22 x 22 x 4,5
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2699,7 +2699,7 @@
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 1.47
-  Dimensions_cm: 22 x 22 x 6.1
+  Dimensions_cm: 22 x 22 x 6,1
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -2798,7 +2798,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 0.75
-  Dimensions_cm: 18.5 x 18.5 x 3.9
+  Dimensions_cm: 18,5 x 18,5 x 3,9
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'No'
@@ -2831,7 +2831,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 1Gbits, no PoE in
   Weight_kg: 0.83
-  Dimensions_cm: 20.2 x 20.2 x 4.4
+  Dimensions_cm: 20,2 x 20,2 x 4,4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'No'
@@ -2864,7 +2864,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 1Gbits, no PoE in
   Weight_kg: 0.98
-  Dimensions_cm: 20.2 x 20.2 x 4.4
+  Dimensions_cm: 20,2 x 20,2 x 4,4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'No'
@@ -2996,7 +2996,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 1 Gbits, no PoE in, PoE out (requires 802.3bt on Eth0)
   Weight_kg: 1.39
-  Dimensions_cm: 22.2 x 22.2 x5.3
+  Dimensions_cm: 22,2 x 22,2 x5,3
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: ''
   UWB: 'No'
@@ -3062,7 +3062,7 @@
   Ethernet1: 10 Gbits
   Ethernet2: 10 Gbits with PoE in
   Weight_kg: 2.0
-  Dimensions_cm: 25.4 x 25.4 x 6
+  Dimensions_cm: 25,4 x 25,4 x 6
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 1.0
   UWB: 'Yes'
@@ -3095,7 +3095,7 @@
   Ethernet1: 2,5 Gbits
   Ethernet2: 'No'
   Weight_kg: 1.5
-  Dimensions_cm: 21.5 x 21.5 x 6.4
+  Dimensions_cm: 21,5 x 21,5 x 6,4
   Geolocation_FTM_80211mc_80211az: ''
   USB_Ports: 0.0
   UWB: 'No'
