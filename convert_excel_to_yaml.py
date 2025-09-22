@@ -12,6 +12,14 @@ Usage:
     python3 convert_excel_to_yaml.py --backup
 """
 
+import sys
+import os
+
+# Fix Unicode output on Windows
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
+
 import pandas as pd
 import yaml
 import argparse
@@ -209,8 +217,13 @@ def convert_excel_to_yaml(excel_file, yaml_file, create_backup=True):
     try:
         print(f"🔄 Reading Excel file: {excel_file}")
         
-        # Read Excel file
-        df = pd.read_excel(excel_file)
+        # Read Excel file, force specific columns as text
+        dtype_override = {"Total_PHY_Serving_Radios": str, "USB_Ports": str}
+        try:
+            df = pd.read_excel(excel_file, dtype=dtype_override)
+        except TypeError:
+            # Fallback for older pandas versions that don't support dtype param
+            df = pd.read_excel(excel_file)
         # Normalize column names to new schema where needed
         original_columns = list(df.columns)
         new_columns = normalize_column_names(original_columns)
@@ -334,7 +347,7 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
     
-    print("🔧 Excel to YAML Converter for Jekyll AP Database")
+    print("Excel to YAML Converter for Jekyll AP Database")
     print("=" * 50)
     
     # Validate only mode

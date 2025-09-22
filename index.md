@@ -505,8 +505,8 @@ div.dataTables_scrollBody table {
             
             
             
-            <td>{{ ap.Vendor | default: "" }}</td>
-            <td>{{ ap.Model | default: "" }}</td>
+            <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: "" }}</td>
+            <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
             <td>{{ ap.Reference | default: "" }}</td>
             <td>{{ ap.Antenna_Type | default: "" }}</td>
             <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
