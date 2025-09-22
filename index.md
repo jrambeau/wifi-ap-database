@@ -399,17 +399,8 @@ div.dataTables_scrollBody table {
 <table id="ap-table" class="display" style="width:100%">
     <thead>
         <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <th>Vendor</th>
-            <th>Model</th>
+            <th class="sticky-col sticky-col-1">Vendor</th>
+            <th class="sticky-col sticky-col-2">Model</th>
             <th>Reference</th>
             <th>Antenna_Type</th>
             <th>Indoor_Outdoor</th>
@@ -453,13 +444,6 @@ div.dataTables_scrollBody table {
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
         <tr class="width-probe">
-            
-            
-            
-            
-            
-            
-            
             <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
             <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
             <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
@@ -503,17 +487,8 @@ div.dataTables_scrollBody table {
         </tr>
         {% for ap in site.data.ap_models %}
         <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <td>{{ ap.Vendor | default: "" }}</td>
-            <td>{{ ap.Model | default: "" }}</td>
+            <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: "" }}</td>
+            <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
             <td>{{ ap.Reference | default: "" }}</td>
             <td>{{ ap.Antenna_Type | default: "" }}</td>
             <td>{{ ap.Indoor_Outdoor | default: "" }}</td>
