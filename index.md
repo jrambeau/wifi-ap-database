@@ -408,8 +408,8 @@ div.dataTables_scrollBody table {
             
             
             
-            <th class="sticky-col sticky-col-1">Vendor</th>
-            <th class="sticky-col sticky-col-2">Model</th>
+            <th>Vendor</th>
+            <th>Model</th>
             <th>Reference</th>
             <th>Antenna_Type</th>
             <th>Indoor_Outdoor</th>
