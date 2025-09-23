@@ -399,15 +399,6 @@ div.dataTables_scrollBody table {
 <table id="ap-table" class="display" style="width:100%">
     <thead>
         <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
             <th class="sticky-col sticky-col-1">Vendor</th>
             <th class="sticky-col sticky-col-2">Model</th>
             <th>Reference</th>
@@ -441,13 +432,6 @@ div.dataTables_scrollBody table {
             <th>Public_Price_USD</th>
             <th>Public_Price_EUR</th>
             <th>Comments</th>
-
-
-
-
-
-
-
         </tr>
         <tr class="filter-row">
             <th class="sticky-col sticky-col-1"><input type="text" placeholder="Vendor" /></th>
@@ -521,25 +505,9 @@ div.dataTables_scrollBody table {
             <td>9999 USD</td>
             <td>8999 EUR</td>
             <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
-
-
-
-
-
-
-
         </tr>
         {% for ap in site.data.ap_models %}
         <tr>
-            
-            
-            
-            
-            
-            
-            
-            
-            
             <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: "" }}</td>
             <td class="sticky-col sticky-col-2">{{ ap.Model | default: "" }}</td>
             <td>{{ ap.Reference | default: "" }}</td>
@@ -573,15 +541,6 @@ div.dataTables_scrollBody table {
             <td>{{ ap.Public_Price_USD | default: "" }}</td>
             <td>{{ ap.Public_Price_EUR | default: "" }}</td>
             <td>{{ ap.Comments | default: "" }}</td>
-
-
-
-
-
-
-
-
-
         </tr>
         {% endfor %}
     </tbody>
