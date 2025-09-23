@@ -136,7 +136,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 
 /* DataTables integrated buttons styling */
 .dt-buttons .dt-button {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+    background: linear-gradient(135deg, #e55346ff 0%, #eaed3aff 100%) !important;
     color: #fff !important;
     border: none !important;
     padding: 8px 14px !important;
@@ -471,6 +471,7 @@ div.dataTables_scrollBody table {
     </thead>
     <tbody>
         <!-- Width probe row: representative max-length samples to stabilize column widths -->
+        <!--
         <tr class="width-probe">
             <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
             <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
@@ -506,6 +507,7 @@ div.dataTables_scrollBody table {
             <td>8999 EUR</td>
             <td>Sample longest realistic comments text to anchor width sizing baseline.</td>
         </tr>
+        -->
         {% for ap in site.data.ap_models %}
         <tr>
             <td class="sticky-col sticky-col-1">{{ ap.Vendor | default: "" }}</td>
