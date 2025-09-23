@@ -136,7 +136,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 
 /* DataTables integrated buttons styling */
 .dt-buttons .dt-button {
-    background: linear-gradient(135deg, #e55346ff 0%, #eaed3aff 100%) !important;
+    background: linear-gradient(135deg, #467be5ff 0%, #382ce4ff 100%) !important;
     color: #fff !important;
     border: none !important;
     padding: 8px 14px !important;
