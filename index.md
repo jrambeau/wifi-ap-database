@@ -76,7 +76,7 @@ tbody .width-probe td { padding:0 !important; border:none !important; font-size:
 }
 
 #ap-table thead th {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #467be5ff 0%, #382ce4ff 100%);
     color: white;
     font-weight: 600;
     padding: 16px 12px;
@@ -351,7 +351,7 @@ div.dataTables_scrollBody table {
 #ap-table thead tr.filter-row th { position: sticky; top: var(--sticky-header-height, 0px); }
 #ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
 #ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
-#ap-table thead tr.filter-row .sticky-col { z-index: 7; background: #f1f5f9; box-shadow:none; }
+#ap-table thead tr.filter-row .sticky-col { z-index: 7; box-shadow:none; }
 /* Neutral, subtle gradient backgrounds for sticky columns */
 #ap-table tbody .sticky-col.sticky-col-1, 
 #ap-table tbody .sticky-col.sticky-col-2 { 
