@@ -435,76 +435,41 @@ div.dataTables_scrollBody table {
             <th>USB_Ports</th>
             <th>UWB</th>
             <th>GNSS</th>
-            <th>Bluetooth</th>
-            <th>Zigbee</th>
-            <th>Minimum_Software_Version</th>
-            <th>Public_Price_USD</th>
-            <th>Public_Price_EUR</th>
-            <th>Comments</th>
-
-
-
-
-
-
-
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Width probe row: representative max-length samples to stabilize column widths -->
-        <tr class="width-probe">
-            <td class="sticky-col sticky-col-1">VeryLongVendorNameSample</td>
-            <td class="sticky-col sticky-col-2">Model-Extreme-9999X-Pro-Max</td>
-            <td>MANUF-REF-SUPER-LONG-IDENTIFIER-12345</td>
-            <td>External High-Gain Omni Directional Antenna Pack</td>
-            <td>Indoor/Outdoor Industrial Hardened</td>
-            <td>Wi-Fi 7 / 802.11be Gen</td>
-            <td>High Density Enterprise Hospitality Stadium</td>
-            <td>4x Concurrent Multi-Radio Chains</td>
-            <td>4x Concurrent Multi-Radio Chains</td>
-            <td>4x4:4 2.4GHz MIMO</td>
-            <td>8x8:8 5GHz MU-MIMO</td>
-            <td>8x8:8 5GHz MU-MIMO</td>
-            <td>8x8:8 6GHz MU-MIMO</td>
-            <td>Dedicated Security / WIPS / Sensor Radio Included</td>
-            <td>PoE++ Class 8</td>
-            <td>45.5 W</td>
-            <td>Reduced Performance Mode @45W</td>
-            <td>Basic Operation Mode @30W</td>
-            <td>Limited Features @15W</td>
-            <td>1 x 10G SFP+/RJ45 Combo</td>
-            <td>1 x 2.5G Ethernet Port</td>
-            <td>1.250 kg</td>
-            <td>28 x 28 x 6.5 cm</td>
-                    <tr class="filter-row">
-                        <th class="sticky-col sticky-col-1"><input type="text" placeholder="Filter Vendor" /></th>
-                        <th class="sticky-col sticky-col-2"><input type="text" placeholder="Filter Model" /></th>
-                        <th><input type="text" placeholder="Filter Reference" /></th>
-                        <th><input type="text" placeholder="Filter Antenna_Type" /></th>
-                        <th><input type="text" placeholder="Filter Indoor_Outdoor" /></th>
-                        <th><input type="text" placeholder="Filter Generation" /></th>
-                        <th><input type="text" placeholder="Filter Product_Positioning" /></th>
-                        <th><input type="text" placeholder="Filter Total_PHY_Serving_Radios" /></th>
-                        <th><input type="text" placeholder="Filter Concurrent_Serving_Radios" /></th>
-                        <th><input type="text" placeholder="Filter Serving_Radio_1" /></th>
-                        <th><input type="text" placeholder="Filter Serving_Radio_2" /></th>
-                        <th><input type="text" placeholder="Filter Serving_Radio_3" /></th>
-                        <th><input type="text" placeholder="Filter Serving_Radio_4" /></th>
-                        <th><input type="text" placeholder="Filter Dedicated_Scanning_Radio" /></th>
-                        <th><input type="text" placeholder="Filter PoE_Class" /></th>
-                        <th><input type="text" placeholder="Filter Max_PoE_Consumption_W" /></th>
-                        <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_bt_Class5_45W" /></th>
-                        <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_at_30W" /></th>
-                        <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_af_15W" /></th>
-                        <th><input type="text" placeholder="Filter Ethernet1" /></th>
-                        <th><input type="text" placeholder="Filter Ethernet2" /></th>
-                        <th><input type="text" placeholder="Filter Weight_kg" /></th>
-                        <th><input type="text" placeholder="Filter Dimensions_cm" /></th>
-                        <th><input type="text" placeholder="Filter Geolocation_FTM_80211mc_80211az" /></th>
-                        <th><input type="text" placeholder="Filter USB_Ports" /></th>
-                        <th><input type="text" placeholder="Filter UWB" /></th>
-                        <th><input type="text" placeholder="Filter GNSS" /></th>
-                        <th><input type="text" placeholder="Filter Bluetooth" /></th>
+                    <tr>
+                        <th class="sticky-col sticky-col-1">Vendor</th>
+                        <th class="sticky-col sticky-col-2">Model</th>
+                        <th>Reference</th>
+                        <th>Antenna_Type</th>
+                        <th>Indoor_Outdoor</th>
+                        <th>Generation</th>
+                        <th>Product_Positioning</th>
+                        <th>Total_PHY_Serving_Radios</th>
+                        <th>Concurrent_Serving_Radios</th>
+                        <th>Serving_Radio_1</th>
+                        <th>Serving_Radio_2</th>
+                        <th>Serving_Radio_3</th>
+                        <th>Serving_Radio_4</th>
+                        <th>Dedicated_Scanning_Radio</th>
+                        <th>PoE_Class</th>
+                        <th>Max_PoE_Consumption_W</th>
+                        <th>Limited_Capabilities_PoE_bt_Class5_45W</th>
+                        <th>Limited_Capabilities_PoE_at_30W</th>
+                        <th>Limited_Capabilities_PoE_af_15W</th>
+                        <th>Ethernet1</th>
+                        <th>Ethernet2</th>
+                        <th>Weight_kg</th>
+                        <th>Dimensions_cm</th>
+                        <th>Geolocation_FTM_80211mc_80211az</th>
+                        <th>USB_Ports</th>
+                        <th>UWB</th>
+                        <th>GNSS</th>
+                        <th>Bluetooth</th>
+                        <th>Zigbee</th>
+                        <th>Minimum_Software_Version</th>
+                        <th>Public_Price_USD</th>
+                        <th>Public_Price_EUR</th>
+                        <th>Comments</th>
+                    </tr>
                         <th><input type="text" placeholder="Filter Zigbee" /></th>
                         <th><input type="text" placeholder="Filter Minimum_Software_Version" /></th>
                         <th><input type="text" placeholder="Filter Public_Price_USD" /></th>
