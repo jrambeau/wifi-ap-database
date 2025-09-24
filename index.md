@@ -436,37 +436,37 @@ div.dataTables_scrollBody table {
         <tr class="filter-row">
             <th class="sticky-col sticky-col-1"><input type="text" placeholder="Vendor" /></th>
             <th class="sticky-col sticky-col-2"><input type="text" placeholder="Model" /></th>
-            <th><input type="text" placeholder="Reference" /></th>
-            <th><input type="text" placeholder="Antenna_Type" /></th>
-            <th><input type="text" placeholder="Indoor_Outdoor" /></th>
-            <th><input type="text" placeholder="Generation" /></th>
-            <th><input type="text" placeholder="Product_Positioning" /></th>
-            <th><input type="text" placeholder="Total_PHY_Serving_Radios" /></th>
-            <th><input type="text" placeholder="Concurrent_Serving_Radios" /></th>
-            <th><input type="text" placeholder="Serving_Radio_1" /></th>
-            <th><input type="text" placeholder="Serving_Radio_2" /></th>
-            <th><input type="text" placeholder="Serving_Radio_3" /></th>
-            <th><input type="text" placeholder="Serving_Radio_4" /></th>
-            <th><input type="text" placeholder="Dedicated_Scanning_Radio" /></th>
-            <th><input type="text" placeholder="PoE_Class" /></th>
-            <th><input type="text" placeholder="Max_PoE_Consumption_W" /></th>
-            <th><input type="text" placeholder="Limited_Capabilities_PoE_bt_Class5_45W" /></th>
-            <th><input type="text" placeholder="Limited_Capabilities_PoE_at_30W" /></th>
-            <th><input type="text" placeholder="Limited_Capabilities_PoE_af_15W" /></th>
-            <th><input type="text" placeholder="Ethernet1" /></th>
-            <th><input type="text" placeholder="Ethernet2" /></th>
-            <th><input type="text" placeholder="Weight_kg" /></th>
-            <th><input type="text" placeholder="Dimensions_cm" /></th>
-            <th><input type="text" placeholder="Geolocation_FTM_80211mc_80211az" /></th>
-            <th><input type="text" placeholder="USB_Ports" /></th>
-            <th><input type="text" placeholder="UWB" /></th>
-            <th><input type="text" placeholder="GNSS" /></th>
-            <th><input type="text" placeholder="Bluetooth" /></th>
-            <th><input type="text" placeholder="Zigbee" /></th>
-            <th><input type="text" placeholder="Minimum_Software_Version" /></th>
-            <th><input type="text" placeholder="Public_Price_USD" /></th>
-            <th><input type="text" placeholder="Public_Price_EUR" /></th>
-            <th><input type="text" placeholder="Comments" /></th>
+            <th><input type="text" placeholder="Filter Reference" /></th>
+            <th><input type="text" placeholder="Filter Antenna_Type" /></th>
+            <th><input type="text" placeholder="Filter Indoor_Outdoor" /></th>
+            <th><input type="text" placeholder="Filter Generation" /></th>
+            <th><input type="text" placeholder="Filter Product_Positioning" /></th>
+            <th><input type="text" placeholder="Filter Total_PHY_Serving_Radios" /></th>
+            <th><input type="text" placeholder="Filter Concurrent_Serving_Radios" /></th>
+            <th><input type="text" placeholder="Filter Serving_Radio_1" /></th>
+            <th><input type="text" placeholder="Filter Serving_Radio_2" /></th>
+            <th><input type="text" placeholder="Filter Serving_Radio_3" /></th>
+            <th><input type="text" placeholder="Filter Serving_Radio_4" /></th>
+            <th><input type="text" placeholder="Filter Dedicated_Scanning_Radio" /></th>
+            <th><input type="text" placeholder="Filter PoE_Class" /></th>
+            <th><input type="text" placeholder="Filter Max_PoE_Consumption_W" /></th>
+            <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_bt_Class5_45W" /></th>
+            <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_at_30W" /></th>
+            <th><input type="text" placeholder="Filter Limited_Capabilities_PoE_af_15W" /></th>
+            <th><input type="text" placeholder="Filter Ethernet1" /></th>
+            <th><input type="text" placeholder="Filter Ethernet2" /></th>
+            <th><input type="text" placeholder="Filter Weight_kg" /></th>
+            <th><input type="text" placeholder="Filter Dimensions_cm" /></th>
+            <th><input type="text" placeholder="Filter Geolocation_FTM_80211mc_80211az" /></th>
+            <th><input type="text" placeholder="Filter USB_Ports" /></th>
+            <th><input type="text" placeholder="Filter UWB" /></th>
+            <th><input type="text" placeholder="Filter GNSS" /></th>
+            <th><input type="text" placeholder="Filter Bluetooth" /></th>
+            <th><input type="text" placeholder="Filter Zigbee" /></th>
+            <th><input type="text" placeholder="Filter Minimum_Software_Version" /></th>
+            <th><input type="text" placeholder="Filter Public_Price_USD" /></th>
+            <th><input type="text" placeholder="Filter Public_Price_EUR" /></th>
+            <th><input type="text" placeholder="Filter Comments" /></th>
         </tr>
     </thead>
     <tbody>
