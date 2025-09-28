@@ -1,7 +1,7 @@
 title: "Wi-Fi Access Points Database"
 description: "Comprehensive database of Wi-Fi Access Point specifications"
-url: "https://jrambeau.github.io"
-baseurl: "/wifi-ap-database"
+url: "https://ap.networkjon.fr"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
