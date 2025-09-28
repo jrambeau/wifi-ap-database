@@ -1,7 +1,7 @@
 title: "Wi-Fi Access Points Database"
 description: "Comprehensive database of Wi-Fi Access Point specifications"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://jrambeau.github.io"
+baseurl: "/wifi-ap-database"
 
 # Build settings
 markdown: kramdown

@@ -1,7 +1,22 @@
 ---
 layout: default
 title: Wi-Fi Access Points Database
+description: Comprehensive database of Wi-Fi Access Points specifications and features
+image: /preview.png
 ---
+
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:title" content="Wi-Fi Access Points Database">
+<meta property="og:description" content="Database of Wi-Fi Access Points specifications and features">
+<meta property="og:image" content="https://ap.networkjon.fr/preview.png">
+<meta property="og:url" content="https://ap.networkjon.fr/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wi-Fi Access Points Database">
+<meta name="twitter:description" content="Database of Wi-Fi Access Points specifications and features">
+<meta name="twitter:image" content="https://ap.networkjon.fr/preview.png">
 
 <!-- DataTable CSS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
