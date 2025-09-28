@@ -391,7 +391,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.6'
+  Minimum_Software_Version: 8.6.0.0, 10.3.1.1
   Public_Price_USD: ''
   Public_Price_EUR: 884.0
   Comments: ''
@@ -424,7 +424,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.4'
+  Minimum_Software_Version: 8.4.0.0, 10.3.1.1
   Public_Price_USD: ''
   Public_Price_EUR: 1392.0
   Comments: ''
@@ -457,7 +457,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.5'
+  Minimum_Software_Version: 8.5.0.0, 10.3.1.1
   Public_Price_USD: ''
   Public_Price_EUR: 1900.0
   Comments: ''
@@ -490,7 +490,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.5'
+  Minimum_Software_Version: 8.5.0.0, 10.3.1.1
   Public_Price_USD: ''
   Public_Price_EUR: 2262.0
   Comments: ''
@@ -523,7 +523,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.11'
+  Minimum_Software_Version: 8.11, 10.5.0.0
   Public_Price_USD: ''
   Public_Price_EUR: 1129.0
   Comments: Only 2 concurrent radios
@@ -556,9 +556,42 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.9'
+  Minimum_Software_Version: 8.9, 10.4.0.0
   Public_Price_USD: ''
   Public_Price_EUR: 1582.0
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-634
+  Reference: ''
+  Antenna_Type: ''
+  Indoor_Outdoor: ''
+  Generation: ''
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: ''
+  PoE_Class: ''
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: ''
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: ''
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: ''
+  GNSS: ''
+  Bluetooth: ''
+  Zigbee: ''
+  Minimum_Software_Version: 8.11.2.0, 10.6.0.0
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Aruba
   Model: AP-655
@@ -589,9 +622,42 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.10'
+  Minimum_Software_Version: 8.10.0.0, 10.4.0.0
   Public_Price_USD: ''
   Public_Price_EUR: 2056.0
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-654
+  Reference: ''
+  Antenna_Type: ''
+  Indoor_Outdoor: ''
+  Generation: ''
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: ''
+  PoE_Class: ''
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: ''
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: ''
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: ''
+  GNSS: ''
+  Bluetooth: ''
+  Zigbee: ''
+  Minimum_Software_Version: 8.11.2.0, 10.6.0.0
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
   Comments: ''
 - Vendor: Aruba
   Model: AP-675
@@ -622,7 +688,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.12'
+  Minimum_Software_Version: 8.12.0.0, 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -655,7 +721,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '8.12'
+  Minimum_Software_Version: 8.12.0.0, 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -688,7 +754,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: 10.7.2
+  Minimum_Software_Version: 10.7.2.0
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -721,7 +787,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '10.7'
+  Minimum_Software_Version: 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -754,7 +820,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '10.7'
+  Minimum_Software_Version: 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: 1869.0
   Comments: ''
@@ -820,7 +886,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '10.7'
+  Minimum_Software_Version: 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
@@ -853,7 +919,7 @@
   GNSS: 'Yes'
   Bluetooth: 'Yes'
   Zigbee: 'Yes'
-  Minimum_Software_Version: '10.7'
+  Minimum_Software_Version: 10.7.0.0
   Public_Price_USD: ''
   Public_Price_EUR: 2806.0
   Comments: ''
@@ -886,7 +952,7 @@
   GNSS: 'No'
   Bluetooth: 'Yes'
   Zigbee: 'No'
-  Minimum_Software_Version: ''
+  Minimum_Software_Version: 8.10.181.0, 17.3.6, 17.6.4
   Public_Price_USD: ''
   Public_Price_EUR: ''
   Comments: ''
