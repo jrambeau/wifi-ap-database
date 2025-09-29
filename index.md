@@ -352,93 +352,43 @@ div.dataTables_scrollBody table {
     margin-top: 0 !important;
     border-top: none !important;
 }
-/* Table wrapper for horizontal scrolling */
-.table-wrapper {
-    position: relative;
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: visible;
-    padding-left: 400px; /* Combined width of fixed columns */
+/* --- Sticky first two columns (Vendor, Model) --- */
+/* CSS variable updated dynamically to match actual first column width */
+:root { 
+    --sticky-col-1-width: 0px; 
+    /* Refined aesthetic backgrounds for sticky columns */
+    --sticky-col-bg: linear-gradient(90deg, #ffffff 0%, #f5f7fa 100%);
+    --sticky-col-bg-alt: linear-gradient(90deg, #f9fafb 0%, #f1f5f9 100%);
+    --sticky-col-bg-hover: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 100%);
 }
 
-/* Fixed columns container */
-.fixed-columns {
-    position: absolute;
-    width: 400px; /* Combined width of both columns */
-    left: 0;
-    top: auto;
-    border-right: 2px solid #e2e8f0;
-    background: #fff;
-    box-shadow: 6px 0 5px -5px rgba(0,0,0,0.1);
-}
-
-/* Individual fixed column widths */
-.fixed-columns .col-1 { width: 200px; }
-.fixed-columns .col-2 { width: 200px; }
-
-/* Main table styles */
-.fixed-columns table,
-.scroll-content table {
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: separate;
-}
+/* Base position context for sticky elements */
+#ap-table { position: relative; }
+#ap-table th, #ap-table td { position: relative; }
 /* Sticky header */
-/* Fixed headers */
-.fixed-columns th,
-.scroll-content th {
-    position: sticky !important;
-    top: 0;
-    z-index: 20;
-    background: linear-gradient(135deg, #467be5ff 0%, #382ce4ff 100%);
-    color: white;
-    padding: 16px 12px;
-    text-align: left;
-    font-weight: 600;
+#ap-table thead { position: sticky; top: 0; z-index: 20; background: rgba(79,70,229,0.92); }
+#ap-table thead tr { position: relative; z-index: 2; }
+#ap-table thead tr.filter-row { position: sticky; top: var(--sticky-header-height, 0px); z-index: 19; }
+#ap-table thead tr.filter-row th { position: sticky; top: var(--sticky-header-height, 0px); }
+
+/* Sticky columns */
+#ap-table .sticky-col { position: sticky !important; left: 0; z-index: 5; }
+#ap-table thead .sticky-col { z-index: 21 !important; /* Above header */ }
+#ap-table thead tr.filter-row .sticky-col { z-index: 20 !important; box-shadow:none; }
+#ap-table tbody .sticky-col { z-index: 4 !important; }
+/* Neutral, subtle gradient backgrounds for sticky columns */
+#ap-table tbody .sticky-col.sticky-col-1, 
+#ap-table tbody .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg); 
+    transition: background 0.25s ease; 
 }
-
-.fixed-columns th:last-child { border-right: 1px solid #e2e8f0; }
-
-/* Filter row headers */
-.fixed-columns .filter-row th,
-.scroll-content .filter-row th {
-    top: var(--header-height, 53px);
-    background: #eef2ff;
-    z-index: 19;
+#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-1, 
+#ap-table tbody tr:nth-child(even) .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg-alt); 
 }
-
-/* Ensure proper stacking of fixed elements */
-.fixed-columns thead { z-index: 30; }
-.fixed-columns tbody { z-index: 20; }
-.scroll-content thead { z-index: 10; }
-/* Row styles */
-.fixed-columns tr,
-.scroll-content tr {
-    height: 48px;
-}
-
-.fixed-columns td,
-.scroll-content td {
-    padding: 12px;
-    border-bottom: 1px solid #e2e8f0;
-    background: #fff;
-}
-
-/* Alternating row colors */
-.fixed-columns tr:nth-child(even) td,
-.scroll-content tr:nth-child(even) td {
-    background: #f8fafc;
-}
-
-/* Hover effects */
-.fixed-columns tr:hover td,
-.scroll-content tr:hover td {
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-}
-
-/* Ensure proper alignment between fixed and scrollable sections */
-.fixed-columns td:last-child {
-    border-right: 1px solid #e2e8f0;
+#ap-table tbody tr:hover .sticky-col.sticky-col-1, 
+#ap-table tbody tr:hover .sticky-col.sticky-col-2 { 
+    background: var(--sticky-col-bg-hover); 
 }
 #ap-table tbody .sticky-col { background: #ffffff; }
 #ap-table tbody tr:nth-child(even) .sticky-col { background: #f8fafc; }
@@ -475,36 +425,11 @@ div.dataTables_scrollBody table {
 </style>
 
 <div id="ap-table-container">
-<div class="table-wrapper">
-    <!-- Fixed columns -->
-    <div class="fixed-columns">
-        <table>
-            <thead>
-                <tr>
-                    <th class="col-1">Vendor</th>
-                    <th class="col-2">Model</th>
-                </tr>
-                <tr class="filter-row">
-                    <th><input type="text" placeholder="Vendor" /></th>
-                    <th><input type="text" placeholder="Model" /></th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for ap in site.data.ap_models %}
-                <tr>
-                    <td>{{ ap.Vendor | default: "" }}</td>
-                    <td>{{ ap.Model | default: "" }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Scrollable content -->
-    <div class="scroll-content">
-        <table id="ap-table" class="display" style="width:100%">
-            <thead>
-                <tr>
+<table id="ap-table" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th class="sticky-col sticky-col-1">Vendor</th>
+            <th class="sticky-col sticky-col-2">Model</th>
             <th>Reference</th>
             <th>Antenna_Type</th>
             <th>Indoor_Outdoor</th>
@@ -663,34 +588,6 @@ div.dataTables_scrollBody table {
 $(document).ready(function() {
     // Default to compact mode
     document.body.classList.add('compact-mode');
-
-    // Synchronize vertical scrolling
-    $('.fixed-columns').on('wheel', function(e) {
-        $('.scroll-content').scrollTop($('.scroll-content').scrollTop() + e.originalEvent.deltaY);
-    });
-
-    $('.scroll-content').on('scroll', function() {
-        $('.fixed-columns').scrollTop($(this).scrollTop());
-    });
-
-    // Calculate and set header height
-    function updateHeaderHeight() {
-        var headerHeight = $('.scroll-content thead tr:first-child th').outerHeight();
-        document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
-    }
-    updateHeaderHeight();
-    $(window).on('resize', updateHeaderHeight);
-    // Row hover synchronization
-    $('.fixed-columns tbody tr, .scroll-content tbody tr').hover(function() {
-        var index = $(this).index();
-        $('.fixed-columns tbody tr').eq(index).addClass('hover');
-        $('.scroll-content tbody tr').eq(index).addClass('hover');
-    }, function() {
-        var index = $(this).index();
-        $('.fixed-columns tbody tr').eq(index).removeClass('hover');
-        $('.scroll-content tbody tr').eq(index).removeClass('hover');
-    });
-
     // Initialize DataTable with buttons but minimal other features
     var table = $('#ap-table').DataTable({
         // Core settings
