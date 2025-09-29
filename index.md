@@ -361,12 +361,21 @@ div.dataTables_scrollBody table {
     --sticky-col-bg-alt: linear-gradient(90deg, #f9fafb 0%, #f1f5f9 100%);
     --sticky-col-bg-hover: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 100%);
 }
-#ap-table thead { position: sticky; top: 0; z-index: 20; }
+
+/* Base position context for sticky elements */
+#ap-table { position: relative; }
+#ap-table th, #ap-table td { position: relative; }
+/* Sticky header */
+#ap-table thead { position: sticky; top: 0; z-index: 20; background: rgba(79,70,229,0.92); }
+#ap-table thead tr { position: relative; z-index: 2; }
 #ap-table thead tr.filter-row { position: sticky; top: var(--sticky-header-height, 0px); z-index: 19; }
 #ap-table thead tr.filter-row th { position: sticky; top: var(--sticky-header-height, 0px); }
-#ap-table .sticky-col { position: sticky; left: 0; z-index: 5; }
-#ap-table thead .sticky-col { z-index: 8; /* keep gradient from #ap-table thead th */ }
-#ap-table thead tr.filter-row .sticky-col { z-index: 7; box-shadow:none; }
+
+/* Sticky columns */
+#ap-table .sticky-col { position: sticky !important; left: 0; z-index: 5; }
+#ap-table thead .sticky-col { z-index: 21 !important; /* Above header */ }
+#ap-table thead tr.filter-row .sticky-col { z-index: 20 !important; box-shadow:none; }
+#ap-table tbody .sticky-col { z-index: 4 !important; }
 /* Neutral, subtle gradient backgrounds for sticky columns */
 #ap-table tbody .sticky-col.sticky-col-1, 
 #ap-table tbody .sticky-col.sticky-col-2 { 
@@ -408,6 +417,11 @@ div.dataTables_scrollBody table {
 #ap-table .sticky-col-1::after, #ap-table .sticky-col-2::after { display:none; }
 /* Prevent probe row artifacts */
 #ap-table tbody tr.width-probe .sticky-col { box-shadow: none !important; background: transparent !important; }
+
+/* Force sticky behavior */
+.dataTables_scrollBody { position: relative !important; }
+.dataTables_scrollBody thead tr { visibility: hidden !important; }
+.dataTables_scrollBody thead tr.filter-row { visibility: visible !important; }
 </style>
 
 <div id="ap-table-container">
