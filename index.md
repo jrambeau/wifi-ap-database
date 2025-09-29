@@ -639,8 +639,8 @@ $(document).ready(function() {
         autoWidth: false,
         
         // Pagination
-        pageLength: 25,
-        lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+        pageLength: 200,
+        lengthMenu: [[50, 100, 200, 500, -1], [50, 100, 200, 500, "All"]],
         
         // Default sort
         order: [[ 0, "asc" ]],
