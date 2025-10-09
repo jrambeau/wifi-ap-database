@@ -472,7 +472,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
-  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: '-'
   Dedicated_Scanning_Radio: 'No'
   PoE_Class: 802.3bt Class 5 (45W) or 2x 802.3at Class 4 (30W)
@@ -1233,7 +1233,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
-  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir)
   PoE_Class: 802.3bt Class 5 (45W)
@@ -1266,7 +1266,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
-  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir)
   PoE_Class: 802.3bt Class 5 (45W)
@@ -1299,7 +1299,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4 if tri-radio mode or 8x8:8 if dual-radio mode'
-  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[5GHz] 4x4:4 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir)
   PoE_Class: 802.3bt Class 5 (45W)
@@ -1332,7 +1332,7 @@
   Concurrent_Serving_Radios: 3 or 4
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 8x8:8 if tri-radio mode or 4x4:4 if quad-radio mode'
-  Serving_Radio_3: '[5GHz] off if tri-radio mode or 4x4:4 if quad-radio mode'
+  Serving_Radio_3: '[5GHz] OFF if tri-radio mode or 4x4:4 if quad-radio mode'
   Serving_Radio_4: '[6GHz] 4x4:4'
   Dedicated_Scanning_Radio: Yes (CleanAir)
   PoE_Class: 802.3bt Class 6 (60W)
@@ -1532,7 +1532,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2 if tri-radio mode or 4x4:4 if dual-radio mode'
-  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir Pro)
   PoE_Class: 802.3bt Class 5 (45W)
@@ -1565,7 +1565,7 @@
   Concurrent_Serving_Radios: 2 or 3
   Serving_Radio_1: '[2.4GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2 if tri-radio mode or 4x4:4 if dual-radio mode'
-  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or off if dual-radio mode'
+  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: Yes (CleanAir Pro)
   PoE_Class: 802.3bt Class 5 (45W)
@@ -1664,7 +1664,7 @@
   Concurrent_Serving_Radios: 3 or 4
   Serving_Radio_1: '[2.4GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
-  Serving_Radio_3: '[5GHz] off if tri-radio mode or 4x4:4 if quad-radio mode'
+  Serving_Radio_3: '[5GHz] OFF if tri-radio mode or 4x4:4 if quad-radio mode'
   Serving_Radio_4: '[6GHz] 4x4:4'
   Dedicated_Scanning_Radio: Yes (CleanAir Pro)
   PoE_Class: 802.3bt Class 6 (60W)
@@ -2678,24 +2678,90 @@
   Public_Price_EUR: ''
   Comments: Not in price list anymore
 - Vendor: Huawei
+  Model: 6760-X1
+  Reference: ''
+  Antenna_Type: ''
+  Indoor_Outdoor: ''
+  Generation: ''
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: ''
+  PoE_Class: ''
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: ''
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: ''
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: ''
+  GNSS: ''
+  Bluetooth: ''
+  Zigbee: ''
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Huawei
+  Model: 6760-X1E
+  Reference: ''
+  Antenna_Type: ''
+  Indoor_Outdoor: ''
+  Generation: ''
+  Product_Positioning: ''
+  Total_PHY_Serving_Radios: ''
+  Concurrent_Serving_Radios: ''
+  Serving_Radio_1: ''
+  Serving_Radio_2: ''
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: ''
+  PoE_Class: ''
+  Max_PoE_Consumption_W: ''
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: ''
+  Ethernet1: ''
+  Ethernet2: ''
+  Weight_kg: ''
+  Dimensions_cm: ''
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: ''
+  GNSS: ''
+  Bluetooth: ''
+  Zigbee: ''
+  Minimum_Software_Version: ''
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Huawei
   Model: 6776-56TP
   Reference: 50086827-001
   Antenna_Type: 'Internal : omni downtilt'
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Total_PHY_Serving_Radios: ''
-  Concurrent_Serving_Radios: ''
+  Total_PHY_Serving_Radios: '3'
+  Concurrent_Serving_Radios: '3'
   Serving_Radio_1: '[2.4GHz] 2x2:2'
-  Serving_Radio_2: 2x2:2 + 4x4:4
-  Serving_Radio_3: ''
+  Serving_Radio_2: '[5GHz] 2x2:2'
+  Serving_Radio_3: '[5GHz] 4x4:4'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
-  Max_PoE_Consumption_W: 22.3
+  Max_PoE_Consumption_W: 22,3 (excl. USB)
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1, if USB 5W is used Tx -3dB
+  Limited_Capabilities_PoE_af_15W: USB disabled, 2nd 5GHz radio OFF
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 0.74
@@ -2717,18 +2783,18 @@
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Total_PHY_Serving_Radios: ''
-  Concurrent_Serving_Radios: ''
+  Total_PHY_Serving_Radios: '3'
+  Concurrent_Serving_Radios: '3'
   Serving_Radio_1: '[2.4GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2'
   Serving_Radio_3: '[6GHz] 4x4:4'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
   PoE_Class: ''
-  Max_PoE_Consumption_W: 21.1
+  Max_PoE_Consumption_W: 21,1 (excl. USB)
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: 'If USB 5W is used: Tx -3dB'
+  Limited_Capabilities_PoE_af_15W: USB disabled, 6 GHz OFF, 2.4GHz and 5GHz 2x2:2
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 0.75
@@ -2750,18 +2816,19 @@
   Indoor_Outdoor: ''
   Generation: Wi-Fi 7 (802.11be)
   Product_Positioning: ''
-  Total_PHY_Serving_Radios: ''
-  Concurrent_Serving_Radios: ''
-  Serving_Radio_1: '[2.4GHz] 2x2:2'
-  Serving_Radio_2: '[5GHz] 4x4:4'
-  Serving_Radio_3: '[6GHz] 2x2:2'
+  Total_PHY_Serving_Radios: '3'
+  Concurrent_Serving_Radios: 2 or 3
+  Serving_Radio_1: '[2.4GHz] 2x2:2 if tri-radio mode or 4x4:4 if dual-radio mode'
+  Serving_Radio_2: '[5GHz] 4x4:4 in both dual-radio or tri-radio mode'
+  Serving_Radio_3: '[6GHz] 2x2:2 if tri-radio mode or OFF if dual-radio mode'
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 23.9
+  PoE_Class: 802.3bt Class 5 (45W) or 802.3bt Class 6 (60W)
+  Max_PoE_Consumption_W: 23,9 (excl. USB and IoT cards)
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Refer to Huawei Spec Center
+  Limited_Capabilities_PoE_af_15W: USB disabled, IoT disabled, only 2,4 GHz radio
+    running at 2x2
   Ethernet1: 5 Gbits
   Ethernet2: ''
   Weight_kg: 1.47
