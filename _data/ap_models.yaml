@@ -1678,7 +1678,7 @@
   Weight_kg: 1.87
   Dimensions_cm: 25,1 x 25,1 x 5,1
   Geolocation_FTM_80211mc_80211az: Yes (.11mc/.11az)
-  USB_Ports: ''
+  USB_Ports: '1'
   UWB: 'Yes'
   GNSS: 'Yes'
   Bluetooth: 'Yes'
@@ -1702,10 +1702,10 @@
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: '?'
+  Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth2
+  Limited_Capabilities_PoE_af_15W: Not documented?
   Ethernet1: 5 Gbits
   Ethernet2: 2,5 Gbits, PoE out
   Weight_kg: ''
@@ -1735,10 +1735,10 @@
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: '?'
+  Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: No PoE out on Eth1
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: No PoE out on Eth2
+  Limited_Capabilities_PoE_af_15W: Not documented?
   Ethernet1: 5 Gbits
   Ethernet2: 2,5 Gbits, PoE out
   Weight_kg: ''
@@ -1768,10 +1768,11 @@
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: 39.6
+  Max_PoE_Consumption_W: 35
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 3x3, USB disabled, no PoE out on Eth2
+  Limited_Capabilities_PoE_af_15W: Radios 2x2 (3x3 on 5GHz), Tx Power max 13dBm on
+    all radios, USB disabled, No PoE out on Eth2
   Ethernet1: 10 Gbits
   Ethernet2: 5 Gbits, PoE in, PoE out
   Weight_kg: 1.62
@@ -1801,10 +1802,12 @@
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: 'Yes'
   PoE_Class: 802.3bt Class 5 (45W)
-  Max_PoE_Consumption_W: ''
+  Max_PoE_Consumption_W: 25.5
   Limited_Capabilities_PoE_bt_Class5_45W: ''
-  Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_at_30W: Radios 3x3 if USB is used, no PoE out on Eth2,
+    otherwise no limitations
+  Limited_Capabilities_PoE_af_15W: Radios 2x2, Tx Power max 10dBm on all radios, USB
+    disabled, No PoE out on Eth2
   Ethernet1: 5 Gbits
   Ethernet2: 2,5 Gbits, PoE out
   Weight_kg: 1.3
@@ -1837,7 +1840,7 @@
   Max_PoE_Consumption_W: 16.6
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Tx Power max 16dBm on all radios, USB disabled
   Ethernet1: 2,5 Gbits
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 0.85
@@ -2068,7 +2071,7 @@
   Max_PoE_Consumption_W: 17
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Tx Power max 16dBm on all radios, USB disabled
   Ethernet1: 2,5 Gbits
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 0.85
@@ -2101,7 +2104,7 @@
   Max_PoE_Consumption_W: 17
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: Tx Power max 16dBm on all radios, USB disabled
   Ethernet1: 2,5 Gbits
   Ethernet2: 1 Gbits, no PoE
   Weight_kg: 0.52
@@ -2625,11 +2628,11 @@
   Serving_Radio_3: ''
   Serving_Radio_4: ''
   Dedicated_Scanning_Radio: ''
-  PoE_Class: ''
-  Max_PoE_Consumption_W: 14.8
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 14,8 (excl. USB)
   Limited_Capabilities_PoE_bt_Class5_45W: ''
   Limited_Capabilities_PoE_at_30W: ''
-  Limited_Capabilities_PoE_af_15W: ''
+  Limited_Capabilities_PoE_af_15W: USB disabled, 5GHz 2x2:2
   Ethernet1: 2,5 Gbits
   Ethernet2: ''
   Weight_kg: 0.73
