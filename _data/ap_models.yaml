@@ -495,6 +495,105 @@
   Public_Price_EUR: 2262.0
   Comments: ''
 - Vendor: Aruba
+  Model: AP-575
+  Reference: R4H17A
+  Antenna_Type: 'Internal : omni horizontal'
+  Indoor_Outdoor: Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: '2'
+  Concurrent_Serving_Radios: '2'
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 26.1
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, PoE
+  Weight_kg: 2.5
+  Dimensions_cm: 24 x 24 x 27
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: 8.7.0.0, 10.3.1.1
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-577
+  Reference: R4H22A
+  Antenna_Type: 'Internal : directionnal 7dBi 90°H/V'
+  Indoor_Outdoor: Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: '2'
+  Concurrent_Serving_Radios: '2'
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 26.1
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, PoE
+  Weight_kg: 2.1
+  Dimensions_cm: 23 x 22 x 14
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: 8.7.0.0, 10.3.1.1
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Aruba
+  Model: AP-574
+  Reference: R4H12A
+  Antenna_Type: 'External : 4x N-type for 5GHz + 2x N-type for 2.4GHz'
+  Indoor_Outdoor: Outdoor
+  Generation: Wi-Fi 6 (802.11ax)
+  Product_Positioning: High-end
+  Total_PHY_Serving_Radios: '2'
+  Concurrent_Serving_Radios: '2'
+  Serving_Radio_1: '[2.4GHz] 2x2:2'
+  Serving_Radio_2: '[5GHz] 4x4:4'
+  Serving_Radio_3: ''
+  Serving_Radio_4: ''
+  Dedicated_Scanning_Radio: 'No'
+  PoE_Class: 802.3at Class 4 (30W)
+  Max_PoE_Consumption_W: 26.1
+  Limited_Capabilities_PoE_bt_Class5_45W: ''
+  Limited_Capabilities_PoE_at_30W: ''
+  Limited_Capabilities_PoE_af_15W: Not supported (AP staging only)
+  Ethernet1: 2,5 Gbits
+  Ethernet2: 1 Gbits, PoE
+  Weight_kg: 2.7
+  Dimensions_cm: 24 x 24 x 19
+  Geolocation_FTM_80211mc_80211az: ''
+  USB_Ports: ''
+  UWB: 'No'
+  GNSS: 'No'
+  Bluetooth: 'Yes'
+  Zigbee: 'Yes'
+  Minimum_Software_Version: 8.7.0.0, 10.3.1.1
+  Public_Price_USD: ''
+  Public_Price_EUR: ''
+  Comments: ''
+- Vendor: Aruba
   Model: AP-615
   Reference: R7J49A
   Antenna_Type: 'Internal : omni downtilt'
@@ -1393,7 +1492,7 @@
   Model: CW9163E
   Reference: ''
   Antenna_Type: 'External : 4x N-Type + 1x RP-SMA active GNSS'
-  Indoor_Outdoor: Indoor
+  Indoor_Outdoor: Outdoor
   Generation: Wi-Fi 6E (802.11ax)
   Product_Positioning: ''
   Total_PHY_Serving_Radios: '3'
@@ -1596,7 +1695,7 @@
   Product_Positioning: ''
   Total_PHY_Serving_Radios: '3'
   Concurrent_Serving_Radios: 3
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: '[6GHz] 4x4:4'
   Serving_Radio_4: ''
@@ -1629,7 +1728,7 @@
   Product_Positioning: ''
   Total_PHY_Serving_Radios: '3'
   Concurrent_Serving_Radios: 3
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: '[6GHz] 4x4:4'
   Serving_Radio_4: ''
@@ -1762,7 +1861,7 @@
   Product_Positioning: High-end
   Total_PHY_Serving_Radios: '3'
   Concurrent_Serving_Radios: 3
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: '[6GHz] 4x4:4'
   Serving_Radio_4: ''
@@ -1864,7 +1963,7 @@
   Product_Positioning: High-end
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -1897,7 +1996,7 @@
   Product_Positioning: High-end
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -1930,7 +2029,7 @@
   Product_Positioning: Mid-range
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -1963,7 +2062,7 @@
   Product_Positioning: Mid-range
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -1996,7 +2095,7 @@
   Product_Positioning: Mid-range
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -2029,7 +2128,7 @@
   Product_Positioning: Mid-range
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -2128,7 +2227,7 @@
   Product_Positioning: Entry-level
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -2161,7 +2260,7 @@
   Product_Positioning: Entry-level
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -2194,7 +2293,7 @@
   Product_Positioning: Entry-level
   Total_PHY_Serving_Radios: '2'
   Concurrent_Serving_Radios: 2
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz] 2x2:2'
+  Serving_Radio_1: '[2.4GHz or 5GHz] 2x2:2'
   Serving_Radio_2: '[5GHz] 2x2:2'
   Serving_Radio_3: ''
   Serving_Radio_4: ''
@@ -3185,7 +3284,7 @@
   Product_Positioning: High-end
   Total_PHY_Serving_Radios: '3'
   Concurrent_Serving_Radios: 3
-  Serving_Radio_1: '[FRA 2.4GHz or 5GHz or 6GHz] 4x4:4'
+  Serving_Radio_1: '[2.4GHz or 5GHz or 6GHz] 4x4:4'
   Serving_Radio_2: '[5GHz] 4x4:4'
   Serving_Radio_3: '[6GHz] 4x4:4'
   Serving_Radio_4: ''
